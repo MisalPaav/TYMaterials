@@ -1,0 +1,95 @@
+site_name: TYMaterials
+theme:
+  name: material
+  font: 
+    text: Roboto 500
+  logo: assets/logo.svg
+  favicon: assets/logo.png
+  features:
+    - navigation.path
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+
+nav:
+  - SEPM: 
+    - sepm/index.md
+    - Unit1: sepm/Unit1.md
+    - Unit2: sepm/Unit2.md
+    - Unit3: sepm/Unit3.md
+    - Unit4: sepm/Unit4.md
+    - Unit5: sepm/Unit5.md
+  
+  - WD:
+    - WD/index.md
+    - Unit1: WD/Unit1.md
+    - Unit2: WD/Unit2.md
+    - Unit3: WD/Unit3.md
+    - Unit4: WD/Unit4.md
+    - Unit5: WD/Unit5.md
+  
+  - DBMS:
+    - dbms/index.md
+    - Unit1: dbms/Unit1.md
+    - Unit2: dbms/Unit2.md
+    - Unit3: dbms/Unit3.md
+    - Unit4: dbms/Unit4.md
+    - Unit5: dbms/Unit5.md
+
+  - CD:
+    - cd/index.md
+    - Unit1: cd/Unit1.md
+    - Unit2: cd/Unit2.md
+    - Unit3: cd/Unit3.md
+    - Unit4: cd/Unit4.md
+    - Unit5: cd/Unit5.md
+  
+  - EEIM:
+    - eeim/index.md
+    - Unit1: eeim/Unit1.md
+    - Unit2: eeim/Unit2.md
+    - Unit3: eeim/Unit3.md
+    - Unit4: eeim/Unit4.md
+    - Unit5: eeim/Unit5.md
+  
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gautampatil1
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/gautampatil1
+  generator: false
+  analytics:
+    provider: google 
+    property: 
+
+
+copyright: Copyright &copy; 2023 Gautam Patil

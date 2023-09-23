@@ -1,0 +1,52 @@
+# Engineering Economics & Industrial Management
+
+## **Syllabus**
+
+| Unit   | Topic                                               | Hours |
+| ------ | --------------------------------------------------- | ----- |
+| [Unit I](#) | Demand, Utility, and Indifference curves        | 7     |
+|        | - Approach to Analysis of demand                    |       |
+|        | - Elasticity of demand                              |       |
+|        | - Measure of demand elasticity                      |       |
+|        | - Factors of Production                             |       |
+|        | - Advertising elasticity                            |       |
+|        | Market and Market Structures                        |       |
+|        | - Price and output determination under            |       |
+|        |   - Perfect competition                             |       |
+|        |   - Monopolistic competition                        |       |
+|        |   - Oligopoly                                       |       |
+|        |   - Monopoly                                       |       |
+|        | - Depreciation and methods for its determination    |       |
+| [Unit II](#) | Functions of central and commercial banks    | 6     |
+|        | - Inflation                                         |       |
+|        | - Deflation                                        |       |
+|        | - Stagflation                                      |       |
+|        | - Direct and Indirect Taxes                        |       |
+|        | - New economic policy                              |       |
+|        | - Liberalization                                   |       |
+|        | - Globalization                                    |       |
+|        | - Privatization                                    |       |
+|        | - Monetary & Fiscal policies of the government     |       |
+|        | - Meaning and phases of business cycles             |       |
+| [Unit III](#) | Definition, nature, and scope of Management | 5     |
+|        | - Functions of management                          |       |
+|        |   - Planning                                       |       |
+|        |   - Organizing                                     |       |
+|        |   - Directing                                      |       |
+|        |   - Controlling                                    |       |
+|        | - Principles of management                         |       |
+|        | - Communication                                    |       |
+| [Unit IV](#) | Meaning of Marketing management               | 7     |
+|        | - Concepts of marketing                            |       |
+|        | - Marketing Mix                                    |       |
+|        | - Service Marketing                                |       |
+|        | - Product Life Cycle                               |       |
+|        | - New Product Development                          |       |
+|        | - Pricing strategies                                |       |
+|        | - Channels of distribution                         |       |
+|        | - Promotion Mix                                    |       |
+| [Unit V](#) | Meaning, nature, and scope of Financial Management | 5 |
+|        | - Sources of Financing                             |       |
+|        | - Ratio Analysis                                   |       |
+|        | - Time value of money                              |       |
+
