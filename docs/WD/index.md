@@ -56,3 +56,6 @@
 |          | - Themes                                           |       |
 |          | - Publishing web sites                             |       |
 
+## Lab Manual
+
+<iframe src="https://drive.google.com/file/d/1y0maUIW1lbB9Ri_2owKB__DvvY-V2hxF/preview" width="640" height="480" allow="autoplay"></iframe>

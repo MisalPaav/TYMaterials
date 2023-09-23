@@ -56,4 +56,7 @@
 |        | - Data Mining                                      |       |
 |        | - Advances in databases                            |       |
 
-<iframe src="https://drive.google.com/file/d/1mt6FgkZGMUAWFzCpcAGq-X1U3W9fEI2Q/preview" width="800px" height="800px"></iframe>
+
+## Lab Manual
+
+<iframe src="https://drive.google.com/file/d/12Rrbube56zhNcWrWVlK21ofFSSr_LPxF/preview" width="800px" height="800px"></iframe>

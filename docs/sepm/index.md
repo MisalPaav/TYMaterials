@@ -62,8 +62,12 @@
 |        | - Recent trends in software engineering (Agile methodology, scrum, pair programming) | |
 
 ## Question Bank with Answers
-
+    Coming Soon ....
 - [CAE - 1]()
 - [CAE - 2]()
 - [CAE - 3]()
 - [ESE]()
+
+## Lab Manual
+
+<iframe src="https://drive.google.com/file/d/13cgDwylP5kqhsL3APiaNUIuhmENuBu8o/preview" width="800" height="480" allow="autoplay"></iframe>
