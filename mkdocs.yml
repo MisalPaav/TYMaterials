@@ -4,7 +4,7 @@ theme:
   font: 
     text: Roboto 500
   logo: assets/logo.svg
-  favicon: assets/logo.png
+  favicon: favicon.ico
   features:
     - navigation.path
     - navigation.indexes
@@ -89,7 +89,7 @@ extra:
   generator: false
   analytics:
     provider: google 
-    property: 
+    property: G-B5944EDZSE
 
 extra_javascript:
   - lol.js
