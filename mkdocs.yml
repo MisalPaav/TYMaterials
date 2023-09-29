@@ -91,5 +91,7 @@ extra:
     provider: google 
     property: 
 
+extra_javascript:
+  - lol.js
 
 copyright: Copyright &copy; 2023 Gautam Patil
