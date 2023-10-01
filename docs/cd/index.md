@@ -29,7 +29,7 @@
 |        | - Constructing SLR parsing tables                   |       |
 |        | - Constructing Canonical LR parsing tables           |       |
 |        | - Constructing LALR parsing tables                  |       |
-| [Unit III](#) | SEMANTIC ANALYSIS                             | 8     |
+| [Unit III](Unit3.md) | [SEMANTIC ANALYSIS](Unit3.md)                             | 8     |
 |        | - Need of semantic analysis                         |       |
 |        | - Abstract Parse trees for Expressions, variables, statements, functions, and class declarations | |
 |        | - Syntax directed definitions                       |       |
@@ -37,7 +37,7 @@
 |        | - Symbol Tables (ST)                                |       |
 |        | - Organization of ST for block structure and non-block structured languages | |
 |        | - Symbol Table management                           |       |
-| [Unit IV](#) | INTERMEDIATE CODE GENERATION AND ERROR RECOVERY | 8 |
+| [Unit IV](Unit4.md) | [INTERMEDIATE CODE GENERATION AND ERROR RECOVERY](Unit4.md) | 8 |
 |        | - Intermediate code generation                      |       |
 |        | - Intermediate languages                            |       |
 |        | - Design issues                                     |       |

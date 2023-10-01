@@ -28,7 +28,7 @@
 |        | - Privatization                                    |       |
 |        | - Monetary & Fiscal policies of the government     |       |
 |        | - Meaning and phases of business cycles             |       |
-| [Unit III](#) | Definition, nature, and scope of Management | 5     |
+| [Unit III](Unit3.md) | [Definition, nature, and scope of Management](Unit3.md) | 5     |
 |        | - Functions of management                          |       |
 |        |   - Planning                                       |       |
 |        |   - Organizing                                     |       |
@@ -36,7 +36,7 @@
 |        |   - Controlling                                    |       |
 |        | - Principles of management                         |       |
 |        | - Communication                                    |       |
-| [Unit IV](#) | Meaning of Marketing management               | 7     |
+| [Unit IV](Unit4.md) | [Meaning of Marketing management](Unit4.md)               | 7     |
 |        | - Concepts of marketing                            |       |
 |        | - Marketing Mix                                    |       |
 |        | - Service Marketing                                |       |
