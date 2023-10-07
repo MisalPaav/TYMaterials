@@ -58,7 +58,7 @@
 
 ## Question Bank with Answers
 - [CAE - 1](CAE-1-Question-Bank.md) 
-- [CAE - 2](Cae-2-Question-Bank.md)
+- [CAE - 2](CAE-2-Question-Bank.md)
 - [CAE - 3]()
 - [ESE]()
 
