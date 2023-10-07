@@ -57,9 +57,8 @@
 |        | - Advances in databases                            |       |
 
 ## Question Bank with Answers
-    Coming ASAP
-- [CAE - 1]()
-- [CAE - 2]()
+- [CAE - 1](CAE-1-Question-Bank.md) 
+- [CAE - 2](Cae-2-Question-Bank.md)
 - [CAE - 3]()
 - [ESE]()
 

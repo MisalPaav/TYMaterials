@@ -44,6 +44,8 @@ nav:
     - Unit3: sepm/Unit3.md
     - Unit4: sepm/Unit4.md
     - Unit5: sepm/Unit5.md
+    - CAE-1-Question-Bank: sepm/CAE-1-Question-Bank.md
+    - CAE-2-Question-Bank: sepm/CAE-2-Question-Bank.md
   
   - WD:
     - WD/index.md
@@ -52,6 +54,8 @@ nav:
     - Unit3: WD/Unit3.md
     - Unit4: WD/Unit4.md
     - Unit5: WD/Unit5.md
+    - CAE-1-Question-Bank: WD/CAE-1-Question-Bank.md
+    - CAE-2-Question-Bank: WD/CAE-2-Question-Bank.md
   
   - DBMS:
     - dbms/index.md
@@ -60,6 +64,8 @@ nav:
     - Unit3: dbms/Unit3.md
     - Unit4: dbms/Unit4.md
     - Unit5: dbms/Unit5.md
+    - CAE-1-Question-Bank: dbms/CAE-1-Question-Bank.md
+    - CAE-2-Question-Bank: dbms/CAE-2-Question-Bank.md
 
   - CD:
     - cd/index.md
@@ -68,6 +74,8 @@ nav:
     - Unit3: cd/Unit3.md
     - Unit4: cd/Unit4.md
     - Unit5: cd/Unit5.md
+    - CAE-1-Question-Bank: cd/CAE-1-Question-Bank.md
+    - CAE-2-Question-Bank: cd/CAE-2-Question-Bank.md
   
   - EEIM:
     - eeim/index.md
@@ -76,6 +84,8 @@ nav:
     - Unit3: eeim/Unit3.md
     - Unit4: eeim/Unit4.md
     - Unit5: eeim/Unit5.md
+    - CAE-1-Question-Bank: eeim/CAE-1-Question-Bank.md
+    - CAE-2-Question-Bank: eeim/CAE-2-Question-Bank.md
   
 plugins:
   - search
