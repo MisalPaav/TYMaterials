@@ -52,8 +52,8 @@
 
 ## Question Bank with Answers
     Coming ASAP
-- [CAE - 1](CAE-1-Question-Bank.md)
-- [CAE - 2](CAE-2-Question-Bank.md)
+- [CAE - 1](EEIM-CAE-1-Question-Bank.md)
+- [CAE - 2](EEIM-CAE-2-Question-Bank.md)
 - [CAE - 3]()
 - [ESE]()
 

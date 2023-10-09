@@ -63,8 +63,8 @@
 
 ## Question Bank with Answers
     Coming ASAP
-- [CAE - 1](CAE-1-Question-Bank.md)
-- [CAE - 2](CAE-2-Question-Bank.md)
+- [CAE - 1](SEPM-CAE-1-Question-Bank.md)
+- [CAE - 2](SEPM-CAE-2-Question-Bank.md)
 - [CAE - 3]()
 - [ESE]()
 
