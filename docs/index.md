@@ -7,6 +7,7 @@ Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
 - [Database Management System CAE 2 Question Bank Solutions](dbms/DBMS-CAE-2-Question-Bank.md)
 - [Web Development CAE 2 Question Bank Solutions](WD/WD-CAE-2-Question-Bank.md)
 - [Software Engineering & Project Management](sepm/SEPM-CAE-2-Question-Bank.md)
+- [Engineering Economics & Industrial Management](eeim/EEIM-CAE-2-Question-Bank.md)
 
 ## **ONLY 3rd & 4th UNIT NOTES ARE AVAILABLE NOW, UNIT1, UNIT2 Notes ETC COMING SOON**
 
