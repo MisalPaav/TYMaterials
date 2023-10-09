@@ -70,10 +70,6 @@ System design is a critical phase in the software development process, aiming to
 
 10. **Compliance**: If applicable, the system should comply with industry standards, regulations, and legal requirements.
 
-## 2.Give the different types of architecture styles
-
-###### Ans2
-
 Several principles guide effective system design:
 
 ### 1. Modularization
@@ -111,9 +107,9 @@ Several principles guide effective system design:
 - **Principle**: Each module or class should have only one reason to change.
 - **Rationale**: SRP promotes code maintainability and makes it easier to identify and fix issues.
 
-## 3. What is necessity of architecture
+## 2.Give the different types of architecture styles
 
-###### Ans3
+###### Ans2
 
 1. **Client-Server Architecture:**
 
@@ -156,9 +152,10 @@ Several principles guide effective system design:
         - Focuses on writing code (functions) without managing server infrastructure.
         - Scales automatically based on demand.
 
-## 4. Give the classification of UML diagram
 
-###### Ans4
+## 3. What is necessity of architecture
+
+###### Ans3
 
 The necessity of architecture in any context, including software or construction, can be summarized as follows:
 
@@ -178,6 +175,9 @@ The necessity of architecture in any context, including software or construction
 
 8. **Alignment with Goals**: Architecture ensures that the project aligns with the overall goals and objectives, preventing deviations that may lead to wastage of resources.
 
+## 4. Give the classification of UML diagram
+
+###### Ans4
 ### UML Diagram
 
 ![UML Diagram](https://www.conceptdraw.com/How-To-Guide/picture/uml-software/Notation-UML.png)
