@@ -183,20 +183,22 @@ The necessity of architecture in any context, including software or construction
 ![UML Diagram](https://www.conceptdraw.com/How-To-Guide/picture/uml-software/Notation-UML.png)
 
 1. **Structural Diagrams**:
-   - **Class Diagram**: Represents the static structure of a system, including classes, attributes, associations, and their relationships.
-   - **Object Diagram**: Shows a snapshot of objects and their relationships at a specific point in time.
-   - **Component Diagram**: Illustrates the physical components of a system and their dependencies.
-   - **Deployment Diagram**: Focuses on the physical deployment of software components on hardware nodes.
-   - **Package Diagram**: Organizes elements into packages to depict the high-level structure of a system.
-   - **Composite Structure Diagram**: Describes the internal structure of a class and how its parts collaborate.
+
+      - **Class Diagram**: Represents the static structure of a system, including classes, attributes, associations, and their relationships.
+      - **Object Diagram**: Shows a snapshot of objects and their relationships at a specific point in time.
+      - **Component Diagram**: Illustrates the physical components of a system and their dependencies.
+      - **Deployment Diagram**: Focuses on the physical deployment of software components on hardware nodes.
+      - **Package Diagram**: Organizes elements into packages to depict the high-level structure of a system.
+      - **Composite Structure Diagram**: Describes the internal structure of a class and how its parts collaborate.
 
 2. **Behavioral Diagrams**:
-   - **Use Case Diagram**: Represents the interactions between actors (users) and a system to define its functionality.
-   - **Activity Diagram**: Depicts the workflow or activities within a system, often used for business processes.
-   - **Sequence Diagram**: Shows the interactions and order of messages between objects over time.
-   - **Communication Diagram**: Emphasizes the interactions between objects but with a focus on relationships and links.
-   - **State Machine Diagram**: Models the states and transitions of an object or system, often used for behavior modeling.
-   - **Timing Diagram**: Represents the timing constraints and interactions between lifelines in a system.
+
+      - **Use Case Diagram**: Represents the interactions between actors (users) and a system to define its functionality.
+      - **Activity Diagram**: Depicts the workflow or activities within a system, often used for business processes.
+      - **Sequence Diagram**: Shows the interactions and order of messages between objects over time.
+      - **Communication Diagram**: Emphasizes the interactions between objects but with a focus on relationships and links.
+      - **State Machine Diagram**: Models the states and transitions of an object or system, often used for behavior modeling.
+      - **Timing Diagram**: Represents the timing constraints and interactions between lifelines in a system.
 
 ## 5. Elaborate the different diagram involved in structural diagram
 
@@ -337,46 +339,46 @@ Dependency is a fundamental concept in software design that represents a relatio
 ### Types of Dependencies
 
 1. **Static Dependency**:
-   - **Description**: Static dependencies are determined at compile-time or design-time and are based on the structure of the code.
-   - **Examples**:
-     - Class A uses Class B, indicating a static dependency from A to B.
-     - A module imports functions from another module.
-   - **Implications**: Changes in the depended-upon element may require recompilation or retesting of the dependent element.
+      - **Description**: Static dependencies are determined at compile-time or design-time and are based on the structure of the code.
+      - **Examples**:
+        - Class A uses Class B, indicating a static dependency from A to B.
+        - A module imports functions from another module.
+      - **Implications**: Changes in the depended-upon element may require recompilation or retesting of the dependent element.
 
 2. **Dynamic Dependency**:
-   - **Description**: Dynamic dependencies are resolved at runtime and are based on the actual execution of the program.
-   - **Examples**:
-     - A method call to a function in another module during program execution.
-     - Dependency injection, where objects are provided at runtime.
-   - **Implications**: Changes in dynamic dependencies may not be detected until runtime and can lead to unexpected behavior.
+      - **Description**: Dynamic dependencies are resolved at runtime and are based on the actual execution of the program.
+      - **Examples**:
+        - A method call to a function in another module during program execution.
+        - Dependency injection, where objects are provided at runtime.
+      - **Implications**: Changes in dynamic dependencies may not be detected until runtime and can lead to unexpected behavior.
 
 3. **Compile-Time Dependency**:
-   - **Description**: Dependencies that are determined and resolved during the compilation phase.
-   - **Examples**:
-     - Including header files in C/C++ programs.
-     - Importing modules in languages like Python.
-   - **Implications**: Compile-time dependencies affect the build process and determine what needs to be included during compilation.
+      - **Description**: Dependencies that are determined and resolved during the compilation phase.
+      - **Examples**:
+        - Including header files in C/C++ programs.
+        - Importing modules in languages like Python.
+      - **Implications**: Compile-time dependencies affect the build process and determine what needs to be included during compilation.
 
 4. **Runtime Dependency**:
-   - **Description**: Dependencies that are resolved and established when the program is executing.
-   - **Examples**:
-     - Loading dynamic libraries or modules at runtime.
-     - Instantiating objects based on user input or configuration.
-   - **Implications**: Runtime dependencies can affect the behavior and performance of the running program.
+      - **Description**: Dependencies that are resolved and established when the program is executing.
+      - **Examples**:
+        - Loading dynamic libraries or modules at runtime.
+        - Instantiating objects based on user input or configuration.
+      - **Implications**: Runtime dependencies can affect the behavior and performance of the running program.
 
 5. **Direct Dependency**:
-   - **Description**: A direct dependency exists when one element explicitly depends on another.
-   - **Examples**:
-     - A class uses another class through a direct function call.
-     - A module imports specific functions from another module.
-   - **Implications**: Direct dependencies are clearly defined and easy to trace.
+      - **Description**: A direct dependency exists when one element explicitly depends on another.
+      - **Examples**:
+        - A class uses another class through a direct function call.
+        - A module imports specific functions from another module.
+      - **Implications**: Direct dependencies are clearly defined and easy to trace.
 
 6. **Indirect Dependency**:
-   - **Description**: An indirect dependency exists when one element depends on another through a chain of dependencies.
-   - **Examples**:
-     - Class A depends on Class B, which in turn depends on Class C.
-     - A module imports Module B, which itself imports Module C.
-   - **Implications**: Indirect dependencies can be harder to trace and manage, and changes in intermediate dependencies can impact the final dependency.
+      - **Description**: An indirect dependency exists when one element depends on another through a chain of dependencies.
+      - **Examples**:
+        - Class A depends on Class B, which in turn depends on Class C.
+        - A module imports Module B, which itself imports Module C.
+      - **Implications**: Indirect dependencies can be harder to trace and manage, and changes in intermediate dependencies can impact the final dependency.
 
 Understanding the types of dependencies and managing them effectively is essential for designing modular and maintainable software systems. By identifying and documenting dependencies, developers can make informed decisions about code changes, updates, and refactoring.
 
@@ -437,61 +439,73 @@ STLC, or Software Testing Life Cycle, is a systematic and structured approach to
 ### 1. Requirement Analysis
 
 - **Objective**: In this phase, the testing team thoroughly reviews and analyzes the project requirements, specifications, and documentation to gain a clear understanding of what needs to be tested.
+
 - **Activities**:
-  - Identify the scope of testing.
-  - Understand the functional and non-functional requirements.
-  - Create a test plan outline.
-  - Define testing objectives and criteria.
-  - Identify potential risks and challenges related to testing.
+    - Identify the scope of testing.
+    - Understand the functional and non-functional requirements.
+    - Create a test plan outline.
+    - Define testing objectives and criteria.
+    - Identify potential risks and challenges related to testing.
+
 - **Output**: Requirement Traceability Matrix (RTM), Test Plan Outline.
 
 ### 2. Test Planning
 
 - **Objective**: Test Planning involves creating a detailed test plan that outlines the testing strategy, approach, resources, and schedule. It defines how testing will be carried out throughout the project.
+
 - **Activities**:
-  - Define the test objectives and scope.
-  - Identify test deliverables, including test cases and test data.
-  - Allocate resources, including test environment setup.
-  - Create a test schedule and timeline.
-  - Define test metrics and reporting mechanisms.
+    - Define the test objectives and scope.
+    - Identify test deliverables, including test cases and test data.
+    - Allocate resources, including test environment setup.
+    - Create a test schedule and timeline.
+    - Define test metrics and reporting mechanisms.
+
 - **Output**: Comprehensive Test Plan Document.
 
 ### 3. Test Case Development
 
 - **Objective**: This phase involves the creation of detailed test cases based on the requirements and test scenarios defined earlier. Test cases serve as a set of instructions for testers to execute during the testing phase.
+
 - **Activities**:
-  - Develop test cases with clear test steps, input data, and expected outcomes.
-  - Ensure test cases cover both positive and negative scenarios.
-  - Organize test cases into test suites.
+    - Develop test cases with clear test steps, input data, and expected outcomes.
+    - Ensure test cases cover both positive and negative scenarios.
+    - Organize test cases into test suites.
+
 - **Output**: Test Cases Document.
 
 ### 4. Test Environment Setup
 
 - **Objective**: Setting up the test environment involves preparing the necessary hardware and software configurations that are required for testing. It ensures that the test environment mirrors the production environment as closely as possible.
+
 - **Activities**:
-  - Install or configure the necessary software.
-  - Prepare test data and test databases.
-  - Ensure compatibility of the test environment with the application under test.
+    - Install or configure the necessary software.
+    - Prepare test data and test databases.
+    - Ensure compatibility of the test environment with the application under test.
+
 - **Output**: Ready-to-use Test Environment.
 
 ### 5. Test Execution
 
 - **Objective**: In this phase, the actual testing is performed according to the test plan and test cases. Testers execute the test cases, record results, and report defects, if any.
+
 - **Activities**:
-  - Execute test cases systematically.
-  - Record test results, including pass/fail status.
-  - Log and report defects with detailed information.
-  - Conduct regression testing when required.
+    - Execute test cases systematically.
+    - Record test results, including pass/fail status.
+    - Log and report defects with detailed information.
+    - Conduct regression testing when required.
+
 - **Output**: Test Execution Results, Defect Reports.
 
 ### 6. Test Cycle Closure
 
 - **Objective**: Test Cycle Closure is the final phase of STLC, where the testing team assesses the completion of testing activities and prepares test summary reports. It also includes evaluating the overall testing process and identifying areas for improvement.
+
 - **Activities**:
-  - Summarize test results and achievements.
-  - Create a Test Summary Report.
-  - Perform a review meeting to gather feedback.
-  - Identify lessons learned and improvements for future testing cycles.
+    - Summarize test results and achievements.
+    - Create a Test Summary Report.
+    - Perform a review meeting to gather feedback.
+    - Identify lessons learned and improvements for future testing cycles.
+
 - **Output**: Test Summary Report, Lessons Learned Document.
 
 These phases of STLC ensure that testing activities are well-planned, executed, and documented, leading to effective quality assurance and defect identification throughout the software development life cycle.
@@ -632,39 +646,39 @@ Software testing is a crucial phase in the software development life cycle, ensu
 Black Box Testing is a software testing technique that focuses on testing the functionality of a software application without knowledge of its internal code or structure. It is based on the software's specifications and requirements. There are several approaches to conducting Black Box Testing:
 
 1. **Equivalence Partitioning**:
-   - This approach divides the input domain of a system into groups or partitions that are expected to exhibit similar behavior.
-   - Test cases are designed to cover each partition, ensuring that representative inputs from each group are tested.
-   - It helps in identifying common input errors and potential issues.
+      - This approach divides the input domain of a system into groups or partitions that are expected to exhibit similar behavior.
+      - Test cases are designed to cover each partition, ensuring that representative inputs from each group are tested.
+      - It helps in identifying common input errors and potential issues.
 
 2. **Boundary Value Analysis (BVA)**:
-   - BVA focuses on testing values at the boundaries of input domains, as these are often more likely to cause errors.
-   - Test cases are designed to test values at the upper and lower boundaries, just beyond the boundaries, and at the exact boundaries.
-   - It helps detect off-by-one errors and issues related to boundary conditions.
+      - BVA focuses on testing values at the boundaries of input domains, as these are often more likely to cause errors.
+      - Test cases are designed to test values at the upper and lower boundaries, just beyond the boundaries, and at the exact boundaries.
+      - It helps detect off-by-one errors and issues related to boundary conditions.
 
 3. **Decision Table Testing**:
-   - In this approach, test cases are derived from a decision table that defines possible combinations of input conditions and corresponding actions or outcomes.
-   - Test cases are created to cover all possible combinations, ensuring comprehensive testing of decision-making logic.
-   - It is particularly useful for complex business rules.
+      - In this approach, test cases are derived from a decision table that defines possible combinations of input conditions and corresponding actions or outcomes.
+      - Test cases are created to cover all possible combinations, ensuring comprehensive testing of decision-making logic.
+      - It is particularly useful for complex business rules.
 
 4. **State Transition Testing**:
-   - State Transition Testing is used for systems that have states or modes that change based on specific conditions or events.
-   - Test cases are designed to cover transitions between different states, including valid and invalid transitions.
-   - It is commonly used in testing software with user interfaces and interactive components.
+      - State Transition Testing is used for systems that have states or modes that change based on specific conditions or events.
+      - Test cases are designed to cover transitions between different states, including valid and invalid transitions.
+      - It is commonly used in testing software with user interfaces and interactive components.
 
 5. **Use Case Testing**:
-   - This approach involves designing test cases based on the various use cases defined for the software.
-   - Test cases simulate real-world scenarios by following the sequences of actions specified in use cases.
-   - It helps ensure that the software functions as expected in typical user interactions.
+      - This approach involves designing test cases based on the various use cases defined for the software.
+      - Test cases simulate real-world scenarios by following the sequences of actions specified in use cases.
+      - It helps ensure that the software functions as expected in typical user interactions.
 
 6. **Error Guessing**:
-   - Error Guessing is an informal approach where testers use their intuition, experience, and knowledge to identify potential error-prone areas in the software.
-   - Test cases are derived based on educated guesses about where defects might occur.
-   - It is useful for finding defects that may not be covered by other formal techniques.
+      - Error Guessing is an informal approach where testers use their intuition, experience, and knowledge to identify potential error-prone areas in the software.
+      - Test cases are derived based on educated guesses about where defects might occur.
+      - It is useful for finding defects that may not be covered by other formal techniques.
 
 7. **Ad Hoc Testing**:
-   - Ad Hoc Testing is an unstructured and exploratory approach where testers perform testing without a predefined test plan.
-   - Testers use their creativity and domain knowledge to interact with the software and identify issues.
-   - It is often used for quick checks and initial testing.
+      - Ad Hoc Testing is an unstructured and exploratory approach where testers perform testing without a predefined test plan.
+      - Testers use their creativity and domain knowledge to interact with the software and identify issues.
+      - It is often used for quick checks and initial testing.
 
 ## 17. Discuss the various techniques of White box testing
 
@@ -739,21 +753,21 @@ Non-Functional Testing, on the other hand, evaluates the non-functional aspects 
 
 A test case is a detailed set of conditions or steps that are used to test specific functionalities or aspects of a software application. A well-structured test case helps in systematic testing and ensures that the application behaves as expected. Below is the typical format of a test case for any application:
 
-## Test Case Identifier
+### Test Case Identifier
 
 - **Test Case ID**: A unique identifier or name for the test case, often in the form of a code or label.
 
-## Test Case Description
+### Test Case Description
 
 - **Title**: A brief and descriptive title that summarizes the purpose of the test case.
 
 - **Objective**: A clear statement of the test's objective, explaining what aspect of the application is being tested.
 
-## Preconditions
+### Preconditions
 
 - **Preconditions**: Any prerequisites or conditions that must be met before executing the test case. For example, login credentials, specific configurations, or data setup.
 
-## Test Steps
+### Test Steps
 
 - **Test Steps**: A numbered list of detailed steps to be followed to execute the test. Each step should be clear, concise, and actionable.
 
@@ -761,7 +775,7 @@ A test case is a detailed set of conditions or steps that are used to test speci
 2. Step 2: Specify any inputs or data to be provided, e.g., "Enter username and password."
 3. Step 3: Define the expected outcome or result, like "User should be logged in successfully."
 
-## Expected Results
+### Expected Results
 
 - **Expected Results**: Clear and unambiguous statements that describe the expected outcomes or behaviors of the application after each step or action.
 
@@ -769,51 +783,53 @@ A test case is a detailed set of conditions or steps that are used to test speci
 - "The user should see their dashboard."
 - "The submitted form data should be saved to the database."
 
-## Test Data
+### Test Data
 
 - **Test Data**: Any specific data or values used during the test case execution. This may include sample inputs, test files, or data sets.
 
-## Test Environment
+### Test Environment
 
 - **Test Environment**: Specify the testing environment or configuration in which the test case is to be executed, including hardware, software, and network settings.
 
-## Test Execution
+### Test Execution
 
 - **Execution Steps**: Provide detailed instructions on how to execute the test case, including any special considerations or parameters.
 
-## Actual Results
+### Actual Results
 
 - **Actual Results**: A section where the tester records the actual outcomes or behaviors observed during test execution. This should be filled in after executing the test.
 
-## Pass/Fail Criteria
+### Pass/Fail Criteria
 
 - **Pass/Fail Criteria**: Clearly define the criteria for determining whether the test case has passed or failed. This is usually based on a comparison between actual and expected results.
 
-## Notes
+### Notes
 
 - **Notes**: Any additional notes, comments, or observations related to the test case or test execution.
 
-## Test Case Status
+### Test Case Status
 
 - **Status**: Indicate the current status of the test case (e.g., Pass, Fail, In Progress).
 
-## Test Case Author
+### Test Case Author
 
 - **Author**: Identify the person or team responsible for creating the test case.
 
-## Date
+### Date
 
 - **Date**: Record the date when the test case was created or last modified.
 
-## Attachments
+### Attachments
 
 - **Attachments**: Include any relevant attachments, such as screenshots, documents, or logs, to support the test case.
 
-## Review and Approval
+### Review and Approval
 
 - **Review and Approval**: If applicable, document the review and approval process for the test case, including the names of reviewers and approvers.
 
-# Regression Testing
+## 20.Discuss Regression testing and Various types of functional testing
+
+###### Ans20
 
 Regression Testing is a type of software testing that focuses on ensuring that changes or enhancements made to a software application do not negatively impact the existing functionality of the system. It is crucial for maintaining the reliability and stability of the software throughout its development lifecycle. Key points about Regression Testing include:
 
@@ -828,10 +844,6 @@ Regression Testing is a type of software testing that focuses on ensuring that c
   - **Selective Regression Testing**: Concentrates on specific critical areas impacted by code changes.
 
 - **Automation**: Automation tools are often employed in Regression Testing to efficiently re-run test cases and identify any deviations from the expected behavior.
-
-## 20.Discuss Regression testing and Various types of functional testing
-
-###### Ans20
 
 Functional Testing is a type of software testing that evaluates the functionality of a software application by verifying whether it performs its intended functions correctly. It focuses on the "what" the software does rather than "how" it does it. Different types of Functional Testing include:
 
@@ -882,3 +894,6 @@ Functional Testing is a type of software testing that evaluates the functionalit
        - Ensures that the software functions correctly on various platforms, browsers, and devices.
 
 Functional Testing is essential for ensuring that a software application meets its intended purpose and delivers a reliable user experience.
+
+## References 
+- https://creately.com/blog/diagrams/uml-diagram-types-examples/

@@ -439,32 +439,32 @@ When designing a relational schema in a database management system (DBMS), sever
 
 1. **Identify Entities and Attributes**:
 
-   - Start by identifying the entities (objects) of interest in the domain and the attributes that describe these entities.
-   - Ensure that each attribute contains atomic, indivisible values.
+      - Start by identifying the entities (objects) of interest in the domain and the attributes that describe these entities.
+      - Ensure that each attribute contains atomic, indivisible values.
 
 2. **Choose Appropriate Data Types**:
 
-   - Select appropriate data types for each attribute to match the nature of the data (e.g., integers for whole numbers, varchar for variable-length text).
-   - Choose data types that minimize storage requirements while preserving data accuracy.
+      - Select appropriate data types for each attribute to match the nature of the data (e.g., integers for whole numbers, varchar for variable-length text).
+      - Choose data types that minimize storage requirements while preserving data accuracy.
 
 3. **Establish Primary Keys**:
 
-   - Designate one or more attributes as primary keys to uniquely identify each tuple (row) in a table (relation).
-   - Primary keys ensure data integrity by preventing duplicate records.
+      - Designate one or more attributes as primary keys to uniquely identify each tuple (row) in a table (relation).
+      - Primary keys ensure data integrity by preventing duplicate records.
 
 4. **Define Relationships**:
 
-   - Specify relationships between tables using foreign keys. Foreign keys establish links between tables, maintaining referential integrity.
-   - Ensure that foreign keys match the primary keys of related tables.
+      - Specify relationships between tables using foreign keys. Foreign keys establish links between tables, maintaining referential integrity.
+      - Ensure that foreign keys match the primary keys of related tables.
 
 5. **Avoid Redundancy**:
 
-   - Minimize data redundancy by storing each piece of information in one place.
-   - Redundancy can lead to data anomalies and increase storage requirements.
+      - Minimize data redundancy by storing each piece of information in one place.
+      - Redundancy can lead to data anomalies and increase storage requirements.
 
 6. **Normalization**:
-   - Normalize the schema to reduce data redundancy and eliminate update anomalies.
-   - Normalization involves breaking down tables into smaller, related tables (higher normal forms) to ensure data integrity.
+      - Normalize the schema to reduce data redundancy and eliminate update anomalies.
+      - Normalization involves breaking down tables into smaller, related tables (higher normal forms) to ensure data integrity.
 
 ### Need for Normalization
 
@@ -472,21 +472,21 @@ Normalization is a crucial step in the database design process for several reaso
 
 1. **Data Integrity**:
 
-   - Normalization reduces data redundancy and the likelihood of inconsistencies or errors in the database.
-   - It ensures that each piece of data is stored in one place, preventing update anomalies.
+      - Normalization reduces data redundancy and the likelihood of inconsistencies or errors in the database.
+      - It ensures that each piece of data is stored in one place, preventing update anomalies.
 
 2. **Efficient Storage**:
 
-   - Normalized databases are more space-efficient as they avoid storing redundant data.
-   - Smaller, well-organized tables require less storage space and improve query performance.
+      - Normalized databases are more space-efficient as they avoid storing redundant data.
+      - Smaller, well-organized tables require less storage space and improve query performance.
 
 3. **Complex Queries**:
 
-   - Normalized databases are more suitable for complex queries and data retrieval tasks.
-   - They facilitate the use of set-based operations, joins, and filters without encountering issues related to data redundancy.
+      - Normalized databases are more suitable for complex queries and data retrieval tasks.
+      - They facilitate the use of set-based operations, joins, and filters without encountering issues related to data redundancy.
 
 4. **Scalability**:
-   - Normalization allows for easier database maintenance and modification as the structure of the database is modular and less prone to unintended side effects.
+      - Normalization allows for easier database maintenance and modification as the structure of the database is modular and less prone to unintended side effects.
 
 ## **11.Explain different anomalies in normalization and discuss how to avoid them with examples**
 
@@ -510,7 +510,7 @@ Suppose a new student, "Alice," enrolls in a course that hasn't been taken by an
 
 **Avoidance:** To avoid insertion anomalies, you can normalize the schema by creating separate tables for students and courses. Then, use a junction table to represent student-course enrollments.
 
-### 2. Deletio n Anomalies
+### 2. Delete Anomalies
 
 **Definition:** Deletion anomalies occur when deleting a record from a table unintentionally removes other related data.
 
