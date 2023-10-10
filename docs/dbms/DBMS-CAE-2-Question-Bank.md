@@ -90,27 +90,27 @@ BCNF (Boyce-Codd Normal Form) is considered a stronger form of 3NF (Third Normal
 
 1. Elimination of Partial Dependencies:
 
-   - 3NF eliminates transitive dependencies, which are dependencies between non-prime attributes through another non-prime attribute (A -> B -> C). This ensures that data is stored without redundancy and anomalies due to transitive relationships.
-   - BCNF goes a step further and eliminates partial dependencies, which are dependencies of non-prime attributes on a part of a candidate key. This makes BCNF stricter in terms of ensuring data integrity, as it removes even more redundancy.
+      - 3NF eliminates transitive dependencies, which are dependencies between non-prime attributes through another non-prime attribute (A -> B -> C). This ensures that data is stored without redundancy and anomalies due to transitive relationships.
+      - BCNF goes a step further and eliminates partial dependencies, which are dependencies of non-prime attributes on a part of a candidate key. This makes BCNF stricter in terms of ensuring data integrity, as it removes even more redundancy.
 
 2. Preservation of Key Dependencies:
 
-   - In 3NF, all attributes are functionally dependent on the superkey, but not necessarily on the entire candidate key. It is possible to have partial dependencies.
-   - BCNF ensures that every non-prime attribute is fully functionally dependent on the candidate key. This means that BCNF not only eliminates partial dependencies but also guarantees that all non-prime attributes are determined solely by the candidate key.
+      - In 3NF, all attributes are functionally dependent on the superkey, but not necessarily on the entire candidate key. It is possible to have partial dependencies.
+      - BCNF ensures that every non-prime attribute is fully functionally dependent on the candidate key. This means that BCNF not only eliminates partial dependencies but also guarantees that all non-prime attributes are determined solely by the candidate key.
 
 3. Minimal Number of Candidate Keys:
 
-   - BCNF typically results in a smaller number of candidate keys compared to 3NF. In 3NF, a relation may have more candidate keys than in BCNF, as partial dependencies might introduce additional candidate keys.
-   - BCNF ensures that a relation contains minimal candidate keys, which simplifies the design and maintenance of the database.
+      - BCNF typically results in a smaller number of candidate keys compared to 3NF. In 3NF, a relation may have more candidate keys than in BCNF, as partial dependencies might introduce additional candidate keys.
+      - BCNF ensures that a relation contains minimal candidate keys, which simplifies the design and maintenance of the database.
 
 4. Avoidance of Insertion, Deletion, and Update Anomalies:
 
-   - BCNF further reduces the chances of insertion, deletion, and update anomalies in the database, as it eliminates both partial and transitive dependencies.
-   - In 3NF, while transitive dependencies are removed, partial dependencies might still lead to anomalies in certain situations.
+      - BCNF further reduces the chances of insertion, deletion, and update anomalies in the database, as it eliminates both partial and transitive dependencies.
+      - In 3NF, while transitive dependencies are removed, partial dependencies might still lead to anomalies in certain situations.
 
 5. Stronger Data Integrity:
 
-   - Because BCNF eliminates both partial and transitive dependencies, it enforces a higher level of data integrity than 3NF. This makes BCNF a more stringent requirement for ensuring the reliability of the database.
+      - Because BCNF eliminates both partial and transitive dependencies, it enforces a higher level of data integrity than 3NF. This makes BCNF a more stringent requirement for ensuring the reliability of the database.
 
 ## **3.Compare BCNF and 3NF**
 
@@ -134,16 +134,16 @@ Consider a database for a library. You have two main tables: `Books` and `Author
 
 1. **Books Table**:
 
-   - `ISBN` (Primary Key)
-   - `Title`
-   - `Publication Year`
-   - `AuthorID` (Foreign Key)
+      - `ISBN` (Primary Key)
+      - `Title`
+      - `Publication Year`
+      - `AuthorID` (Foreign Key)
 
 2. **Authors Table**:
 
-   - `AuthorID` (Primary Key)
-   - `AuthorName`
-   - `AuthorBirthdate`
+      - `AuthorID` (Primary Key)
+      - `AuthorName`
+      - `AuthorBirthdate`
 
 Now, let's examine the 3NF rules in this context:
 
@@ -218,18 +218,18 @@ Decomposition is the process of breaking a relation (table) into multiple smalle
 
 1. **Lossless-Join Property**:
 
-   - The decomposition should be such that we can combine (join) the smaller relations back together to obtain the original relation without losing any information.
-   - It ensures that there are no spurious tuples introduced during the join operation.
+      - The decomposition should be such that we can combine (join) the smaller relations back together to obtain the original relation without losing any information.
+      - It ensures that there are no spurious tuples introduced during the join operation.
 
 2. **Dependency Preservation**:
 
-   - The decomposition should preserve all functional dependencies that were present in the original relation.
-   - This ensures that the integrity constraints of the original relation are maintained.
+      - The decomposition should preserve all functional dependencies that were present in the original relation.
+      - This ensures that the integrity constraints of the original relation are maintained.
 
 3. **Minimality**:
 
-   - The decomposition should be minimal, meaning that it should not have unnecessary or redundant relations.
-   - The smaller relations should be as small as possible while still satisfying the lossless-join and dependency preservation properties.
+      - The decomposition should be minimal, meaning that it should not have unnecessary or redundant relations.
+      - The smaller relations should be as small as possible while still satisfying the lossless-join and dependency preservation properties.
 
 Now, let's illustrate decomposition with an example:
 
@@ -245,26 +245,26 @@ Suppose we want to decompose this relation into two smaller relations, `Students
 
 1. **Lossless-Join Property**:
 
-   - We can decompose the original relation into `Students` and `Courses` as follows:
+      - We can decompose the original relation into `Students` and `Courses` as follows:
 
-     **Students Table:**
+        **Students Table:**
 
-     - `StudentID` (Primary Key)
-     - Other student attributes (e.g., `FirstName`, `LastName`, `DOB`)
+        - `StudentID` (Primary Key)
+        - Other student attributes (e.g., `FirstName`, `LastName`, `DOB`)
 
-     **Courses Table:**
+        **Courses Table:**
 
-     - `CourseID` (Primary Key)
-     - Other course attributes (e.g., `CourseName`, `Instructor`)
+        - `CourseID` (Primary Key)
+        - Other course attributes (e.g., `CourseName`, `Instructor`)
 
-   - With this decomposition, we can join the `Students` and `Courses` tables using the common attribute `StudentID` or `CourseID` to reconstruct the original `Student_Course_Grades` relation without loss of information.
+      - With this decomposition, we can join the `Students` and `Courses` tables using the common attribute `StudentID` or `CourseID` to reconstruct the original `Student_Course_Grades` relation without loss of information.
 
 2. **Dependency Preservation**:
 
-   - The functional dependency `StudentID -> FirstName, LastName` is preserved in the `Students` table, and `CourseID -> CourseName, Instructor` is preserved in the `Courses` table. No functional dependency is lost.
+      - The functional dependency `StudentID -> FirstName, LastName` is preserved in the `Students` table, and `CourseID -> CourseName, Instructor` is preserved in the `Courses` table. No functional dependency is lost.
 
 3. **Minimality**:
-   - The decomposition into `Students` and `Courses` is minimal because we have only two smaller relations, and they contain only the attributes necessary to represent students and courses separately.
+      - The decomposition into `Students` and `Courses` is minimal because we have only two smaller relations, and they contain only the attributes necessary to represent students and courses separately.
 
 This decomposition satisfies the desirable properties of decomposition in database management systems, ensuring that we can work with smaller, well-organized relations while maintaining data integrity and minimizing redundancy.
 
@@ -276,49 +276,49 @@ The relational model is a widely used data model in database management systems 
 
 1. **Tabular Structure**:
 
-   - In the relational model, data is organized into tables (relations), which consist of rows (tuples) and columns (attributes). Each table represents a specific entity or concept in the database.
+      - In the relational model, data is organized into tables (relations), which consist of rows (tuples) and columns (attributes). Each table represents a specific entity or concept in the database.
 
 2. **Data Integrity**:
 
-   - The relational model enforces data integrity through the use of primary keys, foreign keys, and constraints.
-   - Primary keys ensure that each row in a table is uniquely identifiable, preventing duplicate records.
-   - Foreign keys establish relationships between tables, maintaining referential integrity and consistency.
+      - The relational model enforces data integrity through the use of primary keys, foreign keys, and constraints.
+      - Primary keys ensure that each row in a table is uniquely identifiable, preventing duplicate records.
+      - Foreign keys establish relationships between tables, maintaining referential integrity and consistency.
 
 3. **Normalization**:
 
-   - The relational model supports the process of database normalization to reduce data redundancy and improve data integrity.
-   - Normalization involves breaking down tables into smaller, related tables to eliminate data anomalies and dependencies.
+      - The relational model supports the process of database normalization to reduce data redundancy and improve data integrity.
+      - Normalization involves breaking down tables into smaller, related tables to eliminate data anomalies and dependencies.
 
 4. **Structured Query Language (SQL)**:
 
-   - SQL is the standard language for interacting with relational databases.
-   - It provides a powerful and expressive way to create, retrieve, update, and delete data in a relational database.
+      - SQL is the standard language for interacting with relational databases.
+      - It provides a powerful and expressive way to create, retrieve, update, and delete data in a relational database.
 
 5. **Set-Based Operations**:
 
-   - The relational model is based on mathematical set theory and supports set-based operations, making it suitable for complex data retrieval and manipulation.
-   - Queries involve operations like selection, projection, join, and union.
+      - The relational model is based on mathematical set theory and supports set-based operations, making it suitable for complex data retrieval and manipulation.
+      - Queries involve operations like selection, projection, join, and union.
 
 6. **Flexibility and Scalability**:
 
-   - Relational databases are flexible and can adapt to changing data requirements.
-   - They can scale horizontally (adding more machines) or vertically (adding more resources to a single machine) to handle increased data volume and user load.
+      - Relational databases are flexible and can adapt to changing data requirements.
+      - They can scale horizontally (adding more machines) or vertically (adding more resources to a single machine) to handle increased data volume and user load.
 
 7. **ACID Properties**:
 
-   - The relational model emphasizes ACID (Atomicity, Consistency, Isolation, Durability) properties to ensure data reliability and transactional consistency.
-   - ACID transactions guarantee that database operations are either fully completed or fully rolled back, maintaining data integrity.
+      - The relational model emphasizes ACID (Atomicity, Consistency, Isolation, Durability) properties to ensure data reliability and transactional consistency.
+      - ACID transactions guarantee that database operations are either fully completed or fully rolled back, maintaining data integrity.
 
 8. **Data Independence**:
 
-   - The relational model supports data independence, allowing changes to the physical storage (e.g., indexing, storage devices) without affecting the logical structure of the database.
+      - The relational model supports data independence, allowing changes to the physical storage (e.g., indexing, storage devices) without affecting the logical structure of the database.
 
 9. **Security and Access Control**:
 
-   - Relational databases offer robust security features, including user authentication, authorization, and access control mechanisms to protect sensitive data.
+      - Relational databases offer robust security features, including user authentication, authorization, and access control mechanisms to protect sensitive data.
 
 10. **Multi-User Support**:
-    - Relational databases are designed to support concurrent access by multiple users, ensuring data consistency and isolation.
+        - Relational databases are designed to support concurrent access by multiple users, ensuring data consistency and isolation.
 
 ## **8.What is an integrity constraint? Explain the concept of referential integrity with an example**
 
@@ -330,18 +330,18 @@ Integrity constraints are rules or conditions that ensure the accuracy, consiste
 
 1. **Entity Integrity Constraint**:
 
-   - Enforces the uniqueness of the primary key attribute(s) in a table, ensuring that each row is uniquely identifiable.
+      - Enforces the uniqueness of the primary key attribute(s) in a table, ensuring that each row is uniquely identifiable.
 
 2. **Referential Integrity Constraint**:
 
-   - Ensures that relationships between tables are maintained by enforcing the consistency of foreign key values with their corresponding primary key values in related tables.
+      - Ensures that relationships between tables are maintained by enforcing the consistency of foreign key values with their corresponding primary key values in related tables.
 
 3. **Domain Integrity Constraint**:
 
-   - Specifies allowable values for attributes, ensuring that data falls within predefined domains or ranges.
+      - Specifies allowable values for attributes, ensuring that data falls within predefined domains or ranges.
 
 4. **Check Constraint**:
-   - Defines custom rules for data values in a table, ensuring that specific conditions or expressions are met.
+      - Defines custom rules for data values in a table, ensuring that specific conditions or expressions are met.
 
 ### Referential Integrity
 
@@ -544,26 +544,26 @@ In a non-normalized table for employee information, if an employee's salary is u
 
 1. **Ambiguity**:
 
-   - NULL values introduce ambiguity and uncertainty into the data.
-   - It is often challenging to determine the reason for a NULL value (e.g., is it because the data is missing, not applicable, or undefined?).
+      - NULL values introduce ambiguity and uncertainty into the data.
+      - It is often challenging to determine the reason for a NULL value (e.g., is it because the data is missing, not applicable, or undefined?).
 
 2. **Complexity in Queries**:
 
-   - Queries involving NULL values can be more complex to write and understand.
-   - Handling NULLs requires special handling in SQL queries using functions like `IS NULL` or `IS NOT NULL`.
+      - Queries involving NULL values can be more complex to write and understand.
+      - Handling NULLs requires special handling in SQL queries using functions like `IS NULL` or `IS NOT NULL`.
 
 3. **Data Integrity**:
 
-   - NULL values can potentially lead to data integrity issues if not handled properly.
-   - In some cases, NULLs may cause unexpected results or errors in calculations or comparisons.
+      - NULL values can potentially lead to data integrity issues if not handled properly.
+      - In some cases, NULLs may cause unexpected results or errors in calculations or comparisons.
 
 4. **Indexing and Performance**:
 
-   - Indexing columns containing NULL values can be less efficient than indexing columns with non-NULL values.
-   - Queries involving NULLs might not benefit as much from indexing.
+      - Indexing columns containing NULL values can be less efficient than indexing columns with non-NULL values.
+      - Queries involving NULLs might not benefit as much from indexing.
 
 5. **Compatibility Issues**:
-   - Different database systems handle NULL values differently, leading to potential compatibility issues when migrating or using data in different systems.
+      - Different database systems handle NULL values differently, leading to potential compatibility issues when migrating or using data in different systems.
 
 ### Alternatives to NULL Values
 
@@ -571,18 +571,18 @@ To avoid or minimize the use of NULL values, consider these alternatives:
 
 1. **Use Default Values**:
 
-   - Set default values for columns whenever possible to provide meaningful data when no specific value is available.
+      - Set default values for columns whenever possible to provide meaningful data when no specific value is available.
 
 2. **Use Constraints**:
 
-   - Use constraints to enforce data integrity rules, ensuring that columns are populated with valid data.
+      - Use constraints to enforce data integrity rules, ensuring that columns are populated with valid data.
 
 3. **Use Special Values**:
 
-   - Instead of NULL, use special codes or values that convey specific meanings (e.g., use "N/A" for "Not Applicable").
+      - Instead of NULL, use special codes or values that convey specific meanings (e.g., use "N/A" for "Not Applicable").
 
 4. **Normalization**:
-   - Normalize the database design to minimize NULL values by organizing data efficiently and reducing redundancy.
+      - Normalize the database design to minimize NULL values by organizing data efficiently and reducing redundancy.
 
 ## **13.Discuss ACID properties of a transaction with appropriate examples**
 
@@ -769,14 +769,14 @@ The Two-Phase Locking Protocol ensures serializability through the following mec
 
 1. **Conflict Serializability**:
 
-   - 2PL ensures conflict serializability by preventing conflicting operations (e.g., read-write, write-write) between transactions.
-   - Transactions acquire locks before accessing data items, and they release locks only after completing their work.
-   - This strict control over locks ensures that transactions do not interfere with each other in a way that would violate serializability.
+      - 2PL ensures conflict serializability by preventing conflicting operations (e.g., read-write, write-write) between transactions.
+      - Transactions acquire locks before accessing data items, and they release locks only after completing their work.
+      - This strict control over locks ensures that transactions do not interfere with each other in a way that would violate serializability.
 
 2. **Two-Phase Commitment**:
-   - By dividing the execution into two phases (growing and shrinking), 2PL ensures that transactions do not release their locks prematurely.
-   - Releasing locks prematurely can lead to data inconsistency and a violation of serializability.
-   - The growing phase allows a transaction to acquire all necessary locks before starting its execution, preventing conflicts with other transactions.
+      - By dividing the execution into two phases (growing and shrinking), 2PL ensures that transactions do not release their locks prematurely.
+      - Releasing locks prematurely can lead to data inconsistency and a violation of serializability.
+      - The growing phase allows a transaction to acquire all necessary locks before starting its execution, preventing conflicts with other transactions.
 
 **Example:**
 Consider two transactions, T1 and T2, accessing the same bank account:
