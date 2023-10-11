@@ -45,9 +45,11 @@ Let's find the closures of individual attributes:
     Closure of A (A⁺):
         A → A (reflexivity)
         A → B (from F1)
+        B-> C (from F2)
+        C-> D (from F3)
         A → E (from F4)
 
-    So, A⁺ = {A, B, E}
+    So, A⁺ = {A, B, C, D, E}
 
     Closure of B (B⁺):
         B → B (reflexivity)
