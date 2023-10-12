@@ -86,6 +86,12 @@ nav:
     - Unit5: eeim/Unit5.md
     - EEIM-CAE-1-Question-Bank: eeim/EEIM-CAE-1-Question-Bank.md
     - EEIM-CAE-2-Question-Bank: eeim/EEIM-CAE-2-Question-Bank.md
+
+  - BIA:
+    - BIA-CAE-2-Question-Bank: BIA/BIA-CAE-2-Question-Bank.md
+
+  - DM:
+    - DM-CAE-2-Question-Bank: DM/DM-CAE-2-Question-Bank.md
   
 plugins:
   - search
