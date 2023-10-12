@@ -236,28 +236,28 @@ Example:
     p {
         color: blue;
     }
-
-    Effect: This sets the text color of all <p> elements to blue. It affects the foreground color of the text content within the element.
+```
+Effect: This sets the text color of all <p> elements to blue. It affects the foreground color of the text content within the element.
 
 font-size Property:
 
-    Description: The font-size property determines the size of the font used for text within an element.
-    Example:
+Description: The font-size property determines the size of the font used for text within an element.
+Example:
 
-    css
+```css
 
     h1 {
         font-size: 24px;
     }
-
-    Effect: This increases the font size of all <h1> headings to 24 pixels, making the text larger and more prominent.
+```
+Effect: This increases the font size of all <h1> headings to 24 pixels, making the text larger and more prominent.
 
 margin Property:
 
-    Description: The margin property defines the space outside the element's border, creating separation between elements.
-    Example:
+Description: The margin property defines the space outside the element's border, creating separation between elements.
+Example:
 
-    css
+```css
 
         .container {
             margin: 10px;
