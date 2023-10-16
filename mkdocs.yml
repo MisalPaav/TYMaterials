@@ -102,6 +102,8 @@ extra:
       link: https://github.com/gautampatil1
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/gautampatil1
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/mQPNB5hT
   generator: false
   analytics:
     provider: google 

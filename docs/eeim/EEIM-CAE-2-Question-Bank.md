@@ -89,10 +89,12 @@ The three levels of management are:
 
     - **Function**: Top-level managers are responsible for setting the organization's overall strategic goals and direction. They make long-term decisions that affect the entire organization.
     - **Responsibilities**: They develop the organization's mission, vision, and strategic objectives. They also oversee the allocation of resources and monitor the external environment for opportunities and threats.
+
 2. **Middle-Level Management (Tactical Management)**:
 
     - **Function**: Middle-level managers translate the strategic goals set by top-level management into specific tactical plans and actions. They bridge the gap between top-level and front-line management.
     - **Responsibilities**: They develop departmental goals, allocate resources, and coordinate the work of various teams or units within the organization. They are responsible for implementing strategies and ensuring that departmental objectives align with the overall strategic goals.
+
 3. **Front-Line Management (Operational Management)**:
 
     - **Function**: Front-line managers are responsible for day-to-day operations and the execution of tactical plans. They directly supervise employees and ensure that tasks are completed efficiently.
@@ -111,16 +113,19 @@ The functions of management are the essential processes that managers perform to
     - **Definition**: Planning involves setting organizational goals and determining the best course of action to achieve them.
     - **Activities**: Managers define objectives, identify resources needed, develop strategies, and create plans and budgets.
     - **Importance**: Planning provides a roadmap for the organization, helps in resource allocation, and ensures that everyone is working toward common goals.
+
 2. **Organizing**:
 
     - **Definition**: Organizing involves arranging resources, tasks, and people to implement the plans created during the planning stage.
     - **Activities**: Managers structure the organization, assign responsibilities, establish authority relationships, and create formal reporting structures.
     - **Importance**: Organizing ensures that everyone knows their roles, promotes efficiency, and helps in achieving coordination.
+
 3. **Leading**:
 
     - **Definition**: Leading, also known as directing, focuses on motivating and guiding employees to achieve organizational goals.
     - **Activities**: Managers communicate, motivate, inspire, and provide direction to employees. They handle conflicts and make decisions.
     - **Importance**: Leading fosters teamwork, enhances employee morale, and ensures that employees are working effectively toward objectives.
+
 4. **Controlling**:
 
     - **Definition**: Controlling involves monitoring and measuring performance against established goals and taking corrective actions as needed.
