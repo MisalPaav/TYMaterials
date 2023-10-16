@@ -2,6 +2,29 @@
 
 <iframe src="https://drive.google.com/file/d/1ttczBausEx9UP1VQpKo-ZQt_b5yK46Ds/preview" width="800px" height="800px"></iframe>
 
+- [DM Question Bank with Answers](#dm-question-bank-with-answers)
+  - [Answers](#answers)
+    - [**1. Discuss the primary goal of classification in machine learning, and how does it differ from prediction?**](#1-discuss-the-primary-goal-of-classification-in-machine-learning-and-how-does-it-differ-from-prediction)
+    - [**2. Explain the concept of decision tree induction in classification. Provide an example.**](#2-explain-the-concept-of-decision-tree-induction-in-classification-provide-an-example)
+    - [**3. Explain over-fitted and under-fit models with examples.**](#3-explain-over-fitted-and-under-fit-models-with-examples)
+    - [**4. How does the Bayesian classification algorithm work? What role does Bayes' theorem play in it?**](#4-how-does-the-bayesian-classification-algorithm-work-what-role-does-bayes-theorem-play-in-it)
+    - [**5. Describe the process of rule-based classification. What are some advantages of using rule-based systems?**](#5-describe-the-process-of-rule-based-classification-what-are-some-advantages-of-using-rule-based-systems)
+    - [**6. In the context of neural networks, what is backpropagation, and how is it used for classification tasks?**](#6-in-the-context-of-neural-networks-what-is-backpropagation-and-how-is-it-used-for-classification-tasks)
+    - [**7. What is the primary objective of Support Vector Machines (SVM) in classification? How does it handle non-linearly separable data?**](#7-what-is-the-primary-objective-of-support-vector-machines-svm-in-classification-how-does-it-handle-non-linearly-separable-data)
+    - [**8. Provide an overview of associative classification and explain how it combines association rule mining and classification.**](#8-provide-an-overview-of-associative-classification-and-explain-how-it-combines-association-rule-mining-and-classification)
+    - [**9. Differentiate between eager learners and lazy learners in machine learning. Give an example of each.**](#9-differentiate-between-eager-learners-and-lazy-learners-in-machine-learning-give-an-example-of-each)
+    - [**10. What are the common accuracy and error measures used to evaluate classification models? Explain the use of precision, recall, and F1-score.**](#10-what-are-the-common-accuracy-and-error-measures-used-to-evaluate-classification-models-explain-the-use-of-precision-recall-and-f1-score)
+    - [**11. Define prediction in the context of data mining and machine learning. How is it different from classification?**](#11-define-prediction-in-the-context-of-data-mining-and-machine-learning-how-is-it-different-from-classification)
+    - [**12. Compare and contrast supervised and unsupervised prediction methods. Give examples of each.**](#12-compare-and-contrast-supervised-and-unsupervised-prediction-methods-give-examples-of-each)
+    - [**13. Describe the K-Means clustering algorithm and provide a step-by-step explanation of how it works.**](#13-describe-the-k-means-clustering-algorithm-and-provide-a-step-by-step-explanation-of-how-it-works)
+    - [**14. What is hierarchical clustering, and what are the differences between agglomerative and divisive approaches?**](#14-what-is-hierarchical-clustering-and-what-are-the-differences-between-agglomerative-and-divisive-approaches)
+    - [**15. Discuss the concept of density-based clustering and provide an example of a density-based clustering algorithm.**](#15-discuss-the-concept-of-density-based-clustering-and-provide-an-example-of-a-density-based-clustering-algorithm)
+    - [**16. Explain how dimensionality reduction techniques can be used to address the challenges of clustering high-dimensional data.**](#16-explain-how-dimensionality-reduction-techniques-can-be-used-to-address-the-challenges-of-clustering-high-dimensional-data)
+    - [**17. Discuss DBSCAN and STING Algorithms and differentiate between the two.**](#17-discuss-dbscan-and-sting-algorithms-and-differentiate-between-the-two)
+    - [**18. Explain prediction? Discuss the Linear regression method.**](#18-explain-prediction-discuss-the-linear-regression-method)
+    - [**19. What are the key considerations when selecting appropriate error measures for prediction tasks?**](#19-what-are-the-key-considerations-when-selecting-appropriate-error-measures-for-prediction-tasks)
+    - [**20. Discuss the outlier detection process and explain the types of outliers.**](#20-discuss-the-outlier-detection-process-and-explain-the-types-of-outliers)
+
 ## Answers
 
 ### **1\. Discuss the primary goal of classification in machine learning, and how does it differ from prediction?**

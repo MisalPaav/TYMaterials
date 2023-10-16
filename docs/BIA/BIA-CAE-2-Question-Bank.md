@@ -2,10 +2,53 @@
 
 <iframe src="https://drive.google.com/file/d/1aTl7wxdLV7akmC2ywbm9XJJQOhsvvq0a/preview" width="800px" height="800px"></iframe>
 
+## Questions
+
+- [BIA CAE2 Question Bank with Answers](#bia-cae2-question-bank-with-answers)
+  - [Questions](#questions)
+  - [Answers](#answers)
+  - [1. State regression. List and explain types of regression](#1-state-regression-list-and-explain-types-of-regression)
+          - [Ans1](#ans1)
+  - [2. With suitable examples, elaborate on the following terms: SST (Sum of Squares Total), SSR (Sum of Squares Regression), SSE (Sum of Squares Error)](#2-with-suitable-examples-elaborate-on-the-following-terms-sst-sum-of-squares-total-ssr-sum-of-squares-regression-sse-sum-of-squares-error)
+          - [Ans2](#ans2)
+  - [3. Discuss the Significance of P-Value in statistics](#3-discuss-the-significance-of-p-value-in-statistics)
+          - [Ans3](#ans3)
+  - [4. Explain the applications of Multiple Linear Regression](#4-explain-the-applications-of-multiple-linear-regression)
+          - [Ans4](#ans4)
+  - [5. Differentiate between clustering and classification](#5-differentiate-between-clustering-and-classification)
+          - [Ans5](#ans5)
+  - [6. Explain K-means clustering with a suitable diagram](#6-explain-k-means-clustering-with-a-suitable-diagram)
+          - [Ans6](#ans6)
+  - [7. Explain types of clustering in analytics](#7-explain-types-of-clustering-in-analytics)
+          - [Ans7](#ans7)
+  - [8. List and explain the Pros and Cons of K-Means Clustering](#8-list-and-explain-the-pros-and-cons-of-k-means-clustering)
+          - [Ans8](#ans8)
+  - [9. Distinguish between Clustering and Regression](#9-distinguish-between-clustering-and-regression)
+          - [Ans9](#ans9)
+  - [10. Explain Market Segmentation with Cluster Analysis](#10-explain-market-segmentation-with-cluster-analysis)
+          - [Ans10](#ans10)
+  - [11. Explain types of Classification (any 2)](#11-explain-types-of-classification-any-2)
+          - [Ans11](#ans11)
+  - [12. Elaborate with suitable example Classification Applications](#12-elaborate-with-suitable-example-classification-applications)
+          - [Ans12](#ans12)
+  - [13. Explain sigmoid curve in Logistic Regression](#13-explain-sigmoid-curve-in-logistic-regression)
+          - [Ans13](#ans13)
+  - [14. Explain Classification using SVM](#14-explain-classification-using-svm)
+          - [Ans14](#ans14)
+  - [15. Explain K-nearest neighbor application in detail](#15-explain-k-nearest-neighbor-application-in-detail)
+          - [Ans15](#ans15)
+  - [16. How Decision Tree algorithm works](#16-how-decision-tree-algorithm-works)
+          - [Ans16](#ans16)
+  - [17. Explain R-Square](#17-explain-r-square)
+  - [18. Discuss Adjusted R-Squared with a suitable example](#18-discuss-adjusted-r-squared-with-a-suitable-example)
+          - [Ans18](#ans18)
+
 ## Answers
 
-## 1. State regression. List and explain types of regression.
+## 1. State regression. List and explain types of regression
+
 ###### Ans1
+
 Regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It is often used for predicting or explaining the variation in the dependent variable based on the values of the independent variables. There are several types of regression models:
 
 - Linear Regression: Linear regression aims to establish a linear relationship between the dependent variable and one or more independent variables. It's used when the relationship between variables is approximately linear.
@@ -24,8 +67,10 @@ Regression is a statistical method used to model the relationship between a depe
 
 - Time Series Regression: This type is used when the data is collected over time, and the goal is to predict future values based on past observations.
 
-## 2. With suitable examples, elaborate on the following terms: SST (Sum of Squares Total), SSR (Sum of Squares Regression), SSE (Sum of Squares Error).
+## 2. With suitable examples, elaborate on the following terms: SST (Sum of Squares Total), SSR (Sum of Squares Regression), SSE (Sum of Squares Error)
+
 ###### Ans2
+
 SST (Sum of Squares Total): SST is a measure of the total variation in the dependent variable. It quantifies how much the data points deviate from the mean of the dependent variable. It can be calculated as the sum of the squares of the differences between each data point and the mean of the dependent variable.
 
 - Example: In a study of student test scores, SST would quantify the total variation in test scores across all students, regardless of any predictors (independent variables).
@@ -38,8 +83,10 @@ SSE (Sum of Squares Error): SSE represents the unexplained variation or the resi
 
 - Example: In the same multiple linear regression model, SSE would represent the variation in student test scores that cannot be explained by study hours, attendance, and previous test scores. It includes random or unmodeled factors affecting test scores.
 
-## 3. Discuss the Significance of P-Value in statistics.
+## 3. Discuss the Significance of P-Value in statistics
+
 ###### Ans3
+
 The p-value (probability value) is a critical concept in statistics, particularly in hypothesis testing. It quantifies the evidence against a null hypothesis. Here's its significance:
 
 - Hypothesis Testing: In hypothesis testing, the p-value helps determine whether the observed data provides enough evidence to reject the null hypothesis. The null hypothesis typically represents a default assumption of no effect or no difference.
@@ -52,8 +99,10 @@ The p-value (probability value) is a critical concept in statistics, particularl
 
 - Caution: However, it's important to note that a low p-value does not prove the practical or clinical significance of an effect. It only indicates that the effect is statistically significant. Researchers should also consider effect size and context.
 
-## 4. Explain the applications of Multiple Linear Regression.
+## 4. Explain the applications of Multiple Linear Regression
+
 ###### Ans4
+
 Multiple Linear Regression is a versatile statistical method with various applications, including:
 
 - Economics: Predicting factors affecting economic indicators like GDP, inflation, or unemployment by considering multiple variables such as interest rates, government spending, and consumer confidence.
@@ -76,8 +125,10 @@ Multiple Linear Regression is a versatile statistical method with various applic
 
 - Real Estate: Estimating property prices based on attributes like location, size, number of bedrooms, and other features.
 
-## 5. Differentiate between clustering and classification.
+## 5. Differentiate between clustering and classification
+
 ###### Ans5
+
 **Clustering:**
 
 - Purpose: Clustering is an unsupervised learning technique used to group similar data points based on their intrinsic characteristics.
@@ -92,11 +143,13 @@ Multiple Linear Regression is a versatile statistical method with various applic
 - Output: The output of classification is a prediction or assignment of a specific category or label to each data point.
 - Example: Assigning an email as "spam" or "not
 
-## 6. Explain K-means clustering with a suitable diagram:
+## 6. Explain K-means clustering with a suitable diagram
+
 ###### Ans6
+
 K-means clustering is a type of unsupervised machine learning algorithm used to group data points into clusters based on their similarities. The algorithm aims to partition data into clusters in such a way that each data point belongs to the cluster with the nearest mean. Here's how it works:
 
-- Step 1: Initialize the process by selecting the number of clusters (K) you want to create. 
+- Step 1: Initialize the process by selecting the number of clusters (K) you want to create.
 - Step 2: Randomly select K data points as the initial centroids (representative points) for each cluster.
 
 - Step 3: Assign each data point to the nearest centroid, forming K clusters.
@@ -112,8 +165,10 @@ K-means clustering diagram
 
 In the diagram, you can see how data points are initially assigned to clusters based on their proximity to the centroids. The centroids are recalculated, and the assignment process is repeated until convergence is achieved.
 
-## 7. Explain types of clustering in analytics:
+## 7. Explain types of clustering in analytics
+
 ###### Ans7
+
 There are several types of clustering algorithms in analytics:
 
 - K-means clustering: As explained above, it partitions data into K clusters based on similarity.
@@ -130,8 +185,10 @@ There are several types of clustering algorithms in analytics:
 
 - Model-based clustering: It assumes that data is generated by a mixture of probability distributions and attempts to find the best-fit model for the data.
 
-## 8. List and explain the Pros and Cons of K-Means Clustering:
+## 8. List and explain the Pros and Cons of K-Means Clustering
+
 ###### Ans8
+
 **Pros:**
 
 - Simplicity: K-means is easy to understand and implement.
@@ -147,8 +204,10 @@ There are several types of clustering algorithms in analytics:
 - May Converge to Local Optima: The algorithm may get stuck in suboptimal cluster assignments.
 - Outliers Impact Results: Outliers can significantly affect the cluster centroids and, thus, the clustering.
 
-## 9. Distinguish between Clustering and Regression:
+## 9. Distinguish between Clustering and Regression
+
 ###### Ans9
+
 | Feature                   | Clustering                              | Regression                           |
 |---------------------------|----------------------------------------|-------------------------------------|
 | **Objective**             | Group similar data points together based on their characteristics or features. | Model the relationship between input variables and a target variable, making predictions or estimating the target variable. |
@@ -157,8 +216,10 @@ There are several types of clustering algorithms in analytics:
 | **Use Case**              | Used for pattern recognition, data exploration, and finding inherent structure in data. | Used for prediction, forecasting, and understanding the relationships between variables. |
 | **Examples**              | Customer segmentation, image segmentation, anomaly detection. | Predicting house prices based on features like square footage and location, forecasting sales based on historical data, estimating a person's age based on demographic information. |
 
-## 10. Explain Market Segmentation with Cluster Analysis:
+## 10. Explain Market Segmentation with Cluster Analysis
+
 ###### Ans10
+
 Market segmentation is a crucial marketing strategy that involves dividing a market into distinct groups or segments, each with specific characteristics and needs. Cluster analysis is a valuable tool for market segmentation. Here's how it works:
 
 - Data Collection: Gather relevant data about customers, such as demographics, behavior, preferences, or purchase history.
@@ -177,8 +238,10 @@ Evaluation: Continuously monitor and evaluate the effectiveness of the segmentat
 
 Market segmentation with cluster analysis allows businesses to better target their marketing efforts, create personalized campaigns, and increase customer satisfaction by providing relevant products and services. It helps in optimizing resource allocation and improving the overall marketing strategy.
 
-## 11. Explain types of Classification (any 2):
+## 11. Explain types of Classification (any 2)
+
 ###### Ans11
+
 Classification is a supervised machine learning task where the goal is to categorize data points into predefined classes or categories. Here are two common types of classification:
 
 **a. Binary Classification:**
@@ -191,8 +254,10 @@ In multiclass classification, the data is divided into more than two classes, an
 
 Example: Image classification, where you classify images of animals into categories like "cat," "dog," "elephant," and so on.
 
-## 12. Elaborate with suitable example Classification Applications:
+## 12. Elaborate with suitable example Classification Applications
+
 ###### Ans12
+
 Classification has a wide range of real-world applications. Here are two examples:
 
 **a. Sentiment Analysis:**
@@ -205,8 +270,10 @@ In the finance industry, classification is used for fraud detection. Given a tra
 
 Example: Banks and credit card companies use classification models to detect unusual patterns or anomalies in financial transactions and flag potential fraudulent activities for further investigation.
 
-## 13. Explain sigmoid curve in Logistic Regression:
+## 13. Explain sigmoid curve in Logistic Regression
+
 ###### Ans13
+
 In logistic regression, the sigmoid curve, also known as the logistic function, is used to model the relationship between the dependent variable (usually binary, like 0 or 1) and one or more independent variables. The sigmoid function is an S-shaped curve that maps any real-valued number to a value between 0 and 1.
 
 The formula for the sigmoid function is:
@@ -221,8 +288,10 @@ Here:
 
 The sigmoid curve looks like an S-shape, and it has the property that it asymptotically approaches 0 as zz goes to negative infinity and approaches 1 as zz goes to positive infinity. This makes it suitable for modeling probabilities in binary classification problems.
 
-## 14. Explain Classification using SVM:
+## 14. Explain Classification using SVM
+
 ###### Ans14
+
 Support Vector Machine (SVM) is a powerful classification algorithm that works by finding a hyperplane that best separates data points into different classes while maximizing the margin between the classes. Here's how classification using SVM works:
 
 - Data Preparation: You start with a labeled dataset where each data point belongs to one of two classes (binary classification) or multiple classes (multiclass classification).
@@ -237,8 +306,10 @@ Support Vector Machine (SVM) is a powerful classification algorithm that works b
 
 SVMs are effective for handling high-dimensional data and can handle both linearly separable and non-linearly separable datasets by using appropriate kernels. They are commonly used in image classification, text classification, and bioinformatics, among other applications.
 
-## 15. Explain K-nearest neighbor application in detail:
+## 15. Explain K-nearest neighbor application in detail
+
 ###### Ans15
+
 K-Nearest Neighbors (K-NN) is a simple yet effective classification algorithm based on the principle that data points in the same class tend to be close to each other in the feature space. Here's how K-NN works and an application example:
 
 Working of K-NN:
@@ -260,8 +331,10 @@ Imagine you have a dataset of customer information, including age and income, an
 
 K-NN is used in various applications, including recommendation systems, image classification, and anomaly detection, where data points with similar characteristics are expected to belong to the same class or category.
 
-## 16. How Decision Tree algorithm works:
+## 16. How Decision Tree algorithm works
+
 ###### Ans16
+
 Decision Trees are a popular machine learning algorithm used for both classification and regression tasks. They work by recursively splitting the dataset into subsets based on the most significant attribute at each node, ultimately creating a tree-like structure. Here's a detailed explanation of how the Decision Tree algorithm works:
 
 - Step 1: Data Preparation: Initially, you start with a dataset containing various features and a target variable. The algorithm requires labeled data, meaning each data point has a known outcome that the model tries to predict.
@@ -280,7 +353,7 @@ Decision Trees are a popular machine learning algorithm used for both classifica
 
 Decision Trees are interpretable and easy to visualize, making them valuable for understanding the decision-making process within the model. However, they can be prone to overfitting, which can be mitigated with techniques like pruning or using ensemble methods like Random Forests.
 
-## 17. Explain R-Square:
+## 17. Explain R-Square
 
 R-squared, also known as the coefficient of determination, is a statistical measure used to assess the goodness-of-fit of a regression model. It quantifies the proportion of the variance in the dependent variable (the target) that is explained by the independent variables (features) in the model. R-squared values range from 0 to 1, where:
 
@@ -297,8 +370,10 @@ R2=1−SSRSSTR2=1−SSTSSR​
 
 R-squared tells you how well the independent variables in your model explain the variation in the dependent variable. A higher R-squared value indicates a better fit, but a very high R-squared doesn't necessarily mean a good model if it's overfitting. It's essential to consider other evaluation metrics and the context of your problem when interpreting R-squared.
 
-## 18. Discuss Adjusted R-Squared with a suitable example:
+## 18. Discuss Adjusted R-Squared with a suitable example
+
 ###### Ans18
+
 Adjusted R-squared is a modified version of the regular R-squared that adjusts for the number of predictors in a regression model. It is particularly useful when dealing with multiple regression models where more than one independent variable is considered. Adjusted R-squared penalizes the inclusion of irrelevant predictors, preventing the inflation of R-squared due to the addition of variables that do not contribute significantly to the model's performance.
 
 The formula for Adjusted R-squared is:
