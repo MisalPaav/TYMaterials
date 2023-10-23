@@ -88,9 +88,21 @@ nav:
     - EEIM-CAE-2-Question-Bank: eeim/EEIM-CAE-2-Question-Bank.md
 
   - BIA:
+    - BIA/index.md
+    - Unit1: BIA/Unit1.md
+    - Unit2: BIA/Unit2.md
+    - Unit3: BIA/Unit3.md
+    - Unit4: BIA/Unit4.md
+    - Unit5: BIA/Unit5.md
     - BIA-CAE-2-Question-Bank: BIA/BIA-CAE-2-Question-Bank.md
 
   - DM:
+    - DM/index.md
+    - Unit1: DM/Unit1.md
+    - Unit2: DM/Unit2.md
+    - Unit3: DM/Unit3.md
+    - Unit4: DM/Unit4.md
+    - Unit5: DM/Unit5.md
     - DM-CAE-2-Question-Bank: DM/DM-CAE-2-Question-Bank.md
   
 plugins:
