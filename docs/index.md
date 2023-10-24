@@ -1,8 +1,10 @@
 # Welcome to TYMaterials
 
+Download the TYMaterials app [here](https://tinyurl.com/37kkbzen).
+
 Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
 
-I'm from Computer Department so only Computer notes, if anyone is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
+Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
 ## Subjects
 
