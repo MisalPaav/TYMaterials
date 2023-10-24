@@ -1,17 +1,8 @@
 # Welcome to TYMaterials
 
-Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
+Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
 
-## **Question Bank Solutions are Available Now**
-
-- [Database Management System CAE 2 Question Bank Solutions](dbms/DBMS-CAE-2-Question-Bank.md)
-- [Web Development CAE 2 Question Bank Solutions](WD/WD-CAE-2-Question-Bank.md)
-- [Software Engineering & Project Management](sepm/SEPM-CAE-2-Question-Bank.md)
-- [Engineering Economics & Industrial Management](eeim/EEIM-CAE-2-Question-Bank.md)
-- [Business Intelligence Analysis](BIA/BIA-CAE-2-Question-Bank.md)
-- [Data Mining](DM/DM-CAE-2-Question-Bank.md)
-
-## **ONLY 3rd & 4th UNIT NOTES ARE AVAILABLE NOW, UNIT1, UNIT2 Notes ETC COMING SOON**
+I'm from Computer Department so only Computer notes, if anyone is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
 ## Subjects
 
@@ -20,6 +11,10 @@ Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
 - [Database Management System](dbms/index.md)
 - [Compiler Design](cd/index.md)
 - [Engineering Economics & Industrial Management](eeim/index.md)
+
+## End Sem Time Table
+
+![Sem Time Table](./time-table.png)
 
 ## About
 
