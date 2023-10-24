@@ -13,6 +13,8 @@ Only Computer Department notes, if anyone from any other department is intereste
 - [Database Management System](dbms/index.md)
 - [Compiler Design](cd/index.md)
 - [Engineering Economics & Industrial Management](eeim/index.md)
+- [Data Mining](DM/index.md)
+- [Business Intelligence Analysis](BIA/index.md)
 
 ## End Sem Time Table
 
