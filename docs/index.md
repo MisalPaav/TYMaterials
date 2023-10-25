@@ -1,6 +1,6 @@
 # Welcome to TYMaterials
 
-Download the TYMaterials app [here](https://www.dl.dropboxusercontent.com/scl/fi/77kt6nuey672o886kk4fk/TYMaterials_1_1.0.apk?rlkey=8yhfivbx7tas04fdzgbqk1lkd&dl=0).
+Download the TYMaterials app [here](https://bzbf.short.gy/TYMaterials).
 
 Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
 
