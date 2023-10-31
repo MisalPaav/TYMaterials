@@ -38,7 +38,7 @@
 - The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on the client end can directly communicate with the database at the server side. For this interaction, API's like: **ODBC**, **JDBC** are used.
 - The user interfaces and application programs are run on the client-side.
 - The server side is responsible to provide the functionalities like: query processing and transaction management.
-- To communicate with the DBMS, client-side application establishes a connection with the server side.\
+- To communicate with the DBMS, client-side application establishes a connection with the server side.
 ![DBMS Architecture](https://static.javatpoint.com/dbms/images/dbms-2-tier-architecture.png)
 
 **Fig: 2-tier Architecture**
