@@ -4,6 +4,33 @@
 
 ## Answers
 
+- [Database Management System Question Bank CAE-3](#database-management-system-question-bank-cae-3)
+  - [Answers](#answers)
+  - [1. Elaborate in detail DBMS 2 tier and 3 tier architecture](#1-elaborate-in-detail-dbms-2-tier-and-3-tier-architecture)
+    - [2-Tier Architecture](#2-tier-architecture)
+    - [3-Tier Architecture](#3-tier-architecture)
+  - [2. Brief in detail: Relational, Entity-Relationship data model](#2-brief-in-detail-relational-entity-relationship-data-model)
+  - [3. Brief in detail: Object-based , Semistructured data model](#3-brief-in-detail-object-based--semistructured-data-model)
+  - [4. Design an ER diagram of: Library Management system](#4-design-an-er-diagram-of-library-management-system)
+  - [5. Design an ER diagram of: Railway reservation system](#5-design-an-er-diagram-of-railway-reservation-system)
+  - [6. Design an ER diagram of: Airline reservation system](#6-design-an-er-diagram-of-airline-reservation-system)
+  - [7. Design an ER diagram of: Hotel Management system](#7-design-an-er-diagram-of-hotel-management-system)
+  - [8. Design an ER diagram of: Hospital Management system](#8-design-an-er-diagram-of-hospital-management-system)
+  - [9. Explain Relational Database design in detail](#9-explain-relational-database-design-in-detail)
+  - [10. State and explain with suitable example built in functions in database](#10-state-and-explain-with-suitable-example-built-in-functions-in-database)
+  - [11. Describe View and types in SQL in detail](#11-describe-view-and-types-in-sql-in-detail)
+  - [12. Write 4 queries to use : group by, having, order by functions](#12-write-4-queries-to-use--group-by-having-order-by-functions)
+  - [13. State concept of JOIN .Explain types of join with suitable examples](#13-state-concept-of-join-explain-types-of-join-with-suitable-examples)
+  - [14. Define constraint. What SQL constraints do you know?](#14-define-constraint-what-sql-constraints-do-you-know)
+  - [15. With suitable examples explain use of aggregate functions](#15-with-suitable-examples-explain-use-of-aggregate-functions)
+  - [16. Elaborate in detail DDL \& DML commands with suitable examples](#16-elaborate-in-detail-ddl--dml-commands-with-suitable-examples)
+  - [17. What types of SQL subqueries do you know?Explain with suitable example](#17-what-types-of-sql-subqueries-do-you-knowexplain-with-suitable-example)
+  - [18. Define following terms :Primary key, Foreign key ,Unique key in brief](#18-define-following-terms-primary-key-foreign-key-unique-key-in-brief)
+  - [19. Explain CRUD operations in DBMS in detail with suitable examples](#19-explain-crud-operations-in-dbms-in-detail-with-suitable-examples)
+  - [20. Describe Data mining process in detail with suitable example](#20-describe-data-mining-process-in-detail-with-suitable-example)
+  - [21. Brief in detail: NoSQL database](#21-brief-in-detail-nosql-database)
+  - [22. Elaborate in detail recent advancements in database management system](#22-elaborate-in-detail-recent-advancements-in-database-management-system)
+
 ## 1. Elaborate in detail DBMS 2 tier and 3 tier architecture
 
 ### 2-Tier Architecture
