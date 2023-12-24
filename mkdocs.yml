@@ -121,7 +121,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/gautampatil1
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/mQPNB5hT
+      link: upi://pay?pa=8625057783@airtel&pn=GAUTAM SURESH PATIL&tn=Pay money to GAUTAM SURESH PATIL
   generator: false
   analytics:
     provider: google 
