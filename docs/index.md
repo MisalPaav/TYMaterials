@@ -2,6 +2,8 @@
 
 Download the TYMaterials app [here](https://bzbf.short.gy/TYMaterials).
 
+You can see the Question Banks for CAE's after signing in.
+
 Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
 
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
@@ -21,7 +23,7 @@ Only Computer Department notes, if anyone from any other department is intereste
 
 ## End Sem Time Table
 
-![Sem Time Table](./time-table.png)
+![Sem Time Table](https://drive.google.com/uc?id=1menPTtVms2BC6rVT5P3pFdd8zNEOhXE-)
 
 ## About
 
