@@ -36,7 +36,64 @@ theme:
     logo: logo
 
 
-nav:
+nav:  
+
+  - ST: 
+    - ST/index.md
+    - Unit1: ST/Unit1.md
+    - Unit2: ST/Unit2.md
+    - Unit3: ST/Unit3.md
+    - Unit4: ST/Unit4.md
+    - Unit5: ST/Unit5.md
+    - ST-CAE-1-Question-Bank: ST/SEPM-CAE-1-Question-Bank.md
+    - ST-CAE-2-Question-Bank: ST/SEPM-CAE-2-Question-Bank.md
+    - ST-CAE-3-Question-Bank: ST/SEPM-CAE-3-Question-Bank.md
+
+  - UDB: 
+    - UDB/index.md
+    - Unit1: UDB/Unit1.md
+    - Unit2: UDB/Unit2.md
+    - Unit3: UDB/Unit3.md
+    - Unit4: UDB/Unit4.md
+    - Unit5: UDB/Unit5.md
+    - UDB-CAE-1-Question-Bank: UDB/SEPM-CAE-1-Question-Bank.md
+    - UDB-CAE-2-Question-Bank: UDB/SEPM-CAE-2-Question-Bank.md
+    - UDB-CAE-3-Question-Bank: UDB/SEPM-CAE-3-Question-Bank.md
+
+  - NLP: 
+    - NLP/index.md
+    - Unit1: NLP/Unit1.md
+    - Unit2: NLP/Unit2.md
+    - Unit3: NLP/Unit3.md
+    - Unit4: NLP/Unit4.md
+    - Unit5: NLP/Unit5.md
+    - NLP-CAE-1-Question-Bank: NLP/SEPM-CAE-1-Question-Bank.md
+    - NLP-CAE-2-Question-Bank: NLP/SEPM-CAE-2-Question-Bank.md
+    - NLP-CAE-3-Question-Bank: NLP/SEPM-CAE-3-Question-Bank.md
+
+  - SAMD: 
+    - SAMD/index.md
+    - Unit1: SAMD/Unit1.md
+    - Unit2: SAMD/Unit2.md
+    - Unit3: SAMD/Unit3.md
+    - Unit4: SAMD/Unit4.md
+    - Unit5: SAMD/Unit5.md
+    - SAMD-CAE-1-Question-Bank: SAMD/SEPM-CAE-1-Question-Bank.md
+    - SAMD-CAE-2-Question-Bank: SAMD/SEPM-CAE-2-Question-Bank.md
+    - SAMD-CAE-3-Question-Bank: SAMD/SEPM-CAE-3-Question-Bank.md
+
+  - ML: 
+    - ML/index.md
+    - Unit1: ML/Unit1.md
+    - Unit2: ML/Unit2.md
+    - Unit3: ML/Unit3.md
+    - Unit4: ML/Unit4.md
+    - Unit5: ML/Unit5.md
+    - Unit6: ML/Unit6.md
+    - ML-CAE-1-Question-Bank: ML/SEPM-CAE-1-Question-Bank.md
+    - ML-CAE-2-Question-Bank: ML/SEPM-CAE-2-Question-Bank.md
+    - ML-CAE-3-Question-Bank: ML/SEPM-CAE-3-Question-Bank.md
+
   - SEPM: 
     - sepm/index.md
     - Unit1: sepm/Unit1.md
@@ -47,7 +104,7 @@ nav:
     - SEPM-CAE-1-Question-Bank: sepm/SEPM-CAE-1-Question-Bank.md
     - SEPM-CAE-2-Question-Bank: sepm/SEPM-CAE-2-Question-Bank.md
     - SEPM-CAE-3-Question-Bank: sepm/SEPM-CAE-3-Question-Bank.md
-  
+ 
   - WD:
     - WD/index.md
     - Unit1: WD/Unit1.md

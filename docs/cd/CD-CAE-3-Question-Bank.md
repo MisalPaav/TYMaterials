@@ -653,7 +653,8 @@ In this representation:
 
 The DAG for the given basic block might look like this:
 
- `+
+```
+     +
         /\
        /\
       t1   *
@@ -671,7 +672,8 @@ The DAG for the given basic block might look like this:
                     *
                    /\
                   /\
-                 d     2`
+                 d     2
+```
 
 In this DAG representation:
 
@@ -705,10 +707,12 @@ Induction variables are variables whose values change by a constant amount in ea
 
 Intermediate Code:
 
-`B2: i = i + 1
+```
+B2: i = i + 1
 t1: = 4 * j
 t2: = a[t1]
-if t2 < 10 goto B2`
+if t2 < 10 goto B2
+```
 
 To detect and potentially eliminate the induction variable `i`, you need to analyze the code and the control flow within the loop. In this case, `i` is incremented by 1 in each iteration, and its value is used to index the array `a`. Here are the steps:
 
@@ -724,13 +728,15 @@ To detect and potentially eliminate the induction variable `i`, you need to anal
 
 Here's an example of how you can rewrite the loop to eliminate the use of `i`:
 
-`loop_counter = 0
+```
+loop_counter = 0
 t1 = 0
 while loop_counter < n:
     t2 = a[t1]  # Access the array using t1
     if t2 < 10:
         loop_counter = loop_counter + 1
-        t1 = t1 + 4  # Increment t1 instead of i`
+        t1 = t1 + 4  # Increment t1 instead of i
+```
 
 By eliminating the explicit use of `i`, you reduce the number of instructions and potentially improve code efficiency. However, the exact optimization may depend on the context and requirements of the program. Additionally, the compiler may perform such optimizations automatically as part of loop optimization techniques.
 
@@ -748,25 +754,27 @@ return f;
 
 To construct the flow graph for the given code segment, we'll create a representation of the control flow within the `fact` function. The code includes a simple loop that calculates the factorial of a number `n`. Here's the flow graph:
 
-`Start
- |
- v Assignment: f = 1
- |
- v Assignment: i = 2
- |
- v Condition: i <= n?
- |
- | (no)
- v Return: f
- |
- v Condition: i <= n?
- |
- | (yes)
- v Assignment: f = f * i
- |
- v Assignment: i = i + 1
- |
- v Back to Condition`
+```
+Start
+|
+v Assignment: f = 1
+|
+v Assignment: i = 2
+|
+v Condition: i <= n?
+|
+| (no)
+v Return: f
+|
+v Condition: i <= n?
+|
+| (yes)
+v Assignment: f = f * i
+|
+v Assignment: i = i + 1
+|
+v Back to Condition
+```
 
 Explanation of the flow graph:
 

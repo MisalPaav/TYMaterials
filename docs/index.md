@@ -7,14 +7,17 @@ Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
 ## Subjects
-
-- [Software Engineering & Project Management](sepm/index.md)
-- [Web Development](WD/index.md)
-- [Database Management System](dbms/index.md)
-- [Compiler Design](cd/index.md)
-- [Engineering Economics & Industrial Management](eeim/index.md)
-- [Data Mining](DM/index.md)
-- [Business Intelligence Analysis](BIA/index.md)
+- Second Sem:
+    - [Software Testing](ST/index.md)
+    - [Unstructred Database Management](UDB/index.md)
+- First Sem:
+    - [Software Engineering & Project Management](sepm/index.md)
+    - [Web Development](WD/index.md)
+    - [Database Management System](dbms/index.md)
+    - [Compiler Design](cd/index.md)
+    - [Engineering Economics & Industrial Management](eeim/index.md)
+    - [Data Mining](DM/index.md)
+    - [Business Intelligence Analysis](BIA/index.md)
 
 ## End Sem Time Table
 
