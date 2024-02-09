@@ -1,6 +1,6 @@
 # UDBMS CAE 1 Question Bank Solution
 
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;">
+<div style="position: relative; width: 100%; height: auto; max-width: 100%; padding-top: 56.25%;">
   <iframe src="https://drive.google.com/file/d/13Tvmc-ePIpkcmzhPKVTdc3uYBw6AtxrQ/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
 </div>
 
@@ -106,7 +106,6 @@ The emergence of NoSQL databases can be traced back to several factors and trend
 - **Application databases**: Application databases are designed to support the data storage and retrieval needs of a specific application or set of applications. They are optimized for transactional processing, providing efficient storage, indexing, and querying of application data. Application databases are typically tailored to the requirements and data access patterns of individual applications, ensuring optimal performance and scalability.
 
 - **Integration databases**: Integration databases, on the other hand, focus on facilitating data integration and interoperability between multiple systems, applications, or data sources. They serve as a central repository or data hub where data from disparate sources can be aggregated, transformed, and exchanged. Integration databases often support data replication, ETL (Extract, Transform, Load) processes, data cleansing, and data governance functionalities to ensure data quality and consistency across the enterprise.
-
 
 ## 9. **How can understanding the history of NoSQL databases inform database design decisions?**
 
