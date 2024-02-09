@@ -28,13 +28,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
-
 
 nav:  
 
@@ -45,20 +38,20 @@ nav:
     - Unit3: ST/Unit3.md
     - Unit4: ST/Unit4.md
     - Unit5: ST/Unit5.md
-    - ST-CAE-1-Question-Bank: ST/SEPM-CAE-1-Question-Bank.md
-    - ST-CAE-2-Question-Bank: ST/SEPM-CAE-2-Question-Bank.md
-    - ST-CAE-3-Question-Bank: ST/SEPM-CAE-3-Question-Bank.md
+    - ST-CAE-1-Question-Bank: ST/ST-CAE-1-Question-Bank.md
+    - ST-CAE-2-Question-Bank: ST/ST-CAE-2-Question-Bank.md
+    - ST-CAE-3-Question-Bank: ST/ST-CAE-3-Question-Bank.md
 
-  - UDB: 
-    - UDB/index.md
-    - Unit1: UDB/Unit1.md
-    - Unit2: UDB/Unit2.md
-    - Unit3: UDB/Unit3.md
-    - Unit4: UDB/Unit4.md
-    - Unit5: UDB/Unit5.md
-    - UDB-CAE-1-Question-Bank: UDB/SEPM-CAE-1-Question-Bank.md
-    - UDB-CAE-2-Question-Bank: UDB/SEPM-CAE-2-Question-Bank.md
-    - UDB-CAE-3-Question-Bank: UDB/SEPM-CAE-3-Question-Bank.md
+  - UDBMS: 
+    - UDBMS/index.md
+    - Unit1: UDBMS/Unit1.md
+    - Unit2: UDBMS/Unit2.md
+    - Unit3: UDBMS/Unit3.md
+    - Unit4: UDBMS/Unit4.md
+    - Unit5: UDBMS/Unit5.md
+    - UDB-CAE-1-Question-Bank: UDBMS/UDBMS-CAE-1-Question-Bank.md
+    - UDB-CAE-2-Question-Bank: UDBMS/UDBMS-CAE-2-Question-Bank.md
+    - UDB-CAE-3-Question-Bank: UDBMS/UDBMS-CAE-3-Question-Bank.md
 
   - NLP: 
     - NLP/index.md
@@ -67,9 +60,9 @@ nav:
     - Unit3: NLP/Unit3.md
     - Unit4: NLP/Unit4.md
     - Unit5: NLP/Unit5.md
-    - NLP-CAE-1-Question-Bank: NLP/SEPM-CAE-1-Question-Bank.md
-    - NLP-CAE-2-Question-Bank: NLP/SEPM-CAE-2-Question-Bank.md
-    - NLP-CAE-3-Question-Bank: NLP/SEPM-CAE-3-Question-Bank.md
+    - NLP-CAE-1-Question-Bank: NLP/NLP-CAE-1-Question-Bank.md
+    - NLP-CAE-2-Question-Bank: NLP/NLP-CAE-2-Question-Bank.md
+    - NLP-CAE-3-Question-Bank: NLP/NLP-CAE-3-Question-Bank.md
 
   - SAMD: 
     - SAMD/index.md
@@ -78,9 +71,20 @@ nav:
     - Unit3: SAMD/Unit3.md
     - Unit4: SAMD/Unit4.md
     - Unit5: SAMD/Unit5.md
-    - SAMD-CAE-1-Question-Bank: SAMD/SEPM-CAE-1-Question-Bank.md
-    - SAMD-CAE-2-Question-Bank: SAMD/SEPM-CAE-2-Question-Bank.md
-    - SAMD-CAE-3-Question-Bank: SAMD/SEPM-CAE-3-Question-Bank.md
+    - SAMD-CAE-1-Question-Bank: SAMD/SAMD-CAE-1-Question-Bank.md
+    - SAMD-CAE-2-Question-Bank: SAMD/SAMD-CAE-2-Question-Bank.md
+    - SAMD-CAE-3-Question-Bank: SAMD/SAMD-CAE-3-Question-Bank.md
+
+  - UHV: 
+    - UHV/index.md
+    - Unit1: UHV/Unit1.md
+    - Unit2: UHV/Unit2.md
+    - Unit3: UHV/Unit3.md
+    - Unit4: UHV/Unit4.md
+    - Unit5: UHV/Unit5.md
+    - SAMD-CAE-1-Question-Bank: UHV/UHV-CAE-1-Question-Bank.md
+    - SAMD-CAE-2-Question-Bank: UHV/UHV-CAE-2-Question-Bank.md
+    - SAMD-CAE-3-Question-Bank: UHV/UHV-CAE-3-Question-Bank.md
 
   - ML: 
     - ML/index.md

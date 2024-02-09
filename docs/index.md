@@ -9,9 +9,13 @@ Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
 ## Subjects
+
 - Second Sem:
     - [Software Testing](ST/index.md)
     - [Unstructred Database Management](UDB/index.md)
+    - [Machine Learning](ML/index.md)
+    - [Natural Language Processing](NLP/index.md)
+
 - First Sem:
     - [Software Engineering & Project Management](sepm/index.md)
     - [Web Development](WD/index.md)
@@ -21,9 +25,6 @@ Only Computer Department notes, if anyone from any other department is intereste
     - [Data Mining](DM/index.md)
     - [Business Intelligence Analysis](BIA/index.md)
 
-## End Sem Time Table
-
-![Sem Time Table](https://drive.google.com/uc?id=1menPTtVms2BC6rVT5P3pFdd8zNEOhXE-)
 
 ## About
 
@@ -35,6 +36,6 @@ Created by [Gautam Patil](https://gautampatil.tech)
 ## More Projects
 
 - [FYMaterials](https://fymaterials.live)
-- [LofiPomo](https://lofipomo.gautampatil11.repl.co)
-- [EBikeStore](https://ebikestore.gautampatil.tech)
+- [LofiPomo](https://lofipomo.gautampatil.tech)
+- [EBikeStore](https://ebikestore.tech)
 - [ShortStories](https://short-stories-webapp.vercel.app/)
