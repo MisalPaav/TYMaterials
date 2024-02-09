@@ -4,28 +4,27 @@ Download the TYMaterials app [here](https://bzbf.short.gy/TYMaterials).
 
 You can see the Question Banks for CAE's after signing in.
 
-Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
+Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
 
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
 ## Subjects
 
 - Second Sem:
-    - [Software Testing](ST/)
-    - [Unstructred Database Management System](UDBMS/)
-    - [Machine Learning](ML/)
-    - [Natural Language Processing](NLP/)
-    - [Understanding Human Values](UHV/)
+  - [Software Testing](ST/)
+  - [Unstructred Database Management System](UDBMS/)
+  - [Machine Learning](ML/)
+  - [Natural Language Processing](NLP/)
+  - [Understanding Human Values](UHV/)
 
 - First Sem:
-    - [Software Engineering & Project Management](sepm/)
-    - [Web Development](WD/)
-    - [Database Management System](dbms/)
-    - [Compiler Design](cd/index.md)
-    - [Engineering Economics & Industrial Management](eeim/)
-    - [Data Mining](DM/)
-    - [Business Intelligence Analysis](BIA/)
-
+  - [Software Engineering & Project Management](sepm/)
+  - [Web Development](WD/)
+  - [Database Management System](dbms/)
+  - [Compiler Design](cd/index.md)
+  - [Engineering Economics & Industrial Management](eeim/)
+  - [Data Mining](DM/)
+  - [Business Intelligence Analysis](BIA/)
 
 ## About
 
@@ -36,6 +35,7 @@ Created by [Gautam Patil](https://gautampatil.tech)
 
 ## More Projects
 
+- [PictoPixie AI Chatbot](https://gautampatil1.github.io/pictopixie/)
 - [FYMaterials](https://fymaterials.live)
 - [LofiPomo](https://lofipomo.gautampatil.tech)
 - [EBikeStore](https://ebikestore.tech)
