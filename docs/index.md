@@ -11,19 +11,20 @@ Only Computer Department notes, if anyone from any other department is intereste
 ## Subjects
 
 - Second Sem:
-    - [Software Testing](ST/index.md)
-    - [Unstructred Database Management](UDB/index.md)
-    - [Machine Learning](ML/index.md)
-    - [Natural Language Processing](NLP/index.md)
+    - [Software Testing](ST/)
+    - [Unstructred Database Management System](UDBMS/)
+    - [Machine Learning](ML/)
+    - [Natural Language Processing](NLP/)
+    - [Understanding Human Values](UHV/)
 
 - First Sem:
-    - [Software Engineering & Project Management](sepm/index.md)
-    - [Web Development](WD/index.md)
-    - [Database Management System](dbms/index.md)
+    - [Software Engineering & Project Management](sepm/)
+    - [Web Development](WD/)
+    - [Database Management System](dbms/)
     - [Compiler Design](cd/index.md)
-    - [Engineering Economics & Industrial Management](eeim/index.md)
-    - [Data Mining](DM/index.md)
-    - [Business Intelligence Analysis](BIA/index.md)
+    - [Engineering Economics & Industrial Management](eeim/)
+    - [Data Mining](DM/)
+    - [Business Intelligence Analysis](BIA/)
 
 
 ## About
