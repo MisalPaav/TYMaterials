@@ -1,5 +1,29 @@
 # Machine Learning Question Bank Solution
 
+- [Machine Learning Question Bank Solution](#machine-learning-question-bank-solution)
+  - [1.  **Distinguish between Supervised Learning and Unsupervised Learning:**](#1--distinguish-between-supervised-learning-and-unsupervised-learning)
+  - [2.  **Explain machine learning in medical diagnosis:**](#2--explain-machine-learning-in-medical-diagnosis)
+  - [3.  **Explain machine learning in defense sector:**](#3--explain-machine-learning-in-defense-sector)
+  - [4.  **Explain machine learning life cycle:**](#4--explain-machine-learning-life-cycle)
+  - [5.  **Explain market basket analysis using association rule mining:**](#5--explain-market-basket-analysis-using-association-rule-mining)
+  - [6.  **Classify machine learning. Which one out of it often leads to overfitting and why?**](#6--classify-machine-learning-which-one-out-of-it-often-leads-to-overfitting-and-why)
+  - [7.  **Explain in detail: Training dataset vs testing dataset.**](#7--explain-in-detail-training-dataset-vs-testing-dataset)
+  - [8.  **Explain geometric model and probabilistic model in detail.**](#8--explain-geometric-model-and-probabilistic-model-in-detail)
+  - [9.  **Explain overfitting and underfitting with respect to machine learning.**](#9--explain-overfitting-and-underfitting-with-respect-to-machine-learning)
+  - [10.  **Explain feature as split and feature as predictor with an example.**](#10--explain-feature-as-split-and-feature-as-predictor-with-an-example)
+  - [11. The average score on a test is 80 with a standard deviation of 10. With a new teaching curriculum introduced it is believed that this score will change. On random testing, the score of 38 students, the mean was found to be 88. With a 0.05 significance level, is there any evidence to support this claim? (Z score at 0.05 significance level is 1.96)](#11-the-average-score-on-a-test-is-80-with-a-standard-deviation-of-10-with-a-new-teaching-curriculum-introduced-it-is-believed-that-this-score-will-change-on-random-testing-the-score-of-38-students-the-mean-was-found-to-be-88-with-a-005-significance-level-is-there-any-evidence-to-support-this-claim-z-score-at-005-significance-level-is-196)
+  - [12. A genetics engineer was attempting to cross a tiger and a cheetah. She predicted a phenotypic outcome of the traits she was observing to be in the following ratio 4 stripes only: 3 spots only: 9 both stripes and spots. When the cross was performed and she counted the individuals she found 50 with stripes only, 41 with spots only and 85 with both. According to the Chi-square test, did she get the predicted outcome?](#12-a-genetics-engineer-was-attempting-to-cross-a-tiger-and-a-cheetah-she-predicted-a-phenotypic-outcome-of-the-traits-she-was-observing-to-be-in-the-following-ratio-4-stripes-only-3-spots-only-9-both-stripes-and-spots-when-the-cross-was-performed-and-she-counted-the-individuals-she-found-50-with-stripes-only-41-with-spots-only-and-85-with-both-according-to-the-chi-square-test-did-she-get-the-predicted-outcome)
+  - [13. In the garden pea, yellow cotyledon color is dominant to green, and inflated pod shape is dominant to the constricted form. Considering both of these traits jointly in self-fertilized dihybrids, the progeny appeared in the following numbers: 193 green, inflated 184 yellow constricted 556 yellow, inflated 61 green, constricted Do these genes assort independently? Support your answer using Chi-square analysis](#13-in-the-garden-pea-yellow-cotyledon-color-is-dominant-to-green-and-inflated-pod-shape-is-dominant-to-the-constricted-form-considering-both-of-these-traits-jointly-in-self-fertilized-dihybrids-the-progeny-appeared-in-the-following-numbers-193-green-inflated-184-yellow-constricted-556-yellow-inflated-61-green-constricted-do-these-genes-assort-independently-support-your-answer-using-chi-square-analysis)
+  - [14. **What is entropy? Explain information gain with the help of an example.**](#14-what-is-entropy-explain-information-gain-with-the-help-of-an-example)
+  - [15.  **How will you handle Categorical data using the Scikit-Learn library? Explain with an example.**](#15--how-will-you-handle-categorical-data-using-the-scikit-learn-library-explain-with-an-example)
+  - [16.  **Describe the feature selection algorithm which contributes best to the accuracy of the model?**](#16--describe-the-feature-selection-algorithm-which-contributes-best-to-the-accuracy-of-the-model)
+  - [17. **Explain missing data preprocessing in machine learning using the given example dataset.**](#17-explain-missing-data-preprocessing-in-machine-learning-using-the-given-example-dataset)
+  - [18.  **What is the curse of dimensionality issue? How does Principal Component Analysis help to reduce the dimensionality issue?**](#18--what-is-the-curse-of-dimensionality-issue-how-does-principal-component-analysis-help-to-reduce-the-dimensionality-issue)
+  - [19.  **Explain Sparse PCA vs. Kernel PCA.**](#19--explain-sparse-pca-vs-kernel-pca)
+  - [20.  **Explain the step-by-step application of PCA.**](#20--explain-the-step-by-step-application-of-pca)
+  - [21.  **Explain one-hot encoding and label encoding.**](#21--explain-one-hot-encoding-and-label-encoding)
+
+
 ## 1.  **Distinguish between Supervised Learning and Unsupervised Learning:**
 
 - **Supervised Learning:** In supervised learning, the algorithm learns from labeled data, meaning that each training example consists of input data paired with the corresponding correct output. The algorithm learns to map the input to the output based on this labeled data. During training, the algorithm adjusts its parameters to minimize the difference between its predictions and the true labels. Common tasks in supervised learning include classification and regression.
@@ -189,4 +213,4 @@ The steps involved in applying PCA are as follows:
 
 - **One-Hot Encoding:** One-hot encoding is a technique used to convert categorical variables into binary vectors. Each category is represented by a binary attribute, where only one attribute is 1 (hot) and the rest are 0 (cold). One-hot encoding creates binary vectors for each category, making it suitable for algorithms that cannot handle categorical data directly.
 
-  - **Label Encoding:** Label encoding is a technique used to convert categorical variables into numerical labels. Each category is assigned a unique integer label. Label encoding transforms categorical variables into ordinal data, which can be used by algorithms that can interpret numerical data but may not handle categorical data directly.
+- **Label Encoding:** Label encoding is a technique used to convert categorical variables into numerical labels. Each category is assigned a unique integer label. Label encoding transforms categorical variables into ordinal data, which can be used by algorithms that can interpret numerical data but may not handle categorical data directly.
