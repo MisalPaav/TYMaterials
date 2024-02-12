@@ -94,9 +94,9 @@ nav:
     - Unit4: ML/Unit4.md
     - Unit5: ML/Unit5.md
     - Unit6: ML/Unit6.md
-    - ML-CAE-1-Question-Bank: ML/SEPM-CAE-1-Question-Bank.md
-    - ML-CAE-2-Question-Bank: ML/SEPM-CAE-2-Question-Bank.md
-    - ML-CAE-3-Question-Bank: ML/SEPM-CAE-3-Question-Bank.md
+    - ML-CAE-1-Question-Bank: ML/ML-CAE-1-Question-Bank.md
+    - ML-CAE-2-Question-Bank: ML/ML-CAE-2-Question-Bank.md
+    - ML-CAE-3-Question-Bank: ML/ML-CAE-3-Question-Bank.md
 
   - SEPM: 
     - sepm/index.md

@@ -1,5 +1,9 @@
 # NLP CAE 1 Question Bank Solutions
 
+<div style="position: relative; width: 100%; height: auto; max-width: 100%; padding-top: 56.25%;">
+  <iframe src="https://drive.google.com/file/d/15epUSyoS7qvFSSgZh8bqaVtAN0j1FQjl/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+</div>
+
 - [NLP CAE 1 Question Bank Solutions](#nlp-cae-1-question-bank-solutions)
   - [1. **Main Components of a Generic NLP System:**](#1-main-components-of-a-generic-nlp-system)
   - [2. **Levels of NLP and Associated Tasks:**](#2-levels-of-nlp-and-associated-tasks)
@@ -30,8 +34,6 @@
   - **Named Entity Recognition (NER):** NER involves identifying and classifying named entities such as names of people, organizations, locations, etc., within a text. It's crucial for information extraction tasks.
   - **Semantic Analysis:** This component aims to extract the meaning from the text. It may involve tasks like sentiment analysis, semantic role labeling, or coreference resolution.
   - **Pragmatic Analysis:** This component deals with understanding the context and intention behind the text. It includes tasks such as discourse analysis and speech act recognition.
-
-    Each of these components contributes to processing natural language by breaking down the input text into meaningful units, understanding its grammatical structure, identifying important entities and their relationships, and ultimately extracting the intended meaning.
 
 ## 2. **Levels of NLP and Associated Tasks:**
 
