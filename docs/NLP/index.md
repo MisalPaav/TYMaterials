@@ -1,23 +1,23 @@
-# Nautral Language Processing 
+# Nautral Language Processing
 
 ## Syllabus
 
 | Unit | Topic                                                                        | Hours |
 |------|------------------------------------------------------------------------------|-------|
-| I    | Introduction and Basic Text Processing                                     | 6     |
+| [Unit I](/NLP/Unit1)    | Introduction and Basic Text Processing                                     | 6     |
 |      | Spelling Correction                                                         |       |
 |      | Language Modeling                                                            |       |
 |      | Advanced smoothing for language modeling                                    |       |
 |      | POS tagging                                                                   |       |
-| II   | Models for Sequential tagging – MaxEnt                                      | 8     |
+| [Unit II](/NLP/Unit2)   | Models for Sequential tagging – MaxEnt                                      | 8     |
 |      | CRF                                                                          |       |
 |      | Syntax – Constituency Parsing                                               |       |
 |      | Dependency Parsing                                                           |       |
 |      | Distributional Semantics                                                     |       |
-| III  | Lexical Semantics                                                            | 8     |
+| [Unit III](/NLP/Unit3)  | Lexical Semantics                                                            | 8     |
 |      | Topic Models                                                                 |       |
 |      | Entity Linking                                                               |       |
-| IV   | Information Extraction                                                      | 6     |
+| [Unit IV](/NLP/Unit4)   | Information Extraction                                                      | 6     |
 |      | Text Summarization                                                           |       |
 |      | Text Classification                                                          |       |
-| V    | Sentiment Analysis and Opinion Mining                                       | 6     |
+| [Unit V](/NLP/Unit5)    | Sentiment Analysis and Opinion Mining                                       | 6     |

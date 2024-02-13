@@ -8,7 +8,15 @@ Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
 
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
-## Subjects
+## Latest Releases
+
+- [ST CAE 1 Question Bank Solutions](/ST/ST-CAE-1-Question-Bank)
+- [ML CAE 1 Question Bank Solutions](/ML/ML-CAE-1-Question-Bank)
+- [UDBMS CAE 1 Question Bank Solutions](/UDBMS/UDBMS-CAE-1-Question-Bank)
+- [UHV CAE 1 Question Bank Solutions](/UHV/UHV-CAE-1-Question-Bank)
+- [NLP CAE 1 Question Bank Solutions](/NLP/NLP-CAE-1-Question-Bank)
+
+## Subjects Notes
 
 **Second Semester Subjects:**
 

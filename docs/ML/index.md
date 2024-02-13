@@ -4,7 +4,7 @@
 
 | Unit                | Topics                                          | Hrs. |
 |---------------------|-------------------------------------------------|------|
-| **Unit I**          | Introduction to Machine Learning               | 06   |
+| [**Unit I**](/ML/Unit1)          | Introduction to Machine Learning               | 06   |
 |                     | What Is Machine Learning                       |      |
 |                     | Examples of Machine Learning Applications      |      |
 |                     | Learning Associations                          |      |
@@ -12,7 +12,7 @@
 |                     | Regression                                     |      |
 |                     | Unsupervised Learning                          |      |
 |                     | Reinforcement Learning                         |      |
-| **Unit II**         | Feature Selection                              | 06   |
+| [**Unit II**](/ML/Unit2)         | Feature Selection                              | 06   |
 |                     | Scikit-learn Dataset                           |      |
 |                     | Creating training and test sets                 |      |
 |                     | Managing categorical data                      |      |
@@ -23,7 +23,7 @@
 |                     | Non-negative matrix factorization              |      |
 |                     | Sparse PCA                                     |      |
 |                     | Kernel PCA                                     |      |
-| **Unit III**        | Supervised Learning                             | 06   |
+| [**Unit III**](/ML/Unit3)        | Supervised Learning                             | 06   |
 |                     | Learning a Class from example                   |      |
 |                     | Linear Regression                              |      |
 |                     | Logistic Regression                            |      |
@@ -33,7 +33,7 @@
 |                     | Decision Trees                                 |      |
 |                     | Random Forests                                 |      |
 |                     | Model Evaluation: Overfitting & Underfitting   |      |
-| **Unit IV**         | Unsupervised Learning                           | 06   |
+| [**Unit IV**](/ML/Unit4)         | Unsupervised Learning                           | 06   |
 |                     | Clustering                                     |      |
 |                     | k-Means Clustering                             |      |
 |                     | Hierarchical Clustering                        |      |
@@ -43,7 +43,7 @@
 |                     | The Curse of Dimensionality                    |      |
 |                     | Dimensionality Reduction                       |      |
 |                     | Factor Analysis                                |      |
-| **Unit V**          | Combining Multiple Learners                    | 06   |
+| [**Unit V**](/ML/unit5)          | Combining Multiple Learners                    | 06   |
 |                     | Rationale                                      |      |
 |                     | Generating Diverse Learners                    |      |
 |                     | Voting                                         |      |
@@ -53,7 +53,7 @@
 |                     | Stacked Generalization                         |      |
 |                     | Fine-Tuning an Ensemble                        |      |
 |                     | Cascading                                      |      |
-| **Unit VI**         | Advances in Machine Learning                    | 06   |
+| [**Unit VI**](/ML/Unit6)         | Advances in Machine Learning                    | 06   |
 |                     | Reinforcement Learning                          |      |
 |                     | Introduction                                   |      |
 |                     | Elements of Reinforcement Learning              |      |
