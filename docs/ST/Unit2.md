@@ -1,5 +1,9 @@
 # Unit 2: Test Case Design Strategies
 
+<div style="position: relative; width: 100%; height: auto; max-width: 100%; padding-top: 56.25%;">
+  <iframe src="https://drive.google.com/file/d/1bjj61jArUuO1eNFMUWiaB-CC4IHlIsVR/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+</div>
+
 - [Unit 2: Test Case Design Strategies](#unit-2-test-case-design-strategies)
     - [Using Black Box Approach to Test Case Design](#using-black-box-approach-to-test-case-design)
     - [Random Testing](#random-testing)
