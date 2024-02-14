@@ -18,6 +18,11 @@
   - [11. What are the different consequences of an effective test case. Write down the approaches for test case design](#11-what-are-the-different-consequences-of-an-effective-test-case-write-down-the-approaches-for-test-case-design)
   - [12. Distinguish  between whitebox testing and blackbox testing](#12-distinguish--between-whitebox-testing-and-blackbox-testing)
   - [13. List out the different methods for blackbox Testing and explain any two of it](#13-list-out-the-different-methods-for-blackbox-testing-and-explain-any-two-of-it)
+    - [Equivalence Partitioning](#equivalence-partitioning)
+    - [Boundary Value Analysis](#boundary-value-analysis)
+    - [Decision Table Testing](#decision-table-testing)
+    - [State Transition Testing](#state-transition-testing)
+    - [Use Case Testing](#use-case-testing)
   - [14. Elaborate equivalence class partitioning method used in blackbox testing](#14-elaborate-equivalence-class-partitioning-method-used-in-blackbox-testing)
   - [15. Elaborate boundary value analysis method used in blackbox testing](#15-elaborate-boundary-value-analysis-method-used-in-blackbox-testing)
   - [16. Write down example of application which uses equivalence class partitioning and boundary value analysis](#16-write-down-example-of-application-which-uses-equivalence-class-partitioning-and-boundary-value-analysis)
@@ -137,27 +142,32 @@ The Software Testing Life Cycle (STLC) consists of several stages, each with its
 
 **a) Verification and Validation:**
 
-- **Verification:** Verification is the process of evaluating software artifacts to ensure that they meet specified requirements and standards. It focuses on checking whether the software is being built correctly according to the defined specifications. Verification activities include reviews, inspections, walkthroughs, and static analysis techniques.
-
-- **Validation:** Validation is the process of evaluating the software to ensure that it meets the customer's requirements and expectations. It involves testing the software against the user's needs and real-world scenarios to determine whether it behaves as intended. Validation activities include dynamic testing, system testing, and acceptance testing.
-
-**Key Difference:** Verification ensures that the software is built correctly, while validation ensures that the right software is built.
+| Aspect         | Validation                                                     | Verification                                                      |
+|----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
+| Focus          | Determines whether the right product is built.               | Ensures that the product is built correctly according to specs.   |
+| Objective      | Ensures the software meets user needs and expectations.       | Confirms adherence to defined specifications and standards.        |
+| Process        | Involves dynamic testing and user feedback.                   | Involves static testing and evaluation against requirements.      |
+| Timing         | Typically occurs towards the end of the development process.  | Often performed throughout the development lifecycle.             |
+| Outcome        | Determines if the product fulfills its intended purpose.      | Checks if the product meets predefined criteria and standards.    |
 
 **b) Static and Dynamic Testing:**
 
-- **Static Testing:** Static testing is a type of testing that is performed without executing the software code. It involves reviewing and analyzing software artifacts, such as requirements documents, design specifications, and source code, to identify defects, errors, and inconsistencies. Static testing techniques include reviews, inspections, walkthroughs, and static code analysis.
-
-- **Dynamic Testing:** Dynamic testing is a type of testing that involves executing the software code to observe its behavior and verify its functionality. It includes running test cases, providing inputs, and evaluating the outputs to validate the software against specified requirements. Dynamic testing techniques include unit testing, integration testing, system testing, and acceptance testing.
-
-**Key Difference:** Static testing is performed without executing the software, focusing on early defect detection, while dynamic testing involves executing the software to validate its behavior and functionality.
+| Aspect         | Static Testing                                                 | Dynamic Testing                                                  |
+|----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
+| Execution      | Analyzes software without executing the code.                 | Involves executing the code and observing its behavior.          |
+| Timing         | Performed early in the development lifecycle.                 | Typically conducted after the software is developed.             |
+| Focus          | Emphasizes finding defects and issues at an early stage.      | Validates functionality and behavior under real conditions.       |
+| Techniques     | Includes reviews, inspections, and static code analysis.      | Involves unit testing, integration testing, and system testing.   |
+| Coverage       | Focuses on requirements, design, and code analysis.           | Evaluates the software's response to various inputs and scenarios.|
 
 **c) White Box and Black Box Testing:**
-
-- **White Box Testing:** White box testing, also known as clear box testing or structural testing, is a testing technique that involves examining the internal structure and implementation of the software code. Testers have access to the source code and design details and use this knowledge to design test cases based on code paths, branches, and logic. White box testing techniques include statement coverage, branch coverage, path coverage, and code walkthroughs.
-
-- **Black Box Testing:** Black box testing is a testing technique that focuses on testing the functionality of the software without considering its internal implementation. Testers do not have access to the source code and test the software based on its external behavior and specifications. Black box testing techniques include equivalence partitioning, boundary value analysis, decision tables, and use case testing.
-
-**Key Difference:** In white box testing, testers have access to the internal structure of the software and design test cases based on code logic, while in black box testing, testers focus on testing the functionality of the software without knowledge of its internal implementation.
+| Aspect         | White Box Testing                                              | Black Box Testing                                               |
+|----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
+| Knowledge      | Requires knowledge of internal code structure and logic.      | Doesn't require knowledge of internal code, focuses on behavior.  |
+| Perspective    | Tests based on internal workings of the software.             | Tests based on external specifications and user perspective.     |
+| Access         | Testers have access to source code and design details.        | Testers don't have access to source code, test from user's view. |
+| Techniques     | Includes statement coverage, branch coverage, etc.            | Involves equivalence partitioning, boundary value analysis, etc.  |
+| Coverage       | Ensures every path of the code is tested.                    | Focuses on testing inputs and outputs without knowledge of code. |
 
 ## 7\. Explain defect repository with all labels in detail?
 
@@ -251,22 +261,14 @@ Defect prevention in software development offers several benefits, including:
 
 ## 12\. Distinguish  between whitebox testing and blackbox testing
 
-**White Box Testing:**
-
-- Also known as clear box testing or structural testing.
-- Testing technique that examines the internal structure and implementation of the software.
-- Testers have access to the source code and design details.
-- Test cases are designed based on code paths, branches, and logic.
-- Focuses on code coverage criteria such as statement coverage, branch coverage, and path coverage.
-- Examples include unit testing, integration testing, and code reviews.
-
-**Black Box Testing:**
-
-- Testing technique that focuses on testing the functionality of the software without considering its internal implementation.
-- Testers do not have access to the source code and test the software based on its external behavior and specifications.
-- Test cases are designed based on requirements, specifications, and user expectations.
-- Focuses on testing inputs, outputs, interfaces, and system behavior.
-- Examples include functional testing, system testing, acceptance testing, and usability testing.
+| Aspect                | White Box Testing                                    | Black Box Testing                                     |
+|-----------------------|------------------------------------------------------|-------------------------------------------------------|
+| Also known as         | Clear box testing or structural testing              | Functional testing                                    |
+| Testing technique     | Examines internal structure and implementation        | Focuses on functionality without considering internals |
+| Access to source code | Testers have access to source code and design details | Testers do not have access to source code              |
+| Test case design      | Based on code paths, branches, and logic              | Based on requirements, specifications, and user needs |
+| Focus                 | Code coverage criteria (e.g., statement, branch, path coverage) | Testing inputs, outputs, interfaces, and system behavior |
+| Examples              | Unit testing, integration testing, code reviews       | Functional testing, system testing, acceptance testing |
 
 ## 13\. List out the different methods for blackbox Testing and explain any two of it
 
@@ -278,9 +280,25 @@ Defect prevention in software development offers several benefits, including:
 4. State Transition Testing
 5. Use Case Testing
 
-**Explanation of Equivalence Partitioning:** Equivalence Partitioning is a black box testing technique that divides the input data into partitions or equivalence classes, where each class represents a set of input values that should produce similar results. The goal is to design test cases that cover each equivalence class, ensuring thorough testing while minimizing the number of test cases needed.
+### Equivalence Partitioning
 
-**Explanation of Boundary Value Analysis:** Boundary Value Analysis is a black box testing technique that focuses on testing the boundary conditions or edges of equivalence classes. Test cases are designed to include input values at the lower and upper boundaries of each equivalence class, as well as just above and below those boundaries. This approach helps in uncovering defects related to boundary behavior, such as off-by-one errors or boundary-related inconsistencies.
+Equivalence Partitioning is a software testing technique that divides the input data into partitions or groups where each partition represents a set of valid or invalid inputs to the software. Test cases are then derived from each partition, typically selecting one representative value from each partition to ensure thorough testing.
+
+### Boundary Value Analysis
+
+Boundary Value Analysis is a testing technique used to identify errors at the boundaries of input ranges. Test cases are designed to include input values at the boundaries, just inside the boundaries, and just outside the boundaries of valid input ranges. This helps ensure that the software behaves correctly near the edges of acceptable input values.
+
+### Decision Table Testing
+
+Decision Table Testing is a systematic method for testing software behavior where inputs are listed in rows, and corresponding outputs or actions are listed in columns. This technique is particularly useful for testing systems that have complex business logic or decision-making processes. Decision tables help ensure comprehensive test coverage by considering all possible combinations of inputs and their corresponding outcomes.
+
+### State Transition Testing
+
+State Transition Testing is a testing technique used to verify the correct behavior of systems that can change states based on certain conditions or events. Test cases are designed to validate the transitions between different states of the system. This technique is commonly applied to software systems that exhibit finite state machine behavior, such as control systems or user interfaces.
+
+### Use Case Testing
+
+Use Case Testing is a testing technique that focuses on validating the functionality of software from an end-user perspective. Test cases are derived from the various use cases or scenarios identified during the requirements analysis phase. This approach ensures that the software meets the intended business requirements and user needs.
 
 ## 14\. Elaborate equivalence class partitioning method used in blackbox testing
 
