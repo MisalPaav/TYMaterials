@@ -31,7 +31,6 @@
   - [19. Short note on code functional testing and control flow graphs](#19-short-note-on-code-functional-testing-and-control-flow-graphs)
   - [20. Short note on test adequacy criteria](#20-short-note-on-test-adequacy-criteria)
 
-
 ## 1\. Define software testing and define
 
 a) failure
@@ -142,32 +141,34 @@ The Software Testing Life Cycle (STLC) consists of several stages, each with its
 
 **a) Verification and Validation:**
 
-| Aspect         | Validation                                                     | Verification                                                      |
-|----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
-| Focus          | Determines whether the right product is built.               | Ensures that the product is built correctly according to specs.   |
-| Objective      | Ensures the software meets user needs and expectations.       | Confirms adherence to defined specifications and standards.        |
-| Process        | Involves dynamic testing and user feedback.                   | Involves static testing and evaluation against requirements.      |
-| Timing         | Typically occurs towards the end of the development process.  | Often performed throughout the development lifecycle.             |
-| Outcome        | Determines if the product fulfills its intended purpose.      | Checks if the product meets predefined criteria and standards.    |
+| Validation                                                     | Verification                                                      |
+|---------------------------------------------------------------|-------------------------------------------------------------------|
+| Determines whether the right product is built.               | Ensures that the product is built correctly according to specs.   |
+| Ensures the software meets user needs and expectations.       | Confirms adherence to defined specifications and standards.        |
+| Involves dynamic testing and user feedback.                   | Involves static testing and evaluation against requirements.      |
+| Typically occurs towards the end of the development process.  | Often performed throughout the development lifecycle.             |
+| Determines if the product fulfills its intended purpose.      | Checks if the product meets predefined criteria and standards.    |
 
 **b) Static and Dynamic Testing:**
 
-| Aspect         | Static Testing                                                 | Dynamic Testing                                                  |
-|----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
-| Execution      | Analyzes software without executing the code.                 | Involves executing the code and observing its behavior.          |
-| Timing         | Performed early in the development lifecycle.                 | Typically conducted after the software is developed.             |
-| Focus          | Emphasizes finding defects and issues at an early stage.      | Validates functionality and behavior under real conditions.       |
-| Techniques     | Includes reviews, inspections, and static code analysis.      | Involves unit testing, integration testing, and system testing.   |
-| Coverage       | Focuses on requirements, design, and code analysis.           | Evaluates the software's response to various inputs and scenarios.|
+| Static Testing                                                 | Dynamic Testing                                                  |
+|---------------------------------------------------------------|-------------------------------------------------------------------|
+| Analyzes software without executing the code.                 | Involves executing the code and observing its behavior.          |
+| Performed early in the development lifecycle.                 | Typically conducted after the software is developed.             |
+| Emphasizes finding defects and issues at an early stage.      | Validates functionality and behavior under real conditions.       |
+| Includes reviews, inspections, and static code analysis.      | Involves unit testing, integration testing, and system testing.   |
+| Focuses on requirements, design, and code analysis.           | Evaluates the software's response to various inputs and scenarios.|
 
 **c) White Box and Black Box Testing:**
-| Aspect         | White Box Testing                                              | Black Box Testing                                               |
-|----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
-| Knowledge      | Requires knowledge of internal code structure and logic.      | Doesn't require knowledge of internal code, focuses on behavior.  |
-| Perspective    | Tests based on internal workings of the software.             | Tests based on external specifications and user perspective.     |
-| Access         | Testers have access to source code and design details.        | Testers don't have access to source code, test from user's view. |
-| Techniques     | Includes statement coverage, branch coverage, etc.            | Involves equivalence partitioning, boundary value analysis, etc.  |
-| Coverage       | Ensures every path of the code is tested.                    | Focuses on testing inputs and outputs without knowledge of code. |
+
+|White Box Testing                                    | Black Box Testing                                     |
+|------------------------------------------------------|-------------------------------------------------------|
+|Clear box testing or structural testing              | Functional testing                                    |
+|Examines internal structure and implementation        | Focuses on functionality without considering internals |
+|Testers have access to source code and design details | Testers do not have access to source code              |
+|Based on code paths, branches, and logic              | Based on requirements, specifications, and user needs |
+|Code coverage criteria (e.g., statement, branch, path coverage) | Testing inputs, outputs, interfaces, and system behavior |
+|Unit testing, integration testing, code reviews       | Functional testing, system testing, acceptance testing |
 
 ## 7\. Explain defect repository with all labels in detail?
 
@@ -261,14 +262,14 @@ Defect prevention in software development offers several benefits, including:
 
 ## 12\. Distinguish  between whitebox testing and blackbox testing
 
-| Aspect                | White Box Testing                                    | Black Box Testing                                     |
-|-----------------------|------------------------------------------------------|-------------------------------------------------------|
-| Also known as         | Clear box testing or structural testing              | Functional testing                                    |
-| Testing technique     | Examines internal structure and implementation        | Focuses on functionality without considering internals |
-| Access to source code | Testers have access to source code and design details | Testers do not have access to source code              |
-| Test case design      | Based on code paths, branches, and logic              | Based on requirements, specifications, and user needs |
-| Focus                 | Code coverage criteria (e.g., statement, branch, path coverage) | Testing inputs, outputs, interfaces, and system behavior |
-| Examples              | Unit testing, integration testing, code reviews       | Functional testing, system testing, acceptance testing |
+|White Box Testing                                    | Black Box Testing                                     |
+|------------------------------------------------------|-------------------------------------------------------|
+|Clear box testing or structural testing              | Functional testing                                    |
+|Examines internal structure and implementation        | Focuses on functionality without considering internals |
+|Testers have access to source code and design details | Testers do not have access to source code              |
+|Based on code paths, branches, and logic              | Based on requirements, specifications, and user needs |
+|Code coverage criteria (e.g., statement, branch, path coverage) | Testing inputs, outputs, interfaces, and system behavior |
+|Unit testing, integration testing, code reviews       | Functional testing, system testing, acceptance testing |
 
 ## 13\. List out the different methods for blackbox Testing and explain any two of it
 
