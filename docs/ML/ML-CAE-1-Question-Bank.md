@@ -11,24 +11,37 @@
   - [8.  **Explain geometric model and probabilistic model in detail.**](#8--explain-geometric-model-and-probabilistic-model-in-detail)
   - [9.  **Explain overfitting and underfitting with respect to machine learning.**](#9--explain-overfitting-and-underfitting-with-respect-to-machine-learning)
   - [10.  **Explain feature as split and feature as predictor with an example.**](#10--explain-feature-as-split-and-feature-as-predictor-with-an-example)
+    - [Feature as Split](#feature-as-split)
+      - [Example 1](#example-1)
+    - [Feature as Predictor](#feature-as-predictor)
+      - [Example 2](#example-2)
   - [11. The average score on a test is 80 with a standard deviation of 10. With a new teaching curriculum introduced it is believed that this score will change. On random testing, the score of 38 students, the mean was found to be 88. With a 0.05 significance level, is there any evidence to support this claim? (Z score at 0.05 significance level is 1.96)](#11-the-average-score-on-a-test-is-80-with-a-standard-deviation-of-10-with-a-new-teaching-curriculum-introduced-it-is-believed-that-this-score-will-change-on-random-testing-the-score-of-38-students-the-mean-was-found-to-be-88-with-a-005-significance-level-is-there-any-evidence-to-support-this-claim-z-score-at-005-significance-level-is-196)
   - [12. A genetics engineer was attempting to cross a tiger and a cheetah. She predicted a phenotypic outcome of the traits she was observing to be in the following ratio 4 stripes only: 3 spots only: 9 both stripes and spots. When the cross was performed and she counted the individuals she found 50 with stripes only, 41 with spots only and 85 with both. According to the Chi-square test, did she get the predicted outcome?](#12-a-genetics-engineer-was-attempting-to-cross-a-tiger-and-a-cheetah-she-predicted-a-phenotypic-outcome-of-the-traits-she-was-observing-to-be-in-the-following-ratio-4-stripes-only-3-spots-only-9-both-stripes-and-spots-when-the-cross-was-performed-and-she-counted-the-individuals-she-found-50-with-stripes-only-41-with-spots-only-and-85-with-both-according-to-the-chi-square-test-did-she-get-the-predicted-outcome)
   - [13. In the garden pea, yellow cotyledon color is dominant to green, and inflated pod shape is dominant to the constricted form. Considering both of these traits jointly in self-fertilized dihybrids, the progeny appeared in the following numbers: 193 green, inflated 184 yellow constricted 556 yellow, inflated 61 green, constricted Do these genes assort independently? Support your answer using Chi-square analysis](#13-in-the-garden-pea-yellow-cotyledon-color-is-dominant-to-green-and-inflated-pod-shape-is-dominant-to-the-constricted-form-considering-both-of-these-traits-jointly-in-self-fertilized-dihybrids-the-progeny-appeared-in-the-following-numbers-193-green-inflated-184-yellow-constricted-556-yellow-inflated-61-green-constricted-do-these-genes-assort-independently-support-your-answer-using-chi-square-analysis)
   - [14. **What is entropy? Explain information gain with the help of an example.**](#14-what-is-entropy-explain-information-gain-with-the-help-of-an-example)
+    - [Entropy](#entropy)
+    - [Information Gain](#information-gain)
+      - [Example](#example)
   - [15.  **How will you handle Categorical data using the Scikit-Learn library? Explain with an example.**](#15--how-will-you-handle-categorical-data-using-the-scikit-learn-library-explain-with-an-example)
   - [16.  **Describe the feature selection algorithm which contributes best to the accuracy of the model?**](#16--describe-the-feature-selection-algorithm-which-contributes-best-to-the-accuracy-of-the-model)
+    - [Feature Selection Algorithm](#feature-selection-algorithm)
   - [17. **Explain missing data preprocessing in machine learning using the given example dataset.**](#17-explain-missing-data-preprocessing-in-machine-learning-using-the-given-example-dataset)
   - [18.  **What is the curse of dimensionality issue? How does Principal Component Analysis help to reduce the dimensionality issue?**](#18--what-is-the-curse-of-dimensionality-issue-how-does-principal-component-analysis-help-to-reduce-the-dimensionality-issue)
   - [19.  **Explain Sparse PCA vs. Kernel PCA.**](#19--explain-sparse-pca-vs-kernel-pca)
   - [20.  **Explain the step-by-step application of PCA.**](#20--explain-the-step-by-step-application-of-pca)
   - [21.  **Explain one-hot encoding and label encoding.**](#21--explain-one-hot-encoding-and-label-encoding)
-
-
+  
 ## 1.  **Distinguish between Supervised Learning and Unsupervised Learning:**
 
-- **Supervised Learning:** In supervised learning, the algorithm learns from labeled data, meaning that each training example consists of input data paired with the corresponding correct output. The algorithm learns to map the input to the output based on this labeled data. During training, the algorithm adjusts its parameters to minimize the difference between its predictions and the true labels. Common tasks in supervised learning include classification and regression.
-
-- **Unsupervised Learning:** Unsupervised learning, on the other hand, deals with unlabeled data. The algorithm learns the inherent structure of the data without the need for explicit labels. The goal of unsupervised learning is to explore and find hidden patterns or representations in the data. Clustering and dimensionality reduction are typical tasks in unsupervised learning.
+| Supervised Learning                         | Unsupervised Learning                       |
+|---------------------------------------------|---------------------------------------------|
+| Learning with labeled data, input-output pairs are provided | Learning with unlabeled data, no specific outputs are provided |
+| Predicting output based on input features   | Extracting patterns, structures, or relationships from data |
+| Training model using labeled data           | Training model using unlabeled data         |
+| Feedback is provided during training        | No explicit feedback provided during training |
+| Classification, regression                  | Clustering, dimensionality reduction         |
+| Highly dependent on labeled data            | Not dependent on labeled data               |
+| Accuracy, precision, recall                 | Silhouette score, inertia, reconstruction error |
 
 **Example:** If we want to classify emails as spam or not spam, and we have a dataset where each email is labeled as spam or not spam, then it's a supervised learning problem. Conversely, if we want to group similar documents together without any prior labels, it's an unsupervised learning problem.
 
@@ -47,7 +60,8 @@
   
 ## 4.  **Explain machine learning life cycle:**
 
-- The machine learning life cycle consists of several stages, including data collection, data preprocessing, model training, model evaluation, deployment, and monitoring.
+The machine learning life cycle consists of several stages, including data collection, data preprocessing, model training, model evaluation, deployment, and monitoring.
+
 - **Data Collection:** Gathering relevant data from various sources, which may include databases, APIs, or sensor data.
 - **Data Preprocessing:** Cleaning the data, handling missing values, removing outliers, and transforming the data into a suitable format for training.
 - **Model Training:** Selecting an appropriate machine learning algorithm and training it on the preprocessed data.
@@ -57,7 +71,8 @@
   
 ## 5.  **Explain market basket analysis using association rule mining:**
 
-- Market basket analysis is a technique used in retail and e-commerce to uncover patterns in customer purchase behavior. It aims to identify relationships between items that are frequently bought together.
+Market basket analysis is a technique used in retail and e-commerce to uncover patterns in customer purchase behavior. It aims to identify relationships between items that are frequently bought together.
+
 - Association rule mining is a data mining technique used to discover interesting relationships or associations between variables in large datasets.
 - In market basket analysis, the dataset typically consists of transaction records, where each transaction contains a list of items purchased by a customer.
 - Association rule mining algorithms, such as the Apriori algorithm, are applied to the transaction data to find rules of the form "If {item A} is purchased, then {item B} is also likely to be purchased."
@@ -88,15 +103,59 @@ Among these, supervised learning often leads to overfitting. Overfitting occurs 
 
 ## 9.  **Explain overfitting and underfitting with respect to machine learning.**
 
-- **Overfitting:** Overfitting occurs when a machine learning model learns the training data too well, capturing noise or random fluctuations rather than the underlying patterns or relationships. This results in a model that performs well on the training data but fails to generalize to new, unseen data. Overfitting often happens when the model is too complex relative to the amount of training data, or when the training data is noisy or contains outliers.
+**Overfitting**
 
-- **Underfitting:** Underfitting occurs when a machine learning model is too simple to capture the underlying structure of the data. This results in a model that performs poorly both on the training data and on new, unseen data. Underfitting can happen when the model is not complex enough to represent the true relationship between the features and the target variable, or when important features are missing from the model.
+Overfitting occurs when a machine learning model learns the training data too well, capturing noise or random fluctuations in the data rather than the underlying pattern. This results in a model that performs well on the training data but poorly on unseen or test data. In other words, the model memorizes the training examples instead of learning the generalizable patterns, leading to poor performance on new, unseen data.
+
+**Causes of Overfitting**
+
+1. **Complex Models**: Models with high complexity, such as deep neural networks with many parameters, are prone to overfitting.
+
+2. **Insufficient Training Data**: When the amount of training data is limited, the model may overfit by capturing noise rather than the underlying pattern.
+
+3. **Irrelevant Features**: Including irrelevant or noisy features in the model can lead to overfitting, as the model may learn to rely on these features.
+
+**Effects of Overfitting**
+
+- High performance on training data.
+- Poor generalization to unseen data.
+- High variance in model performance across different datasets.
+
+**Underfitting**
+
+Underfitting occurs when a machine learning model is too simple to capture the underlying structure of the data. In other words, the model fails to learn the patterns present in the training data and performs poorly both on the training data and unseen data.
+
+**Causes of Underfitting**
+
+1. **Model Complexity**: Using a model that is too simple, such as a linear model for highly non-linear data, can result in underfitting.
+
+2. **Insufficient Training**: When the model does not have enough capacity to capture the underlying patterns in the data, it may underfit.
+
+3. **Ignoring Important Features**: If important features are not included in the model, it may not be able to capture the underlying relationships in the data.
+
+**Effects of Underfitting**
+
+- Poor performance on both training and test data.
+- Low accuracy and high bias.
+- Inability to capture the underlying patterns in the data.
 
 ## 10.  **Explain feature as split and feature as predictor with an example.**
 
-- **Feature as Split:** In decision tree algorithms, features are used to split the data into subsets at each node of the tree. The decision tree recursively splits the data based on the feature that provides the best separation between the classes or clusters. For example, in a decision tree for predicting whether a loan application will be approved or denied, features such as income, credit score, and debt-to-income ratio may be used to split the data into subsets of applicants with similar characteristics.
+### Feature as Split
 
-- **Feature as Predictor:** In predictive modeling, features are used as predictors or input variables to predict the target variable. Each feature contributes information to the model, helping it make predictions about the target variable. For example, in a linear regression model predicting house prices based on features such as square footage, number of bedrooms, and location, each feature acts as a predictor influencing the predicted house price.
+In the context of decision trees or tree-based algorithms, a feature as a split refers to the process of selecting a feature and a threshold value to partition the dataset into smaller subsets. This partitioning is done based on the values of the chosen feature, with the aim of maximizing the homogeneity or purity of the resulting subsets with respect to the target variable.
+
+#### Example 1
+
+Consider a decision tree for classifying whether a fruit is an apple or an orange based on two features: "color" and "diameter". The decision tree algorithm selects a feature (e.g., "color") and a threshold value (e.g., "red") to split the dataset into two subsets: one subset containing fruits with red color and another containing fruits with colors other than red. This splitting process continues recursively until each subset contains samples belonging to the same class or until a stopping criterion is met.
+
+### Feature as Predictor
+
+In a broader context, a feature as a predictor refers to the role of a feature in predicting the target variable in a machine learning model. Features are the input variables used by the model to make predictions about the target variable. Each feature contributes to the model's prediction in some way, and the model learns the relationship between the features and the target variable during the training process.
+
+#### Example 2
+
+Suppose we have a dataset containing information about houses, including features such as "size", "number of bedrooms", and "location", and we want to predict the house price (target variable). In this case, each feature (e.g., "size", "number of bedrooms", "location") acts as a predictor, providing information that the model uses to make predictions about the house price. For instance, a larger house size or more bedrooms might be associated with a higher house price, and the model learns this relationship from the training data. During prediction, the model uses the values of these features for unseen houses to estimate their prices.
 
 ## 11. The average score on a test is 80 with a standard deviation of 10. With a new teaching curriculum introduced it is believed that this score will change. On random testing, the score of 38 students, the mean was found to be 88. With a 0.05 significance level, is there any evidence to support this claim? (Z score at 0.05 significance level is 1.96)
 
@@ -112,11 +171,17 @@ Among these, supervised learning often leads to overfitting. Overfitting occurs 
 
 ## 14. **What is entropy? Explain information gain with the help of an example.**
 
-- **Entropy:** Entropy is a measure of uncertainty or randomness in a dataset. In the context of decision trees and information theory, entropy is used to quantify the impurity of a set of data points. A dataset with low entropy means it is relatively pure, while high entropy indicates that the data is mixed or uncertain.
+### Entropy
 
-- **Information Gain:** Information gain is a concept used in decision tree algorithms to decide the order of features for splitting. It measures the reduction in entropy achieved by splitting the data on a particular feature. The feature with the highest information gain is chosen as the split point.
+Entropy is a measure of randomness or uncertainty in a dataset. In the context of decision trees and information theory, entropy is used to quantify the impurity or disorder of a set of examples. It measures the average amount of information needed to classify a random sample from the dataset.
 
-**Example:** Consider a dataset of weather conditions and whether people played tennis or not. The target variable is whether tennis was played (Yes/No), and the features include Outlook (Sunny/Overcast/Rainy), Temperature (Hot/Mild/Cool), Humidity (High/Normal), and Wind (Strong/Weak). To decide the best feature for the root node of a decision tree, we calculate the entropy of the target variable before and after splitting the data on each feature. The feature with the highest information gain will be selected as the root node for the decision tree.
+### Information Gain
+
+Information gain is a concept used in decision tree algorithms, particularly in the process of selecting the best feature to split the dataset. It measures the reduction in entropy or uncertainty that results from splitting the dataset on a particular feature. The feature that leads to the greatest information gain is chosen as the splitting criterion.
+
+#### Example
+
+Consider a dataset of weather conditions and corresponding decisions to play tennis or not. The target variable is whether to play tennis ("Yes" or "No"), and the features include "Outlook" (Sunny, Overcast, Rainy), "Temperature" (Hot, Mild, Cool), "Humidity" (High, Normal), and "Windy" (True, False)
 
 ## 15.  **How will you handle Categorical data using the Scikit-Learn library? Explain with an example.**
 
@@ -147,15 +212,15 @@ import pandas as pd
 
 ## 16.  **Describe the feature selection algorithm which contributes best to the accuracy of the model?**
 
-The best feature selection algorithm depends on the dataset and the specific machine learning task. However, some commonly used feature selection algorithms include:
+### Feature Selection Algorithm
 
-- **Recursive Feature Elimination (RFE):** RFE recursively removes features and selects the subset of features that produces the best performance for the model.
+Several feature selection algorithms contribute to the accuracy of a model, depending on the dataset and the underlying problem. Some popular feature selection methods include:
 
-- **Feature Importance:** Some models, like Random Forests and Gradient Boosting Machines, provide a feature importance score that can be used for feature selection.
+1. **Filter Methods**: These methods select features based on their statistical properties, such as correlation with the target variable or variance. Examples include Pearson correlation coefficient and ANOVA F-test.
 
-- **Forward Selection:** Forward selection starts with an empty set of features and adds features one by one based on their contribution to model performance.
+2. **Wrapper Methods**: These methods evaluate subsets of features by training and evaluating the model with different combinations of features. Examples include Recursive Feature Elimination (RFE) and Forward/Backward Selection.
 
-The most effective feature selection algorithm can vary based on factors such as dataset size, dimensionality, and the specific machine learning algorithm being used.
+3. **Embedded Methods**: These methods perform feature selection as part of the model training process. Examples include Lasso regularization and tree-based feature importance.
 
 ## 17. **Explain missing data preprocessing in machine learning using the given example dataset.**
 
@@ -169,20 +234,28 @@ Missing data preprocessing involves handling missing values in the dataset befor
 
 For the given dataset:
 
-`A   B     C     D
-    0   1.0   2.0   3.0
-    1   5.0   6.0   NaN
-    2  10.0  11.0   4.0
-    3  12.0  14.0   Null
-`
+```mathematica
+A   B     C     D
+0   1.0   2.0   3.0
+1   5.0   6.0   NaN
+2  10.0  11.0   4.0
+3  12.0  14.0   Null
+```
 
 We can handle missing values in column C by imputing the missing values using the mean or median of the column, or by deleting the rows with missing values.
 
 ## 18.  **What is the curse of dimensionality issue? How does Principal Component Analysis help to reduce the dimensionality issue?**
 
-- **Curse of Dimensionality:** The curse of dimensionality refers to various problems that arise when working with high-dimensional data, such as increased computational complexity, sparse data distribution, and the risk of overfitting. As the number of dimensions (features) increases, the amount of data required to adequately cover the feature space grows exponentially.
+The curse of dimensionality refers to the problem that arises when working with high-dimensional data. As the number of features or dimensions increases, the volume of the feature space grows exponentially, leading to sparsity of data and computational challenges.
 
-- **Principal Component Analysis (PCA):** PCA is a dimensionality reduction technique that aims to transform high-dimensional data into a lower-dimensional space while preserving most of the variance in the data. It achieves this by identifying the principal components, which are orthogonal vectors that capture the directions of maximum variance in the data. By projecting the data onto a subset of the principal components, PCA can effectively reduce the dimensionality of the dataset while retaining most of the important information.
+Principal Component Analysis (PCA) is a dimensionality reduction technique used to address the curse of dimensionality. PCA transforms the original high-dimensional data into a lower-dimensional space while preserving most of the variance in the data. It achieves this by identifying the principal components, which are orthogonal linear combinations of the original features that capture the maximum variance.
+
+PCA helps reduce the dimensionality issue by:
+
+- Reducing the number of features while retaining most of the information.
+- Removing redundant or correlated features.
+- Simplifying the data representation, making it easier to visualize and analyze.
+- Speeding up the training of machine learning models by reducing the computational burden.
 
 ## 19.  **Explain Sparse PCA vs. Kernel PCA.**
 

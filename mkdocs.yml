@@ -1,4 +1,5 @@
 site_name: TYMaterials
+site_url: https://tymaterials.live
 theme:
   name: material
   font: 
