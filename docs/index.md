@@ -6,6 +6,8 @@ You can see the Question Banks for CAE's after signing in.
 
 Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune.
 
+You can Contribute to development of this project's [Github Repository](https://github.com/GautamPatil1/EduMaterials).
+
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
 ## Latest Releases
