@@ -1,5 +1,9 @@
 # Machine Learning Question Bank Solution
 
+<div style="position: relative; width: 100%; height: auto; max-width: 100%; padding-top: 56.25%;">
+  <iframe src="https://drive.google.com/file/d/1ZHF2P-r1txv6j1Y1k47AVW3H88hq_Wpb/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+</div>
+
 - [Machine Learning Question Bank Solution](#machine-learning-question-bank-solution)
   - [1.  **Distinguish between Supervised Learning and Unsupervised Learning:**](#1--distinguish-between-supervised-learning-and-unsupervised-learning)
   - [2.  **Explain machine learning in medical diagnosis:**](#2--explain-machine-learning-in-medical-diagnosis)

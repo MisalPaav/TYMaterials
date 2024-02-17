@@ -88,6 +88,12 @@ nav:
     - ML-CAE-2-Question-Bank: ML/ML-CAE-2-Question-Bank.md
     - ML-CAE-3-Question-Bank: ML/ML-CAE-3-Question-Bank.md
 
+  - BP:
+    - BP/index.md
+    - BP-CAE-1-Question-Bank: BP/BP-CAE-1-Question-Bank.md
+    - BP-CAE-2-Question-Bank: BP/BP-CAE-2-Question-Bank.md
+    - BP-CAE-3-Question-Bank: BP/BP-CAE-3-Question-Bank.md
+
   - SEPM: 
     - sepm/index.md
     - Unit1: sepm/Unit1.md
