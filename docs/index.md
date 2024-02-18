@@ -12,6 +12,7 @@ Only Computer Department notes, if anyone from any other department is intereste
 
 ## Latest Releases
 
+- [BP CAE 1 Question Bank Solutions](/BP/BP-CAE-1-Question-Bank)
 - [ST CAE 1 Question Bank Solutions](/ST/ST-CAE-1-Question-Bank)
 - [ML CAE 1 Question Bank Solutions](/ML/ML-CAE-1-Question-Bank)
 - [UDBMS CAE 1 Question Bank Solutions](/UDBMS/UDBMS-CAE-1-Question-Bank)
