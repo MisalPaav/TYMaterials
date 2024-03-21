@@ -1,5 +1,9 @@
 # NLP CAE 2 Question Bank
 
+<div style="position: relative; width: 100%; height: auto; max-width: 100%; padding-top: 56.25%;">
+  <iframe src="https://drive.google.com/file/d/1HXBrcFmQom0sSu2htTQzBkZQ7Y6yKXg3/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+</div>
+
 ## Answers
 
 ### 1. **What are the primary components of a morphological parser in Natural Language Processing (NLP)?**
