@@ -12,12 +12,11 @@ Only Computer Department notes, if anyone from any other department is intereste
 
 ## Latest Releases
 
-- [BP CAE 1 Question Bank Solutions](/BP/BP-CAE-1-Question-Bank)
-- [ST CAE 1 Question Bank Solutions](/ST/ST-CAE-1-Question-Bank)
-- [ML CAE 1 Question Bank Solutions](/ML/ML-CAE-1-Question-Bank)
-- [UDBMS CAE 1 Question Bank Solutions](/UDBMS/UDBMS-CAE-1-Question-Bank)
-- [UHV CAE 1 Question Bank Solutions](/UHV/UHV-CAE-1-Question-Bank)
-- [NLP CAE 1 Question Bank Solutions](/NLP/NLP-CAE-1-Question-Bank)
+- [ST CAE 2 Question Bank Solutions](/ST/ST-CAE-2-Question-Bank)
+- [ML CAE 2 Question Bank Solutions](/ML/ML-CAE-2-Question-Bank)
+- [UDBMS CAE 2 Question Bank Solutions](/UDBMS/UDBMS-CAE-2-Question-Bank)
+- [UHV CAE 2 Question Bank Solutions](/UHV/UHV-CAE-2-Question-Bank)
+- [NLP CAE 2 Question Bank Solutions](/NLP/NLP-CAE-2-Question-Bank)
 
 ## Subjects Notes
 
