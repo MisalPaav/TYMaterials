@@ -48,6 +48,7 @@ Created by [Gautam Patil](https://gautampatil.tech)
 
 ## More Projects
 
+- [REZUME: Personalized resume hosting platform](https://rezume.live)
 - [PictoPixie AI Chatbot](https://gautampatil1.github.io/pictopixie/)
 - [FYMaterials](https://fymaterials.live)
 - [LofiPomo](https://lofipomo.gautampatil.tech)
