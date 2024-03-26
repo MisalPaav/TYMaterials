@@ -356,11 +356,10 @@ These documents collectively provide a comprehensive record of the testing proce
 
 Test-related documents are interconnected and serve specific purposes throughout the testing lifecycle. Here's a diagram illustrating the relationship between key test-related documents:
 
-lua
-
- `+----------------------+
-                    |     Test Plan        |
-                    +----------------------+
+```text
+                +----------------------+
+                |     Test Plan        |
+                +----------------------+
                             |
                             v
         +-------------------+--------------------+
@@ -380,7 +379,8 @@ lua
                 v                        v
     +---------------------+    +-----------------------+
     |   Test Metrics      |    |   Test Environment    |
-    +---------------------+    +-----------------------+`
+    +---------------------+    +-----------------------+
+```
 
 - **Test Plan** serves as the foundation, outlining the overall testing approach, scope, and objectives.
 
@@ -394,7 +394,7 @@ lua
 
 In test planning and policy development, three key groups play essential roles:
 
-a. **Management**: Management oversees the overall testing process and is responsible for setting the direction, goals, and policies related to testing. Their role includes:
+**Management**: Management oversees the overall testing process and is responsible for setting the direction, goals, and policies related to testing. Their role includes:
 
 - Defining the organizational testing strategy and policies.
 
@@ -402,7 +402,7 @@ a. **Management**: Management oversees the overall testing process and is respon
 - Establishing quality objectives and metrics.
 - Providing support and guidance to testing teams.
 
-b. **Test Specialists**: Test specialists are experts in various aspects of testing and quality assurance. Their role includes:
+**Test Specialists**: Test specialists are experts in various aspects of testing and quality assurance. Their role includes:
 
 - Providing input and expertise in developing testing policies and procedures.
 
@@ -411,7 +411,7 @@ b. **Test Specialists**: Test specialists are experts in various aspects of test
 - Implementing testing tools and frameworks.
 - Mentoring and training testing teams on best practices.
 
-c. **Stakeholders**: Stakeholders are individuals or groups with an interest or stake in the outcome of the testing process. Their role includes:
+**Stakeholders**: Stakeholders are individuals or groups with an interest or stake in the outcome of the testing process. Their role includes:
 
 - Providing input on testing requirements and priorities.
 
@@ -419,25 +419,48 @@ c. **Stakeholders**: Stakeholders are individuals or groups with an interest or 
 - Monitoring testing progress and results.
 - Providing feedback on the effectiveness of testing processes.`
 
-Collaboratively, these three groups ensure that test planning and policy development align with organizational objectives, adhere to industry best practices, and meet the needs of stakeholders.
-
 ### 21. **List out Different Responsibilities of Test Specialists.**
 
 Test specialists, also known as testing professionals or quality assurance experts, have various responsibilities, including:
 
-a. Developing test plans, strategies, and methodologies. b. Designing test cases and scenarios based on requirements. c. Executing manual and automated tests. d. Analyzing test results and reporting defects. e. Implementing and maintaining testing tools and frameworks. f. Conducting performance, security, and usability testing. g. Collaborating with developers, business analysts, and stakeholders to ensure quality. h. Providing expertise on testing best practices, standards, and industry trends. i. Mentoring and training junior testers. j. Conducting risk assessments and identifying areas for improvement. k. Participating in reviews and audits of testing processes and deliverables.
+- Developing test plans, strategies, and methodologies.
+- Designing test cases and scenarios based on requirements.
+- Executing manual and automated tests.
+- Analyzing test results and reporting defects.
+- Implementing and maintaining testing tools and frameworks.
+- Conducting performance, security, and usability testing.
+- Collaborating with developers, business analysts, and stakeholders to ensure quality.
+- Providing expertise on testing best practices, standards, and industry trends.
+- Mentoring and training junior testers.
+- Conducting risk assessments and identifying areas for improvement.
+- Participating in reviews and audits of testing processes and deliverables.
 
 ### 22. **Wjat are Different Skills Needed by Test Specialists.**
 
 Test specialists require a combination of technical skills, domain knowledge, and soft skills to excel in their roles. Some of the essential skills include:
 
-a. **Technical Skills**: - Proficiency in testing tools and frameworks. - Knowledge of programming languages for automation. - Understanding of databases and SQL for data validation. - Familiarity with operating systems and networks. - Experience with version control systems.
+a. **Technical Skills**:
 
-b. **Domain Knowledge**: - Understanding of software development lifecycle. - Knowledge of the industry or domain being tested (e.g., finance, healthcare). - Awareness of relevant regulations and compliance standards.
+- Proficiency in testing tools and frameworks.
+- Knowledge of programming languages for automation.
+- Understanding of databases and SQL for data validation.
+- Familiarity with operating systems and networks.
+- Experience with version control systems.
 
-c. **Soft Skills**: - Communication skills for interacting with team members and stakeholders. - Analytical and problem-solving skills. - Attention to detail and meticulousness in testing. - Time management and organization skills. - Ability to work independently and as part of a team. - Adaptability and willingness to learn new technologies and methodologies.
+b. **Domain Knowledge**:
 
-Having a balance of these technical and soft skills enables test specialists to effectively plan, execute, and manage testing activities.
+- Understanding of software development lifecycle.
+- Knowledge of the industry or domain being tested (e.g., finance, healthcare).
+- Awareness of relevant regulations and compliance standards.
+
+c. **Soft Skills**:
+
+- Communication skills for interacting with team members and stakeholders.
+- Analytical and problem-solving skills.
+- Attention to detail and meticulousness in testing.
+- Time management and organization skills.
+- Ability to work independently and as part of a team.
+- Adaptability and willingness to learn new technologies and methodologies.
 
 ### 23. **Explain Major Activities Required for Building a Test Group.**
 
@@ -459,4 +482,3 @@ g. **Collaboration and Integration**: Foster collaboration with other teams, suc
 
 h. **Continuous Improvement**: Establish mechanisms for collecting feedback, analyzing testing metrics, and identifying areas for improvement. Encourage a culture of continuous learning and adaptation to evolve and refine testing practices over time.
 
-By undertaking these activities systematically, organizations can build a robust and effective test group capable of delivering high-quality software products.
