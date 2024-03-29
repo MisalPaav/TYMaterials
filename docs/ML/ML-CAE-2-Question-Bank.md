@@ -302,8 +302,6 @@ We'll use the distance function ρ(a,b)=∣x2-x1∣+∣y2-y1∣ρ(a,b)=∣x2​-
 - A4, A5, A6 are closest to Cluster Center A4(5, 8).
 - A3 is closest to Cluster Center A1(2, 10).
 
-### Question 15. Updating Cluster Centers
-
 - New Cluster Center for A7: (1, 2)
 - New Cluster Center for A4: (6, 5.67)
 - New Cluster Center for A1: (2, 10)
@@ -325,6 +323,37 @@ Final Cluster Assignments:
 - Cluster 3: A7(1, 2)
 
 The points have been successfully clustered into three clusters using the K-Means algorithm with the provided initial cluster centers.
+
+### Question 15: Classify Hierarchial Clustering with Agglomerative & divisive Clustering. Elaborate concept of Dendrogram
+
+Hierarchical clustering is a type of clustering algorithm that builds a hierarchy of clusters. It can be broadly classified into two main approaches: agglomerative clustering and divisive clustering.
+
+1. **Agglomerative Clustering**: This method starts with each data point as its own cluster and then merges the closest pairs of clusters iteratively until only one cluster remains. The closeness of clusters is determined by a distance metric, such as Euclidean distance or cosine similarity. Agglomerative clustering is also known as bottom-up clustering because it starts from the bottom (individual data points) and merges upwards.
+
+2. **Divisive Clustering**: In contrast to agglomerative clustering, divisive clustering starts with all data points in a single cluster and then recursively divides them into smaller clusters until each data point is in its own cluster. Divisive clustering is also known as top-down clustering because it starts from the top (all data points in one cluster) and divides downwards.
+
+**Elaboration on Dendrogram**:
+
+A dendrogram is a tree-like diagram that shows the arrangement of the clusters produced by hierarchical clustering. It's a visual representation of the merging or splitting process. In a dendrogram:
+
+- **Vertical lines**: Represent clusters or data points.
+- **Horizontal lines**: Represent the distance or dissimilarity at which clusters are merged (in agglomerative clustering) or split (in divisive clustering).
+
+Here's how a dendrogram works in hierarchical clustering:
+
+1. **Construction**:
+
+    - In agglomerative clustering, at each iteration, the two closest clusters are merged into a single cluster, and the dendrogram is updated to reflect this merging by joining the vertical lines of the clusters at a height corresponding to the distance between them.
+    - In divisive clustering, at each iteration, a cluster is divided into two smaller clusters, and the dendrogram is updated to reflect this division by splitting the vertical line of the cluster into two branches at a height corresponding to the distance at which the division occurred.
+
+2. **Interpretation**:
+
+    - The height at which two clusters merge or split in the dendrogram indicates the distance or dissimilarity between them. The taller the vertical line, the further apart the clusters are in terms of dissimilarity.
+    - The arrangement of branches in the dendrogram reveals the hierarchical structure of the clusters. For example, the closer branches are to each other, the more similar the clusters they represent.
+
+3. **Cutting the Dendrogram**:
+
+    - Depending on the application and the desired number of clusters, you can cut the dendrogram at a certain height to obtain the desired number of clusters. This height corresponds to a threshold for dissimilarity; clusters below this threshold are considered as separate clusters.
 
 ### Question 16: Describe any one ensemble learning algorithm with advantages & disadvantages
 
@@ -420,11 +449,11 @@ The points have been successfully clustered into three clusters using the K-Mean
 | **Applicability** | Suitable for classifiers that produce discrete class labels | Suitable for classifiers that produce class probabilities |
 | **Example** | In a binary classification task, if classifiers A, B, and C predict class 1, class 1, and class 0 respectively, the hard voting ensemble would predict class 1 (majority vote). | In the same scenario as above, if classifiers A, B, and C predict class 1 with probabilities 0.6, 0.7, and 0.4 respectively, the soft voting ensemble would predict class 1 with an average probability of (0.6 + 0.7 + 0.4)/3 = 0.5667. |
 
-**Stacked Generalization (Stacking) in Machine Learning:**
+### Question 20: Elaborate stacked generalization in machine learning with different types of ensemble classifiers with suitable diagram
 
 Stacked Generalization, often referred to as Stacking, is an ensemble learning technique that combines multiple base models to improve predictive performance. It aims to leverage the strengths of different models by blending their predictions to produce a more robust and accurate final prediction.
 
-### Workflow of Stacked Generalization
+#### Workflow of Stacked Generalization
 
 1. **Base Models Training**:
 
@@ -445,7 +474,7 @@ Stacked Generalization, often referred to as Stacking, is an ensemble learning t
     - When making predictions on new data, the base models first make individual predictions.
     - These predictions are then used as input features for the meta-model, which produces the final prediction.
 
-### Types of Ensemble Classifiers in Stacked Generalization
+#### Types of Ensemble Classifiers in Stacked Generalization
 
 1. **Bagging**:
 
@@ -467,7 +496,7 @@ Stacked Generalization, often referred to as Stacking, is an ensemble learning t
     - Base models make predictions on a validation set, and a meta-model learns to combine these predictions to make the final prediction.
     - Examples: Stacked Ensembles.
 
-### Diagram of Stacked Generalization
+#### Diagram of Stacked Generalization
 
 ```text
 +---------------------------------------------+
