@@ -1,14 +1,5 @@
 # Welcome to TYMaterials
 
-| Date         | Subjects / Courses                                             |
-|--------------|-------------------------------------------------------------|
-| 8th May 2024 | Unstructured Database Management (UCOL307)                   |
-| 10th May 2024| Universal Human Values (UHUL304)                             |
-| 14th May 2024| Software Testing (UCOL306)                                   |
-| 16th May 2024| Machine Learning (UCOL308)                                   |
-| 18th May 2024| Open Elective                                                 |
-| 22nd May 2024| Natural Language Processing (NLP) / Backend Programming (BP)  |
-| 24th May 2024| Honor / Minor                                                 |
 
 Download the TYMaterials app [here](https://bzbf.short.gy/TYMaterials).
 
@@ -21,6 +12,18 @@ You can Contribute to development of this project's [Github Repository](https://
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:gautam.patil.cs@ghrcem.raisoni.net).
 
 ## Latest Releases
+
+**2024 Comp End Sem Time Table**
+
+| Date         | Subjects / Courses                                             |
+|--------------|-------------------------------------------------------------|
+| 8th May 2024 | Unstructured Database Management (UCOL307)                   |
+| 10th May 2024| Universal Human Values (UHUL304)                             |
+| 14th May 2024| Software Testing (UCOL306)                                   |
+| 16th May 2024| Machine Learning (UCOL308)                                   |
+| 18th May 2024| Open Elective                                                 |
+| 22nd May 2024| Natural Language Processing (NLP) / Backend Programming (BP)  |
+| 24th May 2024| Honor / Minor                                                 |
 
 - [ST CAE 2 Question Bank Solutions](/ST/ST-CAE-2-Question-Bank)
 - [ML CAE 2 Question Bank Solutions](/ML/ML-CAE-2-Question-Bank)
