@@ -1,5 +1,15 @@
 # Welcome to TYMaterials
 
+| Date         | Subjects / Courses                                             |
+|--------------|-------------------------------------------------------------|
+| 8th May 2024 | Unstructured Database Management (UCOL307)                   |
+| 10th May 2024| Universal Human Values (UHUL304)                             |
+| 14th May 2024| Software Testing (UCOL306)                                   |
+| 16th May 2024| Machine Learning (UCOL308)                                   |
+| 18th May 2024| Open Elective                                                 |
+| 22nd May 2024| Natural Language Processing (NLP) / Backend Programming (BP)  |
+| 24th May 2024| Honor / Minor                                                 |
+
 Download the TYMaterials app [here](https://bzbf.short.gy/TYMaterials).
 
 You can see the Question Banks for CAE's after signing in.
