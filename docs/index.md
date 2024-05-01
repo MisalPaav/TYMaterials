@@ -25,6 +25,12 @@ Only Computer Department notes, if anyone from any other department is intereste
 | 22nd May 2024| Natural Language Processing (NLP) / Backend Programming (BP)  |
 | 24th May 2024| Honor / Minor                                                 |
 
+
+- [ST CAE 1 Question Bank Solutions](/ST/ST-CAE-1-Question-Bank)
+- [ML CAE 1 Question Bank Solutions](/ML/ML-CAE-1-Question-Bank)
+- [UDBMS CAE 1 Question Bank Solutions](/UDBMS/UDBMS-CAE-1-Question-Bank)
+- [UHV CAE 1 Question Bank Solutions](/UHV/UHV-CAE-1-Question-Bank)
+- [NLP CAE 1 Question Bank Solutions](/NLP/NLP-CAE-1-Question-Bank)
 - [ST CAE 2 Question Bank Solutions](/ST/ST-CAE-2-Question-Bank)
 - [ML CAE 2 Question Bank Solutions](/ML/ML-CAE-2-Question-Bank)
 - [UDBMS CAE 2 Question Bank Solutions](/UDBMS/UDBMS-CAE-2-Question-Bank)
