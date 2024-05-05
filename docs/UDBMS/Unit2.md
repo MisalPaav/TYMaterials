@@ -1,21 +1,21 @@
-# Unit 2: Test Case Design Strategies
+# Unit 2
 
 - [Unit 2: Test Case Design Strategies](#unit-2-test-case-design-strategies)
-    - [Comparison of Relational Databases to New NoSQL Stores](#comparison-of-relational-databases-to-new-nosql-stores)
-    - [MongoDB, Cassandra, HBASE, Neo4j Use and Deployment](#mongodb-cassandra-hbase-neo4j-use-and-deployment)
-    - [Application, RDBMS Approach](#application-rdbms-approach)
-    - [Challenges NoSQL Approach](#challenges-nosql-approach)
-    - [Key-Value and Document Data Models](#key-value-and-document-data-models)
-    - [Column-Family Stores](#column-family-stores)
-    - [Aggregate-Oriented Databases](#aggregate-oriented-databases)
-    - [Replication and Sharding](#replication-and-sharding)
-    - [MapReduce on Databases](#mapreduce-on-databases)
-    - [Distribution Models](#distribution-models)
-    - [Single Server](#single-server)
-    - [Sharding](#sharding)
-    - [Master-Slave Replication](#master-slave-replication)
-    - [Peer-to-Peer Replication](#peer-to-peer-replication)
-    - [Combining Sharding and Replication](#combining-sharding-and-replication)
+  - [Comparison of Relational Databases to New NoSQL Stores](#comparison-of-relational-databases-to-new-nosql-stores)
+  - [MongoDB, Cassandra, HBASE, Neo4j Use and Deployment](#mongodb-cassandra-hbase-neo4j-use-and-deployment)
+  - [Application, RDBMS Approach](#application-rdbms-approach)
+  - [Challenges NoSQL Approach](#challenges-nosql-approach)
+  - [Key-Value and Document Data Models](#key-value-and-document-data-models)
+  - [Column-Family Stores](#column-family-stores)
+  - [Aggregate-Oriented Databases](#aggregate-oriented-databases)
+  - [Replication and Sharding](#replication-and-sharding)
+  - [MapReduce on Databases](#mapreduce-on-databases)
+  - [Distribution Models](#distribution-models)
+  - [Single Server](#single-server)
+  - [Sharding](#sharding)
+  - [Master-Slave Replication](#master-slave-replication)
+  - [Peer-to-Peer Replication](#peer-to-peer-replication)
+  - [Combining Sharding and Replication](#combining-sharding-and-replication)
 
 ### Comparison of Relational Databases to New NoSQL Stores
 
