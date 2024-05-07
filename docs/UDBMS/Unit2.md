@@ -46,7 +46,7 @@ Relational databases and NoSQL stores represent two distinct approaches to data 
 
 **Cassandra:**
 
-- **Use:** Column-family NoSQL database.
+- **Use:** Column family NoSQL database.
 - **Deployment:** Ideal for time-series data, event logging, and applications requiring high write throughput and horizontal scalability.
 
 **HBASE:**
