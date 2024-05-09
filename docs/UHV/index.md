@@ -41,7 +41,7 @@
 |      | a) At the level of individual                                                                                                                              |
 |      | b) At the level of society                                                                                                                                  |
 
-## CAE 1
+## CAE 1 2024
 
 1. What do you mean by values? How do they differ from skills? How are values and skills complementary?
 2. Describe the process of discovering the self.
@@ -54,7 +54,7 @@
     - Natural acceptance
 8. Explain how the need of the body is quantitative in nature while that of self is qualitative in nature.
 
-## CAE 2
+## CAE 2 2024
 
 1. Define trust. Illustrate the feeling of trust with an example.
 2. What is the name of respect for a human being?
