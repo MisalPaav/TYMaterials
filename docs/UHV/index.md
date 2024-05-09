@@ -65,6 +65,19 @@
 7. Explain the scope of the systems to achieve harmony in society.
 8. Explain society, crowd, and battlefield with reference to harmony in society.
 
+## CAE 3 2024
+
+1. What are the four orders in nature? Briefly explain them.
+2. Explain the concept of holistic perception of harmony in existence.
+3. What is the Svabhava (natural characteristic) of a unit? Elaborate on the Svabhava of a human order.
+4. Explain about Natural acceptance of human values.
+5. What is the meaning of justice in human relationships? How does it follow from family to world family?
+6. Write a note on:
+   a) Humanistic Education
+   b) Humanistic Constitution.
+7. Visualize a framework for humanistic education for children. Suggest a few ways to modify present-day school education.
+   b) How can we say that 'nature is Self-Organized and in space Self-Organization is available.'
+
 ## End Sem 2023
 
 1. Illustrate the need for value education in today's scenario.
