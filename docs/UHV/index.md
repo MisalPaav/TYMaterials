@@ -41,6 +41,12 @@
 |      | a) At the level of individual                                                                                                                              |
 |      | b) At the level of society                                                                                                                                  |
 
+## Short Notes
+
+<div style="position: relative; width: 100%; height: auto; max-width: 100%; padding-top: 56.25%;">
+  <iframe src="https://drive.google.com/file/d/1-N7e-4Vmfvm3UVh3KVF6nInI5YHIGBiR/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+</div>
+
 ## CAE 1 2024
 
 1. What do you mean by values? How do they differ from skills? How are values and skills complementary?
@@ -77,6 +83,12 @@
    b) Humanistic Constitution.
 7. Visualize a framework for humanistic education for children. Suggest a few ways to modify present-day school education.
    b) How can we say that 'nature is Self-Organized and in space Self-Organization is available.'
+
+## End Sem 2024
+
+<div style="position: relative; width: 100%; height: auto; max-width: 100%; padding-top: 56.25%;">
+  <iframe src="https://drive.google.com/file/d/1-2YkeuzsRQmFLmW3eH8ZiAnUbAzuVhix/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+</div>
 
 ## End Sem 2023
 
