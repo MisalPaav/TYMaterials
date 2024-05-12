@@ -38,7 +38,7 @@
 |                             | Paths                                              |       |
 |                             | Code Complexity Testing                            |       |
 |                             | Evaluating Test Adequacy Criteria                   |       |
-|                             | Defect Report Format and Test Cases Format          |       |
+|                             | Defect Report Format and Test Cases Formats         |       |
 | [Unit III: Levels of Testing](/ST/Unit3) | The Need for Levels of Testing                      | 8     |
 |                             | Unit Test                                          |       |
 |                             | Unit Test Planning                                 |       |
