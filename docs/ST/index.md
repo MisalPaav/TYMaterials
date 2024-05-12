@@ -56,7 +56,7 @@
 |                             | Internationalization Testing                       |       |
 |                             | Ad-hoc Testing                                     |       |
 |                             | Alpha, Beta Tests                                   |       |
-|                             | Testing OO Systems                                  |       |
+|                             | Testing Systems                                    |       |
 |                             | Usability and Accessibility Testing               |       |
 |                             | Configuration Testing                              |       |
 |                             | Compatibility Testing                              |       |
