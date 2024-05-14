@@ -1,4 +1,4 @@
-# Unstructured Database Management
+# Machine Learning
 
 ## Syllabus
 
