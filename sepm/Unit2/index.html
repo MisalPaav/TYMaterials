@@ -1,0 +1,4640 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tymaterials.live/sepm/Unit2/">
+      
+      
+        <link rel="prev" href="../Unit1/">
+      
+      
+        <link rel="next" href="../Unit3/">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>Unit2 - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+500:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto 500";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-B5944EDZSE"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-B5944EDZSE",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-B5944EDZSE",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-2-requirement-analysis-specification" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ST/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ST
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            ST
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../UDBMS/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    UDBMS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            UDBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../NLP/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    NLP
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            NLP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../UHV/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    UHV
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            UHV
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ML/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            ML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/ML-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/ML-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/ML-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../BP/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BP
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            BP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-requirements-functional-and-non-functional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Requirements (Functional and Non-Functional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-requirements-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Requirements Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirement-engineering-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirement Engineering Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feasibility-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feasibility Studies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-elicitation-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Elicitation and Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classical-analysis-structured-system-analysis-petri-nets-data-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classical Analysis (Structured System Analysis, Petri Nets, Data Dictionary)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SEPM-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SEPM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SEPM-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../WD/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dbms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/SQL-Cheat-Sheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL-Cheat-Sheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/DBMS-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/DBMS-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/DBMS-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/EEIM-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EEIM-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/EEIM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EEIM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../BIA/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIA
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            BIA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/BIA-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIA-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/BIA-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIA-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_13" id="__nav_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            DM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/DM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-requirements-functional-and-non-functional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Requirements (Functional and Non-Functional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-requirements-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Requirements Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirement-engineering-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirement Engineering Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feasibility-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feasibility Studies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-elicitation-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Elicitation and Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classical-analysis-structured-system-analysis-petri-nets-data-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classical Analysis (Structured System Analysis, Petri Nets, Data Dictionary)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="unit-2-requirement-analysis-specification">Unit 2: Requirement Analysis &amp; Specification</h1>
+<ul>
+<li><a href="#unit-2-requirement-analysis--specification">Unit 2: Requirement Analysis \&amp; Specification</a><ul>
+<li><a href="#software-requirements-functional-and-non-functional">Software Requirements (Functional and Non-Functional)</a></li>
+<li><a href="#user-requirements">User Requirements</a></li>
+<li><a href="#system-requirements">System Requirements</a></li>
+<li><a href="#software-requirements-document">Software Requirements Document</a></li>
+<li><a href="#requirement-engineering-process">Requirement Engineering Process</a></li>
+<li><a href="#feasibility-studies">Feasibility Studies</a></li>
+<li><a href="#requirements-elicitation-and-analysis">Requirements Elicitation and Analysis</a></li>
+<li><a href="#requirements-validation">Requirements Validation</a></li>
+<li><a href="#requirements-management">Requirements Management</a></li>
+<li><a href="#classical-analysis-structured-system-analysis-petri-nets-data-dictionary">Classical Analysis (Structured System Analysis, Petri Nets, Data Dictionary)</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="software-requirements-functional-and-non-functional">Software Requirements (Functional and Non-Functional)</h3>
+<p><strong>Software Requirements:</strong> Software requirements are the descriptions of what a software system should do and how it should behave. They serve as the foundation for the design, implementation, and testing of the software. Requirements provide a clear and detailed understanding of the expected functionality, features, and constraints of the software.</p>
+<p><strong>Functional Requirements:</strong> Functional requirements describe what the software should do in terms of specific functions, features, and interactions with users or other systems. These requirements are action-oriented and focus on the software's behavior in response to different inputs and conditions. Examples of functional requirements include user authentication, data validation, report generation, and data processing.</p>
+<p><strong>Non-Functional Requirements:</strong> Non-functional requirements, also known as quality attributes or software qualities, specify how the software should perform rather than what it should do. These requirements address aspects such as performance, security, scalability, usability, reliability, and maintainability. Non-functional requirements are critical for ensuring that the software meets user expectations and industry standards.</p>
+<p><strong>Difference Between Functional &amp; Non-Functional Requirements:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Functional Requirements</th>
+<th>Non-Functional Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A functional requirement defines a system or its component.</td>
+<td>A non-functional requirement defines the quality attribute of a software system.</td>
+</tr>
+<tr>
+<td>It specifies “What should the software system do?”</td>
+<td>It places constraints on “How should the software system fulfill the functional requirements?”</td>
+</tr>
+<tr>
+<td>Functional requirement is specified by User.</td>
+<td>Non-functional requirement is specified by technical people (e.g., Architect, Technical leaders, and software developers).</td>
+</tr>
+<tr>
+<td>It is mandatory.</td>
+<td>It is not mandatory.</td>
+</tr>
+<tr>
+<td>It is captured in use case.</td>
+<td>It is captured as a quality attribute.</td>
+</tr>
+<tr>
+<td>Defined at a component level.</td>
+<td>Applied to a system as a whole.</td>
+</tr>
+<tr>
+<td>Helps you verify the functionality of the software.</td>
+<td>Helps you to verify the performance of the software.</td>
+</tr>
+<tr>
+<td>Functional Testing like System, Integration, End to End, API testing, etc are done.</td>
+<td>Non-Functional Testing like Performance, Stress, Usability, Security testing, etc are done.</td>
+</tr>
+<tr>
+<td>Usually easy to define.</td>
+<td>Usually more difficult to define.</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Example</td>
+</tr>
+<tr>
+<td>1) Authentication of the user whenever he/she logs into the system.</td>
+<td>1) Emails should be sent with a latency of no greater than 12 hours from such an activity.</td>
+</tr>
+<tr>
+<td>2) System shutdown in case of a cyber attack.</td>
+<td>2) The processing of each request should be done within 10 seconds.</td>
+</tr>
+<tr>
+<td>3) A verification email is sent to the user whenever he/she registers for the first time on some software system.</td>
+<td>3) The site should load in 3 seconds when the number of simultaneous users is &gt; 10000.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Significance of Software Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Blueprint for Development:</strong> Software requirements provide a blueprint for software developers, helping them understand what needs to be built and how it should work.</p>
+</li>
+<li>
+<p><strong>Alignment with User Needs:</strong> Requirements ensure that the software aligns with the needs and expectations of end-users and stakeholders.</p>
+</li>
+<li>
+<p><strong>Basis for Testing:</strong> Testing is guided by requirements. Test cases are designed to validate that the software meets the specified functional and non-functional criteria.</p>
+</li>
+<li>
+<p><strong>Scope Control:</strong> Requirements help define the scope of the project, ensuring that the project team and stakeholders have a shared understanding of the software's boundaries.</p>
+</li>
+<li>
+<p><strong>Minimizing Ambiguity:</strong> Well-defined requirements reduce ambiguity and misunderstandings, which can lead to costly rework and delays.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> They serve as a key component of the Software Requirements Document (SRD) or Software Requirements Specification (SRS).</p>
+</li>
+</ol>
+<p><strong>Challenges in Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Changing Requirements:</strong> Requirements can change over time due to evolving user needs, market conditions, or technological advancements. Managing changing requirements can be challenging.</p>
+</li>
+<li>
+<p><strong>Incomplete or Ambiguous Requirements:</strong> Ambiguities or gaps in requirements can lead to misunderstandings and misinterpretations.</p>
+</li>
+<li>
+<p><strong>Balancing Functional and Non-Functional Requirements:</strong> Achieving a balance between functional and non-functional requirements, and ensuring that both are met, can be complex.</p>
+</li>
+<li>
+<p><strong>Scope Creep:</strong> Uncontrolled expansion of requirements, known as scope creep, can lead to project delays and budget overruns.</p>
+</li>
+<li>
+<p><strong>Conflicting Requirements:</strong> Different stakeholders may have conflicting requirements, necessitating negotiation and trade-offs.</p>
+</li>
+</ol>
+<p><strong>Best Practices for Managing Software Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Requirements Elicitation:</strong> Engage stakeholders early in the requirements elicitation process to capture their needs accurately.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Maintain a comprehensive and up-to-date Software Requirements Document (SRD) or Software Requirements Specification (SRS).</p>
+</li>
+<li>
+<p><strong>Validation and Verification:</strong> Use techniques like validation and verification to ensure that requirements are complete, consistent, and correct.</p>
+</li>
+<li>
+<p><strong>Change Management:</strong> Implement a robust change management process to handle evolving requirements.</p>
+</li>
+<li>
+<p><strong>Prioritization:</strong> Prioritize requirements based on their criticality and potential impact on project success.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> Foster open and transparent communication among project stakeholders to resolve conflicts and ensure shared understanding.</p>
+</li>
+</ol>
+<hr />
+<h3 id="user-requirements">User Requirements</h3>
+<p><strong>User Requirements:</strong> User requirements, also known as business requirements or stakeholder requirements, are a subset of software requirements that focus on the needs, expectations, and constraints of the software's end-users or stakeholders. These requirements provide a user-centric perspective on what the software should achieve and how it should interact with users.</p>
+<p><img alt="User Requirements" src="https://cdn.ttgtmedia.com/rms/onlineImages/software_quality-types_software_requirements-f.png" /></p>
+<p><strong>Key Characteristics of User Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>User-Centered:</strong> User requirements are centered around the experiences and expectations of the software's end-users or stakeholders.</p>
+</li>
+<li>
+<p><strong>Functional and Non-Functional:</strong> User requirements encompass both functional aspects (what the software should do) and non-functional aspects (how well it should perform).</p>
+</li>
+<li>
+<p><strong>High-Level:</strong> User requirements are often expressed in a high-level, non-technical language that is understandable to stakeholders who may not have technical expertise.</p>
+</li>
+<li>
+<p><strong>Observable Outcomes:</strong> They describe observable outcomes or results that users expect from the software.</p>
+</li>
+</ol>
+<p><strong>Methods for Eliciting User Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Interviews:</strong> Conducting one-on-one or group interviews with end-users and stakeholders to understand their needs and preferences.</p>
+</li>
+<li>
+<p><strong>Surveys and Questionnaires:</strong> Collecting feedback and requirements through structured surveys and questionnaires distributed to a larger user group.</p>
+</li>
+<li>
+<p><strong>Observations:</strong> Observing users in their work environment to gain insights into their workflows and pain points.</p>
+</li>
+<li>
+<p><strong>Use Cases and Scenarios:</strong> Creating use cases and user scenarios to outline specific interactions and behaviors of the software from the user's perspective.</p>
+</li>
+<li>
+<p><strong>Prototyping:</strong> Building prototypes or mockups of the software to gather user feedback and refine requirements.</p>
+</li>
+</ol>
+<p><strong>Benefits of User Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>User Satisfaction:</strong> User requirements ensure that the software aligns with the needs and expectations of the end-users, leading to higher user satisfaction.</p>
+</li>
+<li>
+<p><strong>Reduced Rework:</strong> Capturing user requirements accurately reduces the likelihood of rework and changes after the software development has begun.</p>
+</li>
+<li>
+<p><strong>Improved Usability:</strong> Prioritizing user needs results in a more user-friendly and intuitive software interface.</p>
+</li>
+<li>
+<p><strong>Scope Clarity:</strong> User requirements help define the scope of the project by specifying what the software should and should not do.</p>
+</li>
+<li>
+<p><strong>User Involvement:</strong> Involving users in the requirements elicitation process promotes collaboration and buy-in from key stakeholders.</p>
+</li>
+</ol>
+<p><strong>Challenges in Managing User Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Changing User Needs:</strong> User needs can evolve over time, requiring a flexible approach to accommodate changes.</p>
+</li>
+<li>
+<p><strong>Communication Gap:</strong> Misunderstandings between technical and non-technical stakeholders can lead to discrepancies in user requirements.</p>
+</li>
+<li>
+<p><strong>Incomplete Requirements:</strong> Users may not be able to articulate all their needs, leading to potential gaps in the requirements.</p>
+</li>
+<li>
+<p><strong>Conflicting Requirements:</strong> Different user groups or stakeholders may have conflicting requirements, necessitating negotiation and prioritization.</p>
+</li>
+</ol>
+<p><strong>Best Practices for Managing User Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>User Involvement:</strong> Involve users and stakeholders from the beginning of the project to ensure their needs are well understood and considered.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Thoroughly document user requirements in a clear and accessible format, such as a Software Requirements Document (SRD) or User Requirements Specification.</p>
+</li>
+<li>
+<p><strong>Validation:</strong> Validate user requirements through feedback, reviews, and testing to ensure they accurately represent user needs.</p>
+</li>
+<li>
+<p><strong>Change Management:</strong> Implement a change management process to handle evolving user requirements.</p>
+</li>
+<li>
+<p><strong>Alignment with Organizational Goals:</strong> Ensure that user requirements align with the organization's overall goals and strategic objectives.</p>
+</li>
+</ol>
+<hr />
+<h3 id="system-requirements">System Requirements</h3>
+<p><strong>System Requirements:</strong> System requirements are a subset of software requirements that detail the technical specifications and constraints for the software system. Unlike user requirements, which focus on user needs and expectations, system requirements address how the software should be designed, developed, and deployed from a technical perspective.</p>
+<p><strong>Key Characteristics of System Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Technical Specifications:</strong> System requirements specify the technical aspects of the software, including hardware, software, network, and security requirements.</p>
+</li>
+<li>
+<p><strong>Performance Parameters:</strong> They define performance metrics such as response times, throughput, and capacity.</p>
+</li>
+<li>
+<p><strong>Compatibility:</strong> System requirements address compatibility with operating systems, databases, browsers, and other software components.</p>
+</li>
+<li>
+<p><strong>Security and Compliance:</strong> Security requirements, data protection, and compliance with regulations and standards are essential aspects of system requirements.</p>
+</li>
+<li>
+<p><strong>Deployment and Integration:</strong> System requirements cover deployment scenarios, integration with other systems, and data migration.</p>
+</li>
+</ol>
+<p><strong>Methods for Eliciting System Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Technical Interviews:</strong> Conduct interviews with technical experts, architects, and engineers to gather insights into the system's technical needs.</p>
+</li>
+<li>
+<p><strong>Prototyping:</strong> Create technical prototypes or proof-of-concept implementations to validate technical requirements.</p>
+</li>
+<li>
+<p><strong>Consultation with Vendors:</strong> If the project involves third-party software or hardware, consult with vendors to understand their technical requirements and compatibility.</p>
+</li>
+<li>
+<p><strong>Review of Standards and Regulations:</strong> Ensure that the system complies with industry standards and legal regulations by reviewing relevant documents.</p>
+</li>
+</ol>
+<p><strong>Benefits of System Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Technical Clarity:</strong> System requirements provide clear technical guidelines for software development and architecture.</p>
+</li>
+<li>
+<p><strong>Performance Assurance:</strong> They ensure that the software meets performance, scalability, and security criteria.</p>
+</li>
+<li>
+<p><strong>Interoperability:</strong> System requirements address compatibility and integration with other systems, reducing integration challenges.</p>
+</li>
+<li>
+<p><strong>Security and Compliance:</strong> They help in incorporating security measures and ensuring compliance with industry standards and regulations.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation:</strong> System requirements help identify potential technical risks and enable risk mitigation planning.</p>
+</li>
+</ol>
+<p><strong>Challenges in Managing System Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Complexity:</strong> Defining and managing complex system requirements can be challenging, especially for large and intricate projects.</p>
+</li>
+<li>
+<p><strong>Evolving Technology:</strong> Rapid technological advancements may require updates to system requirements during the project's lifecycle.</p>
+</li>
+<li>
+<p><strong>Dependencies:</strong> System requirements often have dependencies on external factors, such as hardware availability or third-party software updates.</p>
+</li>
+<li>
+<p><strong>Balancing Technical and User Requirements:</strong> Balancing technical requirements with user requirements and ensuring both are met can be complex.</p>
+</li>
+</ol>
+<p><strong>Best Practices for Managing System Requirements:</strong></p>
+<ol>
+<li>
+<p><strong>Technical Expertise:</strong> Involve technical experts and architects in the requirements elicitation process to ensure accuracy and completeness.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Document system requirements in a clear and accessible format, such as a Software Requirements Document (SRD) or System Requirements Specification.</p>
+</li>
+<li>
+<p><strong>Validation:</strong> Validate system requirements through technical reviews, testing, and validation against architectural designs.</p>
+</li>
+<li>
+<p><strong>Change Management:</strong> Implement a change management process to handle evolving system requirements, especially in response to changing technology.</p>
+</li>
+<li>
+<p><strong>Risk Assessment:</strong> Conduct risk assessments to identify and address potential technical risks associated with system requirements.</p>
+</li>
+</ol>
+<hr />
+<h3 id="software-requirements-document">Software Requirements Document</h3>
+<p><strong>Software Requirements Document (SRD):</strong> A Software Requirements Document, also known as a Software Requirements Specification (SRS), is a comprehensive document that outlines all the software requirements, both functional and non-functional, for a software project. It serves as a crucial reference for all stakeholders, including developers, testers, and project managers.</p>
+<p><strong>Key Components of a Software Requirements Document:</strong></p>
+<ol>
+<li>
+<p><strong>Introduction:</strong> The introduction provides an overview of the document, including its purpose, scope, and a brief description of the software project.</p>
+</li>
+<li>
+<p><strong>User Requirements:</strong> This section presents the user-centric requirements, capturing the needs, expectations, and constraints of the software's end-users and stakeholders.</p>
+</li>
+<li>
+<p><strong>System Requirements:</strong> System requirements detail the technical specifications, performance parameters, and constraints for the software system.</p>
+</li>
+<li>
+<p><strong>Functional Requirements:</strong> Functional requirements describe what the software should do, specifying features, interactions, and functionalities.</p>
+</li>
+<li>
+<p><strong>Non-Functional Requirements:</strong> Non-functional requirements address the quality attributes of the software, including performance, security, usability, and scalability.</p>
+</li>
+<li>
+<p><strong>Use Cases and Scenarios:</strong> Use cases and user scenarios provide specific examples of how the software will be used and the expected behavior in different situations.</p>
+</li>
+<li>
+<p><strong>Data Requirements:</strong> Data requirements define data structures, storage, access, and data processing needs for the software.</p>
+</li>
+<li>
+<p><strong>Interface Requirements:</strong> Interface requirements describe how the software will interact with external systems, APIs, or hardware components.</p>
+</li>
+<li>
+<p><strong>Security and Compliance Requirements:</strong> This section outlines security measures, data protection, and compliance with industry standards and regulations.</p>
+</li>
+<li>
+<p><strong>Dependencies and Assumptions:</strong> Any dependencies on external factors, such as hardware, third-party software, or data sources, are documented, along with project assumptions.</p>
+</li>
+<li>
+<p><strong>Constraints:</strong> Constraints refer to limitations or restrictions that may affect the software development or usage.</p>
+</li>
+<li>
+<p><strong>Change Control:</strong> The document includes a section outlining the change management process for handling modifications to requirements during the project.</p>
+</li>
+</ol>
+<p><strong>Benefits of a Software Requirements Document:</strong></p>
+<ol>
+<li>
+<p><strong>Clarity and Alignment:</strong> An SRD ensures that all stakeholders have a clear and aligned understanding of the software project's requirements.</p>
+</li>
+<li>
+<p><strong>Reference Point:</strong> The SRD serves as a reference throughout the project's lifecycle, from design and development to testing and quality assurance.</p>
+</li>
+<li>
+<p><strong>Scope Management:</strong> It helps in defining and managing the project's scope, preventing scope creep.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation:</strong> An SRD identifies potential risks and uncertainties associated with the project's requirements.</p>
+</li>
+<li>
+<p><strong>Quality Assurance:</strong> The document guides quality assurance efforts, ensuring that the software meets the specified criteria.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> It promotes effective communication among project teams, stakeholders, and developers.</p>
+</li>
+</ol>
+<p><strong>Challenges in Creating a Software Requirements Document:</strong></p>
+<ol>
+<li>
+<p><strong>Requirement Volatility:</strong> Changing requirements and evolving user needs can lead to frequent updates and revisions of the SRD.</p>
+</li>
+<li>
+<p><strong>Complexity:</strong> Managing and documenting complex and large sets of requirements can be challenging.</p>
+</li>
+<li>
+<p><strong>Dependencies:</strong> Dealing with dependencies on external factors, third-party software, or hardware components requires careful consideration.</p>
+</li>
+<li>
+<p><strong>Balancing User and System Requirements:</strong> Ensuring a balance between user requirements and system requirements is critical.</p>
+</li>
+</ol>
+<p><strong>Best Practices for Creating a Software Requirements Document:</strong></p>
+<ol>
+<li>
+<p><strong>Stakeholder Involvement:</strong> Involve key stakeholders in the creation and review of the SRD to ensure alignment with their needs.</p>
+</li>
+<li>
+<p><strong>Clarity and Specificity:</strong> Ensure that requirements are clear, specific, and unambiguous, using appropriate terminology.</p>
+</li>
+<li>
+<p><strong>Change Management:</strong> Implement a robust change management process to handle evolving requirements and revisions to the SRD.</p>
+</li>
+<li>
+<p><strong>Version Control:</strong> Maintain version control for the SRD to track changes and updates.</p>
+</li>
+<li>
+<p><strong>Validation:</strong> Validate the SRD through reviews, testing, and validation against architectural designs.</p>
+</li>
+<li>
+<p><strong>Documentation Style and Format:</strong> Use a consistent style and format for the document to enhance readability and accessibility.</p>
+</li>
+</ol>
+<hr />
+<h3 id="requirement-engineering-process">Requirement Engineering Process</h3>
+<p><strong>Requirement Engineering:</strong> Requirement engineering, also known as requirements engineering, is the systematic and disciplined process of defining, documenting, and managing software requirements. It encompasses all the activities involved in understanding user needs, translating them into technical specifications, and ensuring that the final software product meets these requirements.</p>
+<p><img alt="Requirement Engineering Process" src="https://static.javatpoint.com/tutorial/software-engineering/images/requirement-engineering.jpg" /></p>
+<p><strong>Key Stages of Requirement Engineering:</strong></p>
+<ol>
+<li>
+<p><strong>Elicitation:</strong> Elicitation involves gathering and extracting requirements from various sources, including stakeholders, end-users, and existing documentation. Techniques such as interviews, surveys, and observations are used to collect requirements.</p>
+</li>
+<li>
+<p><strong>Analysis:</strong> The analysis stage involves examining the collected requirements for completeness, consistency, and relevance. Conflicting or ambiguous requirements are resolved, and dependencies are identified.</p>
+</li>
+<li>
+<p><strong>Specification:</strong> During specification, requirements are documented in a clear and structured manner. This includes creating a Software Requirements Document (SRD) or Software Requirements Specification (SRS).</p>
+</li>
+<li>
+<p><strong>Validation:</strong> Validation ensures that the specified requirements accurately represent user needs and that they align with the project's goals. Reviews, walkthroughs, and testing may be used for validation.</p>
+</li>
+<li>
+<p><strong>Management:</strong> Requirement management encompasses the handling of changes to requirements, maintaining a requirements baseline, and ensuring that requirements are tracked throughout the project's lifecycle.</p>
+</li>
+</ol>
+<p><strong>Benefits of Requirement Engineering:</strong></p>
+<ol>
+<li>
+<p><strong>Clear Understanding:</strong> Requirement engineering helps in developing a clear and shared understanding of what the software should achieve.</p>
+</li>
+<li>
+<p><strong>Scope Control:</strong> It assists in defining and managing the project's scope, preventing scope creep and changes that can lead to delays and budget overruns.</p>
+</li>
+<li>
+<p><strong>Quality Assurance:</strong> The process ensures that requirements are complete, consistent, and aligned with user needs, improving the chances of delivering a high-quality software product.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation:</strong> By identifying potential issues and conflicts early in the process, requirement engineering supports effective risk mitigation planning.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> It promotes effective communication among project teams and stakeholders, reducing misunderstandings and ambiguities.</p>
+</li>
+</ol>
+<p><strong>Challenges in Requirement Engineering:</strong></p>
+<ol>
+<li>
+<p><strong>Changing Requirements:</strong> Requirements can change over time due to evolving user needs or market conditions. Managing changing requirements is a significant challenge.</p>
+</li>
+<li>
+<p><strong>Incomplete or Ambiguous Requirements:</strong> Ambiguities or gaps in requirements can lead to misunderstandings and misinterpretations.</p>
+</li>
+<li>
+<p><strong>Conflicting Requirements:</strong> Different stakeholders may have conflicting requirements, necessitating negotiation and trade-offs.</p>
+</li>
+<li>
+<p><strong>Balancing User and System Requirements:</strong> Ensuring a balance between user requirements and technical system requirements is complex.</p>
+</li>
+</ol>
+<p><strong>Best Practices in Requirement Engineering:</strong></p>
+<ol>
+<li>
+<p><strong>Stakeholder Engagement:</strong> Engage stakeholders, including end-users and project sponsors, early in the process to ensure their needs are accurately captured.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Maintain a comprehensive and up-to-date Software Requirements Document (SRD) or Software Requirements Specification.</p>
+</li>
+<li>
+<p><strong>Validation and Verification:</strong> Use techniques like validation and verification to ensure that requirements are complete, consistent, and correct.</p>
+</li>
+<li>
+<p><strong>Change Management:</strong> Implement a robust change management process to handle evolving requirements.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> Foster open and transparent communication among project team members, stakeholders, and sponsors.</p>
+</li>
+</ol>
+<hr />
+<h3 id="feasibility-studies">Feasibility Studies</h3>
+<p><strong>Feasibility Studies:</strong> Feasibility studies are an essential step in the software development process that assess the viability and practicality of a proposed software project. They aim to determine whether the project is worth pursuing by evaluating technical, economic, operational, legal, and scheduling factors.</p>
+<p><strong>Types of Feasibility Studies:</strong></p>
+<ol>
+<li>
+<p><strong>Technical Feasibility:</strong> Technical feasibility assesses whether the proposed software project can be developed using the available technology and within the constraints of the organization. It considers factors such as the availability of necessary skills, hardware, software, and development tools.</p>
+</li>
+<li>
+<p><strong>Economic Feasibility:</strong> Economic feasibility evaluates whether the software project is financially viable. It involves estimating the costs of development, maintenance, and operation, as well as the potential benefits, such as increased revenue or cost savings. A cost-benefit analysis is typically performed to determine the project's return on investment (ROI).</p>
+</li>
+<li>
+<p><strong>Operational Feasibility:</strong> Operational feasibility assesses whether the software, once developed, can be integrated into the existing operational processes and whether it will be accepted by users. It considers factors such as user training, change management, and the impact on day-to-day operations.</p>
+</li>
+<li>
+<p><strong>Legal Feasibility:</strong> Legal feasibility examines whether the proposed software project complies with legal and regulatory requirements. It assesses issues related to intellectual property, data protection, and other legal considerations.</p>
+</li>
+<li>
+<p><strong>Scheduling Feasibility:</strong> Scheduling feasibility evaluates whether the project can be completed within the defined timeframe. It takes into account project dependencies, resource availability, and potential risks that could affect the project's timeline.</p>
+</li>
+</ol>
+<p><strong>Benefits of Feasibility Studies:</strong></p>
+<ol>
+<li>
+<p><strong>Risk Mitigation:</strong> Feasibility studies help identify potential issues and risks early in the project, allowing for effective risk mitigation planning.</p>
+</li>
+<li>
+<p><strong>Informed Decision-Making:</strong> They provide critical information to project sponsors and stakeholders, enabling informed decisions about whether to proceed with the project.</p>
+</li>
+<li>
+<p><strong>Cost Control:</strong> Economic feasibility studies help in estimating project costs and potential returns, ensuring cost-effective project management.</p>
+</li>
+<li>
+<p><strong>Operational Preparedness:</strong> Operational feasibility studies assist in preparing for the impact of the software on existing operations and user acceptance.</p>
+</li>
+<li>
+<p><strong>Legal Compliance:</strong> Legal feasibility studies ensure that the software project complies with all relevant laws and regulations, reducing legal risks.</p>
+</li>
+</ol>
+<p><strong>Challenges in Conducting Feasibility Studies:</strong></p>
+<ol>
+<li>
+<p><strong>Data Availability:</strong> Obtaining accurate and reliable data for economic feasibility analysis can be challenging.</p>
+</li>
+<li>
+<p><strong>Complexity:</strong> Conducting comprehensive feasibility studies, especially for large and complex projects, can be time-consuming and resource-intensive.</p>
+</li>
+<li>
+<p><strong>Changing Factors:</strong> Economic, technical, and legal factors may change over time, affecting the feasibility of a project.</p>
+</li>
+<li>
+<p><strong>Subjectivity:</strong> Some aspects of feasibility, such as estimating potential benefits or risks, involve subjectivity.</p>
+</li>
+</ol>
+<p><strong>Best Practices in Conducting Feasibility Studies:</strong></p>
+<ol>
+<li>
+<p><strong>Interdisciplinary Teams:</strong> Form interdisciplinary teams with experts in technology, finance, operations, legal, and project management to conduct thorough feasibility studies.</p>
+</li>
+<li>
+<p><strong>Data Validation:</strong> Validate data sources and assumptions to improve the accuracy of economic and scheduling feasibility assessments.</p>
+</li>
+<li>
+<p><strong>Scenario Analysis:</strong> Consider multiple scenarios, including best-case, worst-case, and most likely, to evaluate the impact of different factors on feasibility.</p>
+</li>
+<li>
+<p><strong>Regular Updates:</strong> Periodically review and update feasibility studies to account for changing factors and evolving project conditions.</p>
+</li>
+</ol>
+<hr />
+<h3 id="requirements-elicitation-and-analysis">Requirements Elicitation and Analysis</h3>
+<p><strong>Requirements Elicitation:</strong> Requirements elicitation is the process of gathering, identifying, and documenting software requirements from various sources, including stakeholders, end-users, and existing documentation. It is a crucial initial step in the software development process, as it sets the foundation for understanding what the software should achieve.</p>
+<p><strong>Key Activities in Requirements Elicitation:</strong></p>
+<ol>
+<li>
+<p><strong>Stakeholder Identification:</strong> Identify and involve all relevant stakeholders, including end-users, customers, project sponsors, and subject matter experts.</p>
+</li>
+<li>
+<p><strong>Data Collection:</strong> Collect data and information related to the project, such as existing documents, user feedback, and market research.</p>
+</li>
+<li>
+<p><strong>Interviews:</strong> Conduct one-on-one or group interviews with stakeholders to understand their needs, expectations, and constraints.</p>
+</li>
+<li>
+<p><strong>Surveys and Questionnaires:</strong> Use structured surveys and questionnaires to gather feedback from a broader user group.</p>
+</li>
+<li>
+<p><strong>Observations:</strong> Observe users in their work environment to gain insights into their workflows and pain points.</p>
+</li>
+<li>
+<p><strong>Use Cases and Scenarios:</strong> Create use cases and user scenarios to outline specific interactions and behaviors of the software from the user's perspective.</p>
+</li>
+<li>
+<p><strong>Prototyping:</strong> Build prototypes or mockups of the software to gather user feedback and refine requirements.</p>
+</li>
+</ol>
+<p><strong>Requirements Analysis:</strong> Requirements analysis follows elicitation and involves examining the collected requirements to ensure they are complete, consistent, relevant, and unambiguous. This stage aims to identify potential conflicts, dependencies, and gaps in the requirements.</p>
+<p><strong>Key Activities in Requirements Analysis:</strong></p>
+<ol>
+<li>
+<p><strong>Requirements Classification:</strong> Categorize requirements as user requirements, system requirements, functional requirements, or non-functional requirements.</p>
+</li>
+<li>
+<p><strong>Requirements Prioritization:</strong> Prioritize requirements based on their importance and impact on the project's success.</p>
+</li>
+<li>
+<p><strong>Conflict Resolution:</strong> Address any conflicts or discrepancies in the requirements, either through negotiation or by involving stakeholders in decision-making.</p>
+</li>
+<li>
+<p><strong>Dependencies Identification:</strong> Identify dependencies between requirements and assess their impact on the project.</p>
+</li>
+<li>
+<p><strong>Gap Analysis:</strong> Perform gap analysis to identify any gaps or missing requirements that need to be addressed.</p>
+</li>
+</ol>
+<p><strong>Benefits of Requirements Elicitation and Analysis:</strong></p>
+<ol>
+<li>
+<p><strong>User-Centric Design:</strong> Elicitation ensures that the software design is user-centric, aligning with user needs and expectations.</p>
+</li>
+<li>
+<p><strong>Scope Definition:</strong> Elicitation and analysis contribute to defining the project's scope, preventing scope creep.</p>
+</li>
+<li>
+<p><strong>Quality Assurance:</strong> Analysis ensures that requirements are complete, consistent, and relevant, improving the chances of delivering a high-quality software product.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation:</strong> Early identification of conflicts, gaps, and dependencies supports effective risk mitigation planning.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> The process promotes effective communication among project teams and stakeholders, reducing misunderstandings and ambiguities.</p>
+</li>
+</ol>
+<p><strong>Challenges in Requirements Elicitation and Analysis:</strong></p>
+<ol>
+<li>
+<p><strong>Changing Requirements:</strong> User needs and project conditions may change over time, requiring updates to requirements.</p>
+</li>
+<li>
+<p><strong>Incomplete or Ambiguous Requirements:</strong> Ambiguities or gaps in requirements can lead to misunderstandings and misinterpretations.</p>
+</li>
+<li>
+<p><strong>Conflicting Requirements:</strong> Different stakeholders may have conflicting requirements, necessitating negotiation and trade-offs.</p>
+</li>
+<li>
+<p><strong>Balancing User and System Requirements:</strong> Ensuring a balance between user requirements and technical system requirements can be complex.</p>
+</li>
+</ol>
+<p><strong>Best Practices in Requirements Elicitation and Analysis:</strong></p>
+<ol>
+<li>
+<p><strong>Stakeholder Engagement:</strong> Engage stakeholders, including end-users and project sponsors, early in the process to ensure their needs are accurately captured.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Maintain a comprehensive and up-to-date Software Requirements Document (SRD) or Software Requirements Specification.</p>
+</li>
+<li>
+<p><strong>Validation and Verification:</strong> Use techniques like validation and verification to ensure that requirements are complete, consistent, and correct.</p>
+</li>
+<li>
+<p><strong>Change Management:</strong> Implement a robust change management process to handle evolving requirements.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> Foster open and transparent communication among project team members, stakeholders, and sponsors.</p>
+</li>
+</ol>
+<hr />
+<h3 id="requirements-validation">Requirements Validation</h3>
+<p><strong>Requirements Validation:</strong> Requirements validation is the process of ensuring that the specified software requirements accurately represent user needs and that they align with the project's goals. Validation verifies that the documented requirements are complete, consistent, relevant, and free from ambiguities and errors.</p>
+<p><strong>Key Activities in Requirements Validation:</strong></p>
+<ol>
+<li>
+<p><strong>Reviews and Inspections:</strong> Conduct reviews and inspections of the Software Requirements Document (SRD) or Software Requirements Specification (SRS) to identify inconsistencies, omissions, and errors in the requirements.</p>
+</li>
+<li>
+<p><strong>Walkthroughs:</strong> Organize walkthroughs where project stakeholders, including end-users, review and provide feedback on the requirements.</p>
+</li>
+<li>
+<p><strong>Prototyping:</strong> Use prototypes or mockups to demonstrate the requirements to end-users and stakeholders for feedback and validation.</p>
+</li>
+<li>
+<p><strong>Simulation:</strong> In some cases, simulation tools or techniques can be used to validate requirements, especially for complex and critical systems.</p>
+</li>
+<li>
+<p><strong>Traceability Analysis:</strong> Ensure that there is traceability between requirements and other project artifacts, such as design documents and test cases.</p>
+</li>
+<li>
+<p><strong>User Acceptance Testing (UAT):</strong> Conduct user acceptance testing to allow end-users to interact with the software and validate that it meets their needs and expectations.</p>
+</li>
+</ol>
+<p><strong>Benefits of Requirements Validation:</strong></p>
+<ol>
+<li>
+<p><strong>Quality Assurance:</strong> Validation ensures that requirements are complete, consistent, and relevant, improving the chances of delivering a high-quality software product.</p>
+</li>
+<li>
+<p><strong>User Satisfaction:</strong> Validation through user involvement and acceptance testing increases user satisfaction with the final software.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation:</strong> Identifying and resolving issues in the requirements early in the project supports effective risk mitigation planning.</p>
+</li>
+<li>
+<p><strong>Clear Communication:</strong> Validation promotes clear and effective communication among project teams and stakeholders, reducing misunderstandings and ambiguities.</p>
+</li>
+</ol>
+<p><strong>Challenges in Requirements Validation:</strong></p>
+<ol>
+<li>
+<p><strong>Changing Requirements:</strong> User needs and project conditions may change over time, requiring updates to requirements even after validation.</p>
+</li>
+<li>
+<p><strong>Incomplete or Ambiguous Requirements:</strong> Ambiguities or gaps in requirements can lead to misunderstandings and misinterpretations.</p>
+</li>
+<li>
+<p><strong>Conflicting Requirements:</strong> Different stakeholders may have conflicting requirements, necessitating negotiation and trade-offs.</p>
+</li>
+<li>
+<p><strong>Balancing User and System Requirements:</strong> Ensuring a balance between user requirements and technical system requirements can be complex.</p>
+</li>
+</ol>
+<p><strong>Best Practices in Requirements Validation:</strong></p>
+<ol>
+<li>
+<p><strong>User Involvement:</strong> Involve end-users and project stakeholders in the validation process to ensure that the software meets their needs and expectations.</p>
+</li>
+<li>
+<p><strong>Traceability:</strong> Ensure traceability between requirements and other project artifacts, facilitating validation and change management.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Maintain clear and accessible documentation of requirements, review findings, and validation results.</p>
+</li>
+<li>
+<p><strong>Continuous Improvement:</strong> Use validation results as feedback to improve the requirements elicitation and analysis processes.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> Foster open and transparent communication among project team members, stakeholders, and sponsors to address validation issues effectively.</p>
+</li>
+</ol>
+<hr />
+<h3 id="requirements-management">Requirements Management</h3>
+<p><strong>Requirements Management:</strong> Requirements management is the process of handling and controlling software requirements throughout a project's lifecycle. It includes the capture, documentation, tracking, and control of requirements to ensure that they remain relevant and well-aligned with the project's goals.</p>
+<p><strong>Key Activities in Requirements Management:</strong></p>
+<ol>
+<li>
+<p><strong>Requirements Capture:</strong> Capture requirements from various sources, including stakeholders, end-users, and existing documentation.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Maintain a comprehensive and up-to-date Software Requirements Document (SRD) or Software Requirements Specification (SRS).</p>
+</li>
+<li>
+<p><strong>Change Control:</strong> Implement a robust change management process to handle modifications to requirements during the project. This process may involve assessing the impact of changes and obtaining approval from stakeholders.</p>
+</li>
+<li>
+<p><strong>Version Control:</strong> Maintain version control for the SRD to track changes and updates, ensuring that the most recent requirements are available.</p>
+</li>
+<li>
+<p><strong>Traceability:</strong> Ensure that there is traceability between requirements and other project artifacts, such as design documents and test cases.</p>
+</li>
+<li>
+<p><strong>Baseline Management:</strong> Establish and manage requirements baselines to capture a snapshot of requirements at specific points in time.</p>
+</li>
+<li>
+<p><strong>Validation and Verification:</strong> Use techniques like validation and verification to ensure that requirements are complete, consistent, and correct.</p>
+</li>
+</ol>
+<p><strong>Benefits of Requirements Management:</strong></p>
+<ol>
+<li>
+<p><strong>Scope Control:</strong> Requirements management assists in defining and managing the project's scope, preventing scope creep.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation:</strong> Early identification and management of changes and updates to requirements support effective risk mitigation planning.</p>
+</li>
+<li>
+<p><strong>Quality Assurance:</strong> Managing requirements ensures that they remain complete, consistent, and relevant, contributing to the quality of the final software product.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> The process promotes clear and effective communication among project teams and stakeholders, reducing misunderstandings and ambiguities.</p>
+</li>
+</ol>
+<p><strong>Challenges in Requirements Management:</strong></p>
+<ol>
+<li>
+<p><strong>Changing Requirements:</strong> User needs and project conditions may change over time, requiring updates to requirements and effective change management.</p>
+</li>
+<li>
+<p><strong>Complexity:</strong> Managing and documenting complex and large sets of requirements can be challenging.</p>
+</li>
+<li>
+<p><strong>Dependencies:</strong> Dealing with dependencies between requirements and other project artifacts, such as design and test cases, requires careful coordination.</p>
+</li>
+<li>
+<p><strong>Balancing User and System Requirements:</strong> Ensuring a balance between user requirements and technical system requirements is complex.</p>
+</li>
+</ol>
+<p><strong>Best Practices in Requirements Management:</strong></p>
+<ol>
+<li>
+<p><strong>Change Management:</strong> Implement a robust change management process to handle evolving requirements, assess the impact of changes, and obtain stakeholder approval.</p>
+</li>
+<li>
+<p><strong>Version Control:</strong> Use version control systems to track changes to requirements and ensure that the most recent versions are accessible.</p>
+</li>
+<li>
+<p><strong>Traceability:</strong> Maintain traceability between requirements and other project artifacts to facilitate validation, verification, and change management.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Keep clear and accessible documentation of requirements, change requests, and validation results.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> Foster open and transparent communication among project team members, stakeholders, and sponsors to address management issues effectively.</p>
+</li>
+</ol>
+<p>In conclusion, requirements management is a critical ongoing process in the software development lifecycle. It ensures that software requirements are well-handled, controlled, and aligned with project goals. Effective requirements management supports scope control, risk mitigation, quality assurance, and clear communication among stakeholders and project teams.</p>
+<hr />
+<h3 id="classical-analysis-structured-system-analysis-petri-nets-data-dictionary">Classical Analysis (Structured System Analysis, Petri Nets, Data Dictionary)</h3>
+<p><strong>Classical Analysis in Software Engineering:</strong> Classical analysis refers to a set of traditional methodologies and techniques used in software engineering for requirements analysis and system design. These approaches have been widely used in the past and have evolved to meet the needs of complex software systems.</p>
+<p><strong>Structured System Analysis:</strong> Structured system analysis, commonly associated with methodologies like Structured Analysis and Structured Design, focuses on breaking down a complex system into smaller, more manageable components. This approach uses techniques like data flow diagrams (DFDs) to illustrate how data moves through a system and data dictionary to define data elements and their attributes.</p>
+<p><strong>Key Concepts in Structured System Analysis:</strong></p>
+<ol>
+<li>
+<p><strong>Data Flow Diagrams (DFDs):</strong> DFDs are graphical representations that show how data is processed and transferred within a system. They use processes, data stores, data flows, and external entities to model the flow of information.</p>
+</li>
+<li>
+<p><strong>Data Dictionary:</strong> A data dictionary is a centralized repository that defines data elements, their attributes, and their relationships. It provides a common understanding of data across the project.</p>
+</li>
+</ol>
+<p><strong>Petri Nets:</strong> Petri Nets are a mathematical modeling tool used for modeling concurrent and distributed systems. They are particularly valuable for modeling systems where multiple processes or activities can occur simultaneously. Petri Nets provide a visual way to represent the flow of activities and decisions within a system.</p>
+<p><strong>Key Concepts in Petri Nets:</strong></p>
+<ol>
+<li>
+<p><strong>Places and Transitions:</strong> Petri Nets use places to represent states or conditions and transitions to represent events or actions.</p>
+</li>
+<li>
+<p><strong>Tokens:</strong> Tokens move between places and transitions, representing the progress of activities within the system.</p>
+</li>
+<li>
+<p><strong>Concurrency:</strong> Petri Nets can model concurrent activities, making them suitable for systems with parallel processes.</p>
+</li>
+</ol>
+<p><strong>Data Dictionary:</strong> A data dictionary is a centralized repository that defines data elements, their attributes, and their relationships. It provides a common understanding of data across the project.</p>
+<p><strong>Benefits of Classical Analysis Techniques:</strong></p>
+<ol>
+<li>
+<p><strong>Structured Decomposition:</strong> Structured analysis helps break down complex systems into smaller, more understandable components, making it easier to analyze and design.</p>
+</li>
+<li>
+<p><strong>Clarity and Consistency:</strong> Data dictionaries ensure that data elements are clearly defined, leading to consistency in data usage.</p>
+</li>
+<li>
+<p><strong>Concurrency Modeling:</strong> Petri Nets are effective for modeling and analyzing concurrent and distributed systems.</p>
+</li>
+<li>
+<p><strong>Communication:</strong> These techniques promote clear and standardized communication among project stakeholders and development teams.</p>
+</li>
+</ol>
+<p><strong>Challenges in Classical Analysis:</strong></p>
+<ol>
+<li>
+<p><strong>Complexity:</strong> For large and complex systems, structured analysis and Petri Nets can become complex and challenging to manage.</p>
+</li>
+<li>
+<p><strong>Evolutionary Limitations:</strong> These techniques may have limitations when it comes to modeling modern, dynamic, and highly interactive software systems.</p>
+</li>
+<li>
+<p><strong>Learning Curve:</strong> Learning and mastering these techniques can be time-consuming for project teams.</p>
+</li>
+</ol>
+<p><strong>Best Practices in Using Classical Analysis Techniques:</strong></p>
+<ol>
+<li>
+<p><strong>Tailored Approach:</strong> Apply these techniques as appropriate for the specific project and system being analyzed. In some cases, a mix of modern and classical techniques may be more effective.</p>
+</li>
+<li>
+<p><strong>Documentation:</strong> Maintain clear and well-documented models, diagrams, and data dictionaries to ensure that they remain accessible and understandable.</p>
+</li>
+<li>
+<p><strong>Training and Skill Development:</strong> Provide training and support to project teams to help them use these techniques effectively.</p>
+</li>
+<li>
+<p><strong>Collaboration:</strong> Foster collaboration among stakeholders and development teams to ensure that the analysis and design are accurate and meet the project's needs.</p>
+</li>
+</ol>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/functional-vs-non-functional-requirements/">https://www.geeksforgeeks.org/functional-vs-non-functional-requirements/</a></li>
+<li><a href="https://www.techtarget.com/searchsoftwarequality/answer/What-are-requirements-types">https://www.techtarget.com/searchsoftwarequality/answer/What-are-requirements-types</a></li>
+<li><a href="https://www.javatpoint.com/software-engineering-requirement-engineering">https://www.javatpoint.com/software-engineering-requirement-engineering</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Unit3/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit3">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit3
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="upi://pay?pa=8625057783@airtel&pn=GAUTAM SURESH PATIL&tn=Pay money to GAUTAM SURESH PATIL" target="_blank" rel="noopener" title="pay?pa=8625057783@airtel&amp;pn=GAUTAM SURESH PATIL&amp;tn=Pay money to GAUTAM SURESH PATIL" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../lol.js"></script>
+      
+    
+  </body>
+</html>

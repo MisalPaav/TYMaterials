@@ -1,0 +1,5222 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tymaterials.live/dbms/SQL-Cheat-Sheet/">
+      
+      
+        <link rel="prev" href="../Unit5/">
+      
+      
+        <link rel="next" href="../DBMS-CAE-1-Question-Bank/">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>SQL-Cheat-Sheet - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+500:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto 500";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-B5944EDZSE"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-B5944EDZSE",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-B5944EDZSE",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sql-cheat-sheet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SQL-Cheat-Sheet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ST/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ST
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            ST
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../UDBMS/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    UDBMS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            UDBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../NLP/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    NLP
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            NLP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../UHV/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    UHV
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            UHV
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ML/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            ML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/Unit6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/ML-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/ML-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML/ML-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../BP/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BP
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            BP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sepm/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/SEPM-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/SEPM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/SEPM-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../WD/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SQL-Cheat-Sheet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SQL-Cheat-Sheet
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-create-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      SQL-Create Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-delete-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      SQL-Delete Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sql-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. SQL DataTypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Datatypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeric-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numeric Datatypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datetime-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date/Time Datatypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sql-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. SQL Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-sql-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. SQL Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-crud-operations-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Crud Operations in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-important-sql-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Important SQL Keywords
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-clauses-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Clauses in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-sql-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. SQL Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-keys-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Keys in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-functions-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Functions in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-joins-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Joins in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-triggers-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Triggers in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-sql-stored-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. SQL Stored Procedures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-sql-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. SQL Injection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#original-httpswwwinterviewbitcomsql-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Original: https://www.interviewbit.com/sql-cheat-sheet/
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DBMS-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DBMS-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DBMS-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/EEIM-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EEIM-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/EEIM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EEIM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../BIA/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIA
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            BIA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/BIA-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIA-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/BIA-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIA-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_13" id="__nav_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            DM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/DM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-create-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      SQL-Create Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-delete-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      SQL-Delete Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sql-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. SQL DataTypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      String Datatypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeric-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numeric Datatypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datetime-datatypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date/Time Datatypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sql-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. SQL Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-sql-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. SQL Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-crud-operations-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Crud Operations in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-important-sql-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Important SQL Keywords
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-clauses-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Clauses in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-sql-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. SQL Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-keys-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Keys in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-functions-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Functions in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-joins-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Joins in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-triggers-in-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Triggers in SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-sql-stored-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. SQL Stored Procedures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-sql-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. SQL Injection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#original-httpswwwinterviewbitcomsql-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Original: https://www.interviewbit.com/sql-cheat-sheet/
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sql-cheat-sheet">SQL Cheat Sheet</h1>
+<ul>
+<li><a href="#sql-cheat-sheet">SQL Cheat Sheet</a><ul>
+<li><a href="#1-installation">1. Installation</a></li>
+<li><a href="#2-tables">2. Tables</a></li>
+<li><a href="#sql-create-table">SQL-Create Table</a></li>
+<li><a href="#sql-delete-table">SQL-Delete Table</a></li>
+<li><a href="#3-sql-datatypes">3. SQL DataTypes</a></li>
+<li><a href="#string-datatypes">String Datatypes</a></li>
+<li><a href="#numeric-datatypes">Numeric Datatypes</a></li>
+<li><a href="#datetime-datatypes">Date/Time Datatypes</a></li>
+<li><a href="#4-sql-commands">4. SQL Commands</a></li>
+<li><a href="#5-sql-constraints">5. SQL Constraints</a></li>
+<li><a href="#6-crud-operations-in-sql">6. Crud Operations in SQL</a></li>
+<li><a href="#7-important-sql-keywords">7. Important SQL Keywords</a></li>
+<li><a href="#8-clauses-in-sql">8. Clauses in SQL</a></li>
+<li><a href="#9-sql-operators">9. SQL Operators</a></li>
+<li><a href="#10-keys-in-sql">10. Keys in SQL</a></li>
+<li><a href="#11-functions-in-sql">11. Functions in SQL</a></li>
+<li><a href="#12-joins-in-sql">12. Joins in SQL</a></li>
+<li><a href="#13-triggers-in-sql">13. Triggers in SQL</a></li>
+<li><a href="#14-sql-stored-procedures">14. SQL Stored Procedures</a></li>
+<li><a href="#15-sql-injection">15. SQL Injection</a></li>
+<li><a href="#useful-resources">Useful Resources</a></li>
+<li><a href="#original-httpswwwinterviewbitcomsql-cheat-sheet">Original: https://www.interviewbit.com/sql-cheat-sheet/</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="1-installation">1. Installation</h3>
+<p>To get started with using SQL, we first need to install some Database Management System server. After installing the RDBMS, the RDBMS itself will provide all the required tools to perform operations on the database and its contents through SQL. Some common RDBMS which is highly in use are:</p>
+<ul>
+<li>Oracle</li>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<li>Heidi SQL</li>
+</ul>
+<p>To install any RDBMS, we just need to visit their official website and install the setup file from there, by following the instructions available there. With the server setup, we can set up a Query Editor, on which we can type our SQL Queries.</p>
+<h3 id="2-tables">2. Tables</h3>
+<p>All data in the database are organized efficiently in the form of tables. A database can be formed from a collection of multiple tables, where each table would be used for storing a particular kind of data and the table by themselves would be linked with each other by using some relations.</p>
+<p><strong>Example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Phone</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTEGER </td>
+<td>VARCHAR(25) </td>
+<td>VARCHAR(12) </td>
+<td>INTEGER</td>
+</tr>
+</tbody>
+</table>
+<p>The above example is for a table of students and stores their Name, Phone, and Class as data. The ID is assigned to each student to uniquely identify each student and using this ID, we can relate data from this table to other tables.</p>
+<h3 id="sql-create-table">SQL-Create Table</h3>
+<p>We use the CREATE command to create a table. The table in the above example can be created with the following code:</p>
+<pre><code>CREATE TABLE student(
+   ID INT NOT NULL,
+   Name varchar(25),
+   Phone varchar(12),
+   Class INT
+);
+</code></pre>
+<h3 id="sql-delete-table">SQL-Delete Table</h3>
+<p>To delete a table from a database, we use the DROP command.</p>
+<pre><code>DROP TABLE student;
+</code></pre>
+<h3 id="3-sql-datatypes">3. SQL DataTypes</h3>
+<p>To allow the users to work with tables effectively, SQL provides us with various datatypes each of which can be useful based on the type of data we handle.</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/284/original/SQL_DataTypes.png?1640067003" /></p>
+<p>The above image is a chart that shows all the datatypes available in SQL along with some of their examples.</p>
+<p>The next section describes various most popular SQL server datatypes categorised under each major division.</p>
+<h3 id="string-datatypes">String Datatypes</h3>
+<p>The table below lists all the String type datatypes available in SQL, along with their descriptions:</p>
+<table>
+<thead>
+<tr>
+<th>Datatype</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHAR(size)</td>
+<td>A fixed-length string containing numbers, letters or special characters. Length may vary from 0-255.</td>
+</tr>
+<tr>
+<td>VARCHAR(size)</td>
+<td>Variable-length string where the length may vary from 0-65535. Similar to CHAR.</td>
+</tr>
+<tr>
+<td>TEXT(size)</td>
+<td>Can contain a string of size up to 65536 bytes.</td>
+</tr>
+<tr>
+<td>TINY TEXT</td>
+<td>Can contain a string of up to 255 characters.</td>
+</tr>
+<tr>
+<td>MEDIUM TEXT</td>
+<td>Can contain a string of up to 16777215 characters.</td>
+</tr>
+<tr>
+<td>LONG TEXT</td>
+<td>Can contain a string of up to 4294967295 characters.</td>
+</tr>
+<tr>
+<td>BINARY(size)</td>
+<td>Similar to CHAR() but stores binary byte strings.</td>
+</tr>
+<tr>
+<td>VARBINARY(size)</td>
+<td>Similar to VARCHAR() but stores binary byte strings.</td>
+</tr>
+<tr>
+<td>BLOB(size)</td>
+<td>Holds blobs up to 65536 bytes.</td>
+</tr>
+<tr>
+<td>TINYBLOB</td>
+<td>It is used for Binary Large Objects and has a maximum size of 255bytes.</td>
+</tr>
+<tr>
+<td>MEDIUMBLOB</td>
+<td>Holds blobs up to 16777215 bytes.</td>
+</tr>
+<tr>
+<td>LONGBLOB</td>
+<td>Holds blobs upto 4294967295 bytes.</td>
+</tr>
+<tr>
+<td>ENUM(val1,val2,…)</td>
+<td>String object that can have only 1 possible value from a list of size at most 65536 values in an ENUM list. If no value is inserted, a blank value is inserted.</td>
+</tr>
+<tr>
+<td>SET(val1,val2,…)</td>
+<td>String object with 0 or more values, chosen from a list of possible values with a maximum limit of 64 values.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="numeric-datatypes">Numeric Datatypes</h3>
+<p>The table below lists all the Numeric Datatypes in SQL along with their descriptions:</p>
+<table>
+<thead>
+<tr>
+<th>Datatype</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BIT(size)</td>
+<td>Bit-value type, where size varies from 1 to 64. Default value: 1</td>
+</tr>
+<tr>
+<td>INT(size)</td>
+<td>Integer with values in the signed range of -2147483648 to 2147483647 and values in the unsigned range of 0 to 4294967295.</td>
+</tr>
+<tr>
+<td>TINYINT(size)</td>
+<td>Integer with values in the signed range of -128 to 127 and values in the unsigned range of 0 to 255.</td>
+</tr>
+<tr>
+<td>SMALLINT(size)</td>
+<td>Integer with values in the signed range of -32768 to 32767 and values in the unsigned range of 0 to 65535.</td>
+</tr>
+<tr>
+<td>MEDIUMINT(size)</td>
+<td>Integer with values in the signed range of -8388608 to 8388607 and values in the unsigned range of 0 to 16777215.</td>
+</tr>
+<tr>
+<td>BIGINT(size)</td>
+<td>Integer with values in the signed range of 9223372036854775808 to 9223372036854775807 and values in the unsigned range of 0 to 18446744073709551615.</td>
+</tr>
+<tr>
+<td>BOOLEAN</td>
+<td>Boolean values where 0 is considered as FALSE and non-zero values are considered TRUE.</td>
+</tr>
+<tr>
+<td>FLOAT (p)</td>
+<td>The floating-point number is stored. If the precision parameter is set between 0 to 24, the type is FLOAT() else if it lies between 25 to 53, the datatype is DOUBLE().</td>
+</tr>
+<tr>
+<td>DECIMAL(size,d)</td>
+<td>Decimal number with a number of digits before decimal place set by size parameter, and a number of digits after the decimal point set by d parameter. Default values: size = 10, d = 10. Maximum Values: size = 65, d = 30.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="datetime-datatypes">Date/Time Datatypes</h3>
+<p>The datatypes available in SQL to handle Date/Time operations effectively are called the Date/Time datatypes. The below table lists all the Date/Time variables in SQL along with their description:</p>
+<table>
+<thead>
+<tr>
+<th>Datatype</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DATE</td>
+<td>Stores date in YYYY-MM-DD format with dates in the range of ‘1000-01-01’ to ‘9999-12-31’.</td>
+</tr>
+<tr>
+<td>TIME(fsp)</td>
+<td>Stores time in hh:mm:ss format with times in the range of ‘-838:59:59’ to ‘838:59:59’.</td>
+</tr>
+<tr>
+<td>DATETIME(fsp)</td>
+<td>Stores a combination of date and time in YYYY-MM-DD and hh:mm:ss format, with values in the range of ‘1000-01-01 00:00:00’ to ‘9999-12-31 23:59:59’.</td>
+</tr>
+<tr>
+<td>TIMESTAMP(fsp)</td>
+<td>It stores values relative to the Unix Epoch, basically a Unix Timestamp. Values lie in the range of ‘1970-01-01 00:00:01’ UTC to ‘2038-01-09 03:14:07’ UTC.</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>Stores values of years as a 4digit number format, with a range lying between -1901 to 2155.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-sql-commands">4. SQL Commands</h3>
+<p>SQL Commands are instructions that are used by the user to communicate with the database, to perform specific tasks, functions and queries of data.</p>
+<p><strong>Types of SQL Commands:</strong></p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/286/original/SQL_Commands.png?1640067344" /></p>
+<p>The above image broadly shows the different types of SQL commands available in SQL in the form of a chart.</p>
+<p><strong>1. Data Definition Language(DDL):</strong> It changes a table’s structure by adding, deleting and altering its contents. Its changes are auto-committed(all changes are automatically permanently saved in the database). Some commands that are a part of DDL are:</p>
+<ul>
+<li><strong>CREATE:</strong> Used to create a new table in the database.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>CREATE TABLE STUDENT(Name VARCHAR2(20), Email VARCHAR2(100), DOB DATE);
+</code></pre>
+<ul>
+<li><strong>ALTER:</strong> Used to alter contents of a table by adding some new column or attribute, or changing some existing attribute.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>ALTER TABLE STUDENT ADD(ADDRESS VARCHAR2(20));  
+ALTER TABLE STUDENT MODIFY (ADDRESS VARCHAR2(20));
+</code></pre>
+<ul>
+<li><strong>DROP:</strong> Used to delete the structure and record stored in the table.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>DROP TABLE STUDENT;
+</code></pre>
+<ul>
+<li><strong>TRUNCATE:</strong> Used to delete all the rows from the table, and free up the space in the table.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>TRUNCATE TABLE STUDENT;
+</code></pre>
+<p><strong>2. Data Manipulation Language(DML):</strong> It is used for modifying a database, and is responsible for any form of change in a database. These commands are not auto-committed, i.e all changes are not automatically saved in the database. Some commands that are a part of DML are:</p>
+<ul>
+<li><strong>INSERT:</strong> Used to insert data in the row of a table.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>INSERT INTO STUDENT (Name, Subject) VALUES ("Scaler", "DSA");
+</code></pre>
+<p>In the above example, we insert the values “Scaler” and “DSA” in the columns Name and Subject in the STUDENT table.</p>
+<ul>
+<li><strong>UPDATE:</strong> Used to update value of a table’s column.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>UPDATE STUDENT   
+SET User_Name = 'Interviewbit'    
+WHERE Student_Id = '2'
+</code></pre>
+<p>In the above example, we update the name of the student, whose Student_ID is 2, to the User_Name = “Interviewbit”.</p>
+<ul>
+<li><a href="https://www.scaler.com/topics/delete-query-in-sql/"><strong>DELETE</strong></a><strong>:</strong> Used to delete one or more rows in a table.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>DELETE FROM STUDENT 
+WHERE Name = "Scaler";
+</code></pre>
+<p>In the above example, the query deletes the row where the Name of the student is “Scaler” from the STUDENT table.</p>
+<p><strong>3. Data Control Language(DCL):</strong> These commands are used to grant and take back access/authority (revoke) from any database user. Some commands that are a part of DCL are:</p>
+<ul>
+<li><strong>Grant:</strong> Used to grant a user access privileges to a database.</li>
+</ul>
+<p><em>Example</em>:</p>
+<pre><code>GRANT SELECT, UPDATE ON TABLE_1 TO USER_1, USER_2;
+</code></pre>
+<p>In the above example, we grant the rights to SELECT and UPDATE data from the table TABLE_1 to users - USER_1 and USER_2.</p>
+<ul>
+<li><strong>Revoke</strong>: Used to revoke the permissions from an user.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>REVOKE SELECT, UPDATE ON TABLE_1 FROM USER_1, USER_2;
+</code></pre>
+<p>In the above example we revoke the rights to SELECT and UPDATE data from the table TABLE_1 from the users- USER_1 and USER_2.</p>
+<p><strong>4. Transaction Control Language:</strong> These commands can be used only with DML commands in conjunction and belong to the category of auto-committed commands. Some commands that are a part of TCL are:</p>
+<ul>
+<li><strong>COMMIT:</strong> Saves all the transactions made on a database.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>DELETE FROM STUDENTS
+WHERE AGE = 16;  
+COMMIT;
+</code></pre>
+<p>In the above database, we delete the row where AGE of the students is 16, and then save this change to the database using COMMIT.</p>
+<ul>
+<li><strong>ROLLBACK:</strong> It is used to undo transactions which are not yet been saved.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>DELETE FROM STUDENTS 
+WHERE AGE = 16;  
+ROLLBACK;
+</code></pre>
+<p>By using ROLLBACK in the above example, we can undo the deletion we performed in the previous line of code, because the changes are not committed yet.</p>
+<ul>
+<li><strong>SAVEPOINT:</strong> Used to roll transaction back to a certain point without having to roll back the entirity of the transaction.</li>
+</ul>
+<p><em>Example:</em></p>
+<pre><code>SAVEPOINT SAVED;
+DELETE FROM STUDENTS 
+WHERE AGE = 16;  
+ROLLBACK TO SAVED;
+</code></pre>
+<p>In the above example, we have created a savepoint just before performing the delete operation in the table, and then we can return to that savepoint using the ROLLBACK TO command.</p>
+<p><strong>5. Data Query Language:</strong> It is used to fetch some data from a database. The command belonging to this category is:</p>
+<ul>
+<li>SELECT: It is used to retrieve selected data based on some conditions which are described using the WHERE clause. It is to be noted that the WHERE clause is also optional to be used here and can be used depending on the user’s needs.</li>
+</ul>
+<p><em>Example:</em> With WHERE clause,</p>
+<pre><code>SELECT Name  
+FROM Student  
+WHERE age &gt;= 18;
+</code></pre>
+<p><em>Example:</em> Without WHERE clause,</p>
+<pre><code>SELECT Name  
+FROM Student
+</code></pre>
+<p>In the first example, we will only select those names in the Student table, whose corresponding age is greater than 17. In the 2nd example, we will select all the names from the Student table.</p>
+<h3 id="5-sql-constraints">5. SQL Constraints</h3>
+<p>Constraints are rules which are applied on a table. For example, specifying valid limits or ranges on data in the table etc.</p>
+<p>The valid constraints in SQL are:</p>
+<p><strong>1. NOT NULL:</strong> Specifies that this column cannot store a NULL value.</p>
+<p><em>Example:</em></p>
+<pre><code>CREATE TABLE Student
+(
+   ID int(8) NOT NULL,
+   NAME varchar(30) NOT NULL,
+   ADDRESS varchar(50)
+);
+</code></pre>
+<p>In the above example, we create a table STUDENT, which has some attributes it has to store. Among these attributes we declare that the columns ID and NAME cannot have NULL values in their fields using NOT NULL constraint.</p>
+<p><strong>2. UNIQUE:</strong> Specifies that this column can have only Unique values, i.e the values cannot be repeated in the column.</p>
+<p><em>Example:</em></p>
+<pre><code>CREATE TABLE Student
+(
+   ID int(8) UNIQUE,
+   NAME varchar(10) NOT NULL,
+   ADDRESS varchar(20)
+);
+</code></pre>
+<p>In the above example, we create a table Student and declare the ID column to be unique using the UNIQUE constraint.</p>
+<p><strong>3. Primary Key:</strong> It is a field using which it is possible to uniquely identify each row in a table. We will get to know about this in detail in the upcoming section.</p>
+<p><strong>4. Foreign Key:</strong> It is a field using which it is possible to uniquely identify each row in some other table. We will get to know about this in detail in the upcoming section.</p>
+<p><strong>5. CHECK:</strong> It validates if all values in a column satisfy some particular condition or not.</p>
+<p><em>Example:</em></p>
+<pre><code>CREATE TABLE Student
+(
+   ID int(6) NOT NULL,
+   NAME varchar(10),
+   AGE int CHECK (AGE &lt; 20)
+);
+</code></pre>
+<p>Here, in the above query, we add the CHECK constraint into the table. By adding the constraint, we can only insert entries that satisfy the condition AGE &lt; 20 into the table.</p>
+<p><strong>6. DEFAULT:</strong> It specifies a default value for a column when no value is specified for that field.</p>
+<p><em>Example:</em></p>
+<pre><code>CREATE TABLE Student
+(
+   ID int(8) NOT NULL,
+   NAME varchar(50) NOT NULL,
+   CLASS int DEFAULT 2
+);
+</code></pre>
+<p>In the above query, we set a default value of 2 for the CLASS attribute. While inserting records into the table, if the column has no value specified, then 2 is assigned to that column as the default value.</p>
+<h3 id="6-crud-operations-in-sql">6. Crud Operations in SQL</h3>
+<p>CRUD is an abbreviation for <strong>Create, Read, Update and Delete</strong>. These 4 operations comprise the most basic database operations. The relevant commands for these 4 operations in SQL are:</p>
+<ul>
+<li>Create: INSERT</li>
+<li>Read: SELECT</li>
+<li>Update: UPDATE</li>
+<li>Delete: DELETE</li>
+</ul>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/287/original/SQL_CRUD_Operations.png?1640068657" /></p>
+<p>The above image shows the pillars of SQL CRUD operations.</p>
+<ul>
+<li><strong>INSERT:</strong> To insert any new data ( create operation - C ) into a database, we use the INSERT INTO statement.</li>
+</ul>
+<p><strong>SQL Syntax:</strong></p>
+<pre><code>INSERT INTO name_of_table(column1, column2, ....)
+   VALUES(value1, value2, ....)
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>INSERT INTO student(ID, name, phone, class)
+   VALUES(1, 'Scaler', '+1234-4527', 12)
+</code></pre>
+<p>For multiple rows,</p>
+<p><strong>SQL Syntax:</strong></p>
+<pre><code>INSERT INTO name_of_table(column1, column2, ....)
+   VALUES(value1, value2, ....),
+   (new_value1, new_value2, ...),
+   (....), ... ;
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>INSERT INTO student(ID, name, phone, class)
+   VALUES(1, 'Scaler', '+1234-4527', 12),
+   (2, 'Interviewbit', '+4321-7654', 11);
+</code></pre>
+<p>The above example will insert into the student table having the values 1, Scaler, +1234-5678 and 12 to the columns ID, name, phone and class columns.</p>
+<ul>
+<li><strong>SELECT:</strong> We use the select statement to perform the Read ( R ) operation of CRUD.</li>
+</ul>
+<p><strong>SQL Syntax:</strong></p>
+<pre><code>SELECT column1,column2,.. FROM name_of_table;
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>SELECT name,class FROM student;
+</code></pre>
+<p>The above example allows the user to read the data in the name and class columns from the student table.</p>
+<ul>
+<li><strong>UPDATE:</strong> Update is the ‘U’ component of CRUD. The Update command is used to update the contents of specific columns of specific rows.</li>
+</ul>
+<p><strong>SQL Syntax:</strong></p>
+<pre><code>UPDATE name_of_table
+SET column1=value1,column2=value2,...
+WHERE conditions...;
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>UPDATE customers
+SET phone = '+1234-9876'
+WHEREID = 2;
+</code></pre>
+<p>The above SQL example code will update the table ‘customers’ whose ID is 2 with the new given phone number.</p>
+<ul>
+<li><strong>DELETE:</strong></li>
+</ul>
+<p>The Delete command is used to delete or remove some rows from a table. It is the ‘D’ component of CRUD.</p>
+<p><strong>SQL Syntax:</strong></p>
+<pre><code>DELETE FROM name_of_table
+WHERE condition1, condition2, ...;
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>DELETE FROM student
+WHERE class = 11;
+</code></pre>
+<p>The above SQL example code will delete the row from table student, where the class = 11 conditions becomes true.</p>
+<h3 id="7-important-sql-keywords">7. Important SQL Keywords</h3>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/288/original/SQL_Keywords.png?1640069077" /></p>
+<p>The below table lists some important keywords used in SQL, along with their description and example.</p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADD</td>
+<td>Will add a new column to an existing table.</td>
+<td>ALTER TABLE student ADD email_address VARCHAR(255)</td>
+</tr>
+<tr>
+<td>ALTER TABLE</td>
+<td>Adds edits or deletes columns in a table</td>
+<td>ALTER TABLE student DROP COLUMN email_address;</td>
+</tr>
+<tr>
+<td>ALTER COLUMN</td>
+<td>Can change the datatype of a table’s column</td>
+<td>ALTER TABLE student ALTER COLUMN phone VARCHAR(15)</td>
+</tr>
+<tr>
+<td>AS</td>
+<td>Renames a table/column with an alias existing only for the query duration.</td>
+<td>SELECT name AS student_name, phone FROM student;</td>
+</tr>
+<tr>
+<td>ASC</td>
+<td>Used in conjunction with ORDER BY to sort data in ascending order.</td>
+<td>SELECT column1, column2, … FROM table_name ORDER BY column1, column2, … ASC;</td>
+</tr>
+<tr>
+<td>DESC</td>
+<td>Used in conjunction with ORDER BY to sort data in descending order.</td>
+<td>SELECT column1, column2, … FROM table_name ORDER BY column1, column2, … DESC;</td>
+</tr>
+<tr>
+<td>CHECK</td>
+<td>Constrains the value which can be added to a column.</td>
+<td>CREATE TABLE student(fullName varchar(255), age INT, CHECK(age &gt;= 18));</td>
+</tr>
+<tr>
+<td>CREATE DATABASE</td>
+<td>Creates a new database.</td>
+<td>CREATE DATABASE student;</td>
+</tr>
+<tr>
+<td>DEFAULT</td>
+<td>Sets the default value for a given column.</td>
+<td>CREATE TABLE products(ID int, name varchar(255) DEFAULT ‘Username’, from date DEFAULT GETDATE());</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>Delete values from a table.</td>
+<td>DELETE FROM users WHERE user_id= 674;</td>
+</tr>
+<tr>
+<td>DROP COLUMN</td>
+<td>Deletes/Drops a column from a table.</td>
+<td>ALTER TABLE student DROP COLUMN name;</td>
+</tr>
+<tr>
+<td>DROP DATABASE</td>
+<td>Completely deletes a database with all its content within.</td>
+<td>DROP DATABASE student;</td>
+</tr>
+<tr>
+<td>DROP DEFAULT</td>
+<td>Removes a default value for a column.</td>
+<td>ALTER TABLE student ALTER COLUMN age DROP DEFAULT;</td>
+</tr>
+<tr>
+<td>DROP TABLE</td>
+<td>Deletes a table from a database.</td>
+<td>DROP TABLE students;</td>
+</tr>
+<tr>
+<td>FROM</td>
+<td>Determines which table to read or delete data from.</td>
+<td>SELECT * FROM students;</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>Used with WHERE clause for multiple OR conditionals.</td>
+<td>SELECT * FROM students WHERE name IN(‘Scaler’, ‘Interviewbit’,‘Academy’);</td>
+</tr>
+<tr>
+<td>ORDER BY</td>
+<td>Used to sort given data in Ascending or Descending order.</td>
+<td>SELECT * FROM student ORDER BY age ASC</td>
+</tr>
+<tr>
+<td>SELECT DISTINCT</td>
+<td>Works in the same war as SELECT, except that only unique values are included in the results.</td>
+<td>SELECT DISTINCT age from student;</td>
+</tr>
+<tr>
+<td>TOP</td>
+<td>Used in conjunction with SELECT to select a fixed number of records from a table.</td>
+<td>SELECT TOP 5 * FROM students;</td>
+</tr>
+<tr>
+<td>VALUES</td>
+<td>Used along with the INSERT INTO keyword to add new values to a table.</td>
+<td>INSERT INTO Customers (CustomerName, City, Country) VALUES (‘Cardinal’, ‘Stavanger’, ‘Norway’);</td>
+</tr>
+<tr>
+<td>WHERE</td>
+<td>Filters given data based on some given condition.</td>
+<td>SELECT * FROM students WHERE age &gt;= 18;</td>
+</tr>
+<tr>
+<td>UNIQUE</td>
+<td>Ensures that all values in a column are different.</td>
+<td>UNIQUE (ID)</td>
+</tr>
+<tr>
+<td>UNION</td>
+<td>Used to combine the result-set of two or more SELECT statements.</td>
+<td>SELECT column_name(s) FROM Table1 UNION SELECT column_name(s) FROM Table2;</td>
+</tr>
+<tr>
+<td>UNION ALL</td>
+<td>Combines the result set of two or more SELECT statements(it allows duplicate values)</td>
+<td>SELECT City FROM table1 UNION ALL SELECT City FROM table2 ORDER BY City;</td>
+</tr>
+<tr>
+<td>SELECT TOP</td>
+<td>Used to specify the number of records to return.</td>
+<td>SELECT TOP 3 * FROM Students;</td>
+</tr>
+<tr>
+<td>LIMIT</td>
+<td>Puts a restriction on how many rows are returned from a query.</td>
+<td>SELECT * FROM table1 LIMIT 3;</td>
+</tr>
+<tr>
+<td>UPDATE</td>
+<td>Modifies the existing records in a table.</td>
+<td>UPDATE Customers SET ContactName = ‘Scaler’, City = ‘India’ WHERE CustomerID = 1;</td>
+</tr>
+<tr>
+<td>SET</td>
+<td>Used with UPDATE to specify which columns and values should be updated in a table.</td>
+<td>UPDATE Customers SET ContactName = ‘Scaler’, City= ‘India’ WHERE CustomerID = 1;</td>
+</tr>
+<tr>
+<td>IS NULL</td>
+<td>Column values are tested for NULL values using this operator.</td>
+<td>SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NULL;</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>Used to search for a specified pattern in a column.</td>
+<td>SELECT * FROM Students WHERE Name LIKE ‘a%’;</td>
+</tr>
+<tr>
+<td>ROWNUM</td>
+<td>Returns a number indicating the order in which Oracle selects the row from a table or set of joined rows.</td>
+<td>SELECT * FROM Employees WHERE ROWNUM &lt; 10;</td>
+</tr>
+<tr>
+<td>GROUP BY</td>
+<td>Groups rows that have the same values into summary rows.</td>
+<td>SELECT COUNT(StudentID), State FROM Students GROUP BY State;</td>
+</tr>
+<tr>
+<td>HAVING</td>
+<td>Enables the user to specify conditions that filter which group results appear in the results.</td>
+<td>HAVING COUNT(CustomerID) &gt; 5;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-clauses-in-sql">8. Clauses in SQL</h3>
+<p>Clauses are in-built functions available in SQL and are used for filtering and analysing data quickly allowing the user to efficiently extract the required information from the database.</p>
+<p>The below table lists some of the important SQL clauses and their description with examples:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WHERE</td>
+<td>Used to select data from the database based on some conditions.</td>
+<td>SELECT * from Employee WHERE age &gt;= 18;</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>Used to combine 2 or more conditions and returns true if all the conditions are True.</td>
+<td>SELECT * from Employee WHERE age &gt;= 18 AND salary &gt;= 45000 ;</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>Similar to AND but returns true if any of the conditions are True.</td>
+<td>Select * from Employee where salary &gt;= 45000 OR age &gt;= 18</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>Used to search for a specified pattern in a column.</td>
+<td>SELECT * FROM Students WHERE Name LIKE ‘a%’;</td>
+</tr>
+<tr>
+<td>LIMIT</td>
+<td>Puts a restriction on how many rows are returned from a query.</td>
+<td>SELECT * FROM table1 LIMIT 3;</td>
+</tr>
+<tr>
+<td>ORDER BY</td>
+<td>Used to sort given data in Ascending or Descending order.</td>
+<td>SELECT * FROM student ORDER BY age ASC</td>
+</tr>
+<tr>
+<td>GROUP BY</td>
+<td>Groups rows that have the same values into summary rows.</td>
+<td>SELECT COUNT(StudentID), State FROM Students GROUP BY State;</td>
+</tr>
+<tr>
+<td>HAVING</td>
+<td>It performs the same as the WHERE clause but can also be used with aggregate functions.</td>
+<td>SELECT COUNT(ID), AGE FROM Students GROUP BY AGE HAVING COUNT(ID) &gt; 5;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-sql-operators">9. SQL Operators</h3>
+<p>Operators are used in SQL to form complex expressions which can be evaluated to code more intricate queries and extract more precise data from a database.</p>
+<p>There are 3 main types of operators: Arithmetic, Comparision and Logical operators, each of which will be described below.</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/289/original/SQL_Operators.png?1640069206" /></p>
+<ul>
+<li><strong>Arithmetic Operators:</strong></li>
+</ul>
+<p>Arithmetic Operators allows the user to perform arithmetic operations in SQL. The table below shows the list of arithmetic operators available in SQL:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulo</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Bitwise Operators:</strong></li>
+</ul>
+<p>Bitwise operators are used to performing Bit manipulation operations in SQL. The table below shows the list of bitwise operators available in SQL:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>Bitwise AND</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>^</td>
+<td>Bitwise XOR</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Relational Operators:</strong></li>
+</ul>
+<p>Relational operators are used to performing relational expressions in SQL, i.e those expressions whose value either result in true or false. The table below shows the list of relational operators available in SQL:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\=</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal to</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Not equal to</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Compound Operators:</strong></li>
+</ul>
+<p>Compound operators are basically a combination of 2 or more arithmetic or relational operator, which can be used as a shorthand while writing code. The table below shows the list of compound operators available in SQL:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+=</td>
+<td>Add equals</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>Subtract equals</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>Multiply equals</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>Divide equals</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>Modulo equals</td>
+</tr>
+<tr>
+<td>&amp;=</td>
+<td>AND equals</td>
+</tr>
+<tr>
+<td></td>
+<td>=</td>
+</tr>
+<tr>
+<td>^=</td>
+<td>XOR equals</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Logical Operators:</strong></li>
+</ul>
+<p>Logical operators are used to combining 2 or more relational statements into 1 compound statement whose truth value is evaluated as a whole. The table below shows the SQL logical operators with their description:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALL</td>
+<td>Returns True if all subqueries meet the given condition.</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>Returns True if all the conditions turn out to be true</td>
+</tr>
+<tr>
+<td>ANY</td>
+<td>True if any of the subqueries meet the given condition</td>
+</tr>
+<tr>
+<td>BETWEEN</td>
+<td>True if the operand lies within the range of the conditions</td>
+</tr>
+<tr>
+<td>EXISTS</td>
+<td>True if the subquery returns one or more records</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>Returns True if the operands to at least one of the operands in a given list of expressions</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>Return True if the operand and some given pattern match.</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>Displays some record if the set of given conditions is False</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>Returns True if any of the conditions turn out to be True</td>
+</tr>
+<tr>
+<td>SOME</td>
+<td>Returns True if any of the Subqueries meet the given condition.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-keys-in-sql">10. Keys in SQL</h3>
+<p>A database consists of multiple tables and these tables and their contents are related to each other by some relations/conditions. To identify each row of these tables uniquely, we make use of SQL keys. A SQL key can be a single column or a group of columns used to uniquely identify the rows of a table. SQL keys are a means to ensure that no row will have duplicate values. They are also a means to establish relations between multiple tables in a database.</p>
+<p><strong>Types of Keys:</strong></p>
+<p><strong>1. Primary Key:</strong> They uniquely identify a row in a table.</p>
+<p><strong>Properties:</strong></p>
+<ul>
+<li>Only a single primary key for a table. (A special case is a composite key, which can be formed by the composition of 2 or more columns, and act as a single candidate key.)</li>
+<li>The primary key column cannot have any NULL values.</li>
+<li>The primary key must be unique for each row.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code>CREATE TABLE Student (
+   ID int NOT NULL,
+   LastName varchar(255) NOT NULL,
+   FirstName varchar(255),
+   Class int,
+   PRIMARY KEY (ID)
+);
+</code></pre>
+<p>The above example creates a table called STUDENT with some given properties(columns) and assigns the ID column as the primary key of the table. Using the value of ID column, we can uniquely identify its corresponding row.</p>
+<p><strong>2. Foreign Key:</strong> Foreign keys are keys that reference the primary keys of some other table. They establish a relationship between 2 tables and link them up.</p>
+<p><strong>Example:</strong> In the below example, a table called Orders is created with some given attributes and its Primary Key is declared to be OrderID and Foreign Key is declared to be PersonId referenced from the Person's table. A person's table is assumed to be created beforehand.</p>
+<pre><code>CREATE TABLE Orders (
+   OrderID int NOT NULL,
+   OrderNumber int NOT NULL,
+   PersonID int,
+   PRIMARY KEY (OrderID),
+   FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+</code></pre>
+<ul>
+<li><strong>Super Key:</strong> It is a group of single or multiple keys which identifies row of a table.</li>
+<li><strong>Candidate Key:</strong> It is a collection of unique attributes that can uniquely identify tuples in a table.</li>
+<li><strong>Alternate Key:</strong> It is a column or group of columns that can identify every row in a table uniquely.</li>
+<li><strong>Compound Key:</strong> It is a collection of more than one record that can be used to uniquely identify a specific record.</li>
+<li><strong>Composite Key:</strong> Collection of more than one column that can uniquely identify rows in a table.</li>
+<li><strong>Surrogate Key:</strong> It is an artificial key that aims to uniquely identify each record.</li>
+</ul>
+<p>Amongst these, the Primary and Foreign keys are most commonly used.</p>
+<h3 id="11-functions-in-sql">11. Functions in SQL</h3>
+<p>The SQL Server has many builtin functions some of which are listed below:</p>
+<ul>
+<li><strong>SQL Server String Functions:</strong></li>
+</ul>
+<p>The table below lists some of the String functions in SQL with their description:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASCII</td>
+<td>Returns ASCII values for a specific character.</td>
+</tr>
+<tr>
+<td>CHAR</td>
+<td>Returns character based on the ASCII code.</td>
+</tr>
+<tr>
+<td>CONCAT</td>
+<td>Concatenates 2 strings together.</td>
+</tr>
+<tr>
+<td>SOUNDEX</td>
+<td>Returns similarity of 2 strings in terms of a 4 character code.</td>
+</tr>
+<tr>
+<td>DIFFERENCE</td>
+<td>Compares 2 SOUNDEX values and returns the result as an integer.</td>
+</tr>
+<tr>
+<td>SUBSTRING</td>
+<td>Extracts a substring from a given string.</td>
+</tr>
+<tr>
+<td>TRIM</td>
+<td>Removes leading and trailing whitespaces from a string.</td>
+</tr>
+<tr>
+<td>UPPER</td>
+<td>Converts a string to upper-case.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>SQL Server Numeric Functions:</strong></li>
+</ul>
+<p>The table below lists some of the Numeric functions in SQL with their description:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ABS</td>
+<td>Returns the absolute value of a number.</td>
+</tr>
+<tr>
+<td>ASIN</td>
+<td>Returns arc sine value of a number.</td>
+</tr>
+<tr>
+<td>AVG</td>
+<td>Returns average value of an expression.</td>
+</tr>
+<tr>
+<td>COUNT</td>
+<td>Counts the number of records returned by a SELECT query.</td>
+</tr>
+<tr>
+<td>EXP</td>
+<td>Returns e raised to the power of a number.</td>
+</tr>
+<tr>
+<td>FLOOR</td>
+<td>Returns the greatest integer &lt;= the number.</td>
+</tr>
+<tr>
+<td>RAND</td>
+<td>Returns a random number.</td>
+</tr>
+<tr>
+<td>SIGN</td>
+<td>Returns the sign of a number.</td>
+</tr>
+<tr>
+<td>SQRT</td>
+<td>Returns the square root of a number.</td>
+</tr>
+<tr>
+<td>SUM</td>
+<td>Returns the sum of a set of values.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>SQL Server Date Functions:</strong></li>
+</ul>
+<p>The table below lists some of the Date functions in SQL with their description:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CURRENT_TIMESTAMP</td>
+<td>Returns current date and time.</td>
+</tr>
+<tr>
+<td>DATEADD</td>
+<td>Adds a date/time interval to date and returns the new date.</td>
+</tr>
+<tr>
+<td>DATENAME</td>
+<td>Returns a specified part of a date(as a string).</td>
+</tr>
+<tr>
+<td>DATEPART</td>
+<td>Returns a specified part of a date(as an integer).</td>
+</tr>
+<tr>
+<td>DAY</td>
+<td>Returns the day of the month for a specified date.</td>
+</tr>
+<tr>
+<td>GETDATE</td>
+<td>Returns the current date and time from the database.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>SQL Server Advanced Functions:</strong></li>
+</ul>
+<p>The table below lists some of the Advanced functions in SQL with their description:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CAST</td>
+<td>Typecasts a value into specified datatype.</td>
+</tr>
+<tr>
+<td>CONVERT</td>
+<td>Converts a value into a specified datatype.</td>
+</tr>
+<tr>
+<td>IIF</td>
+<td>Return a value if a condition evaluates to True, else some other value.</td>
+</tr>
+<tr>
+<td>ISNULL</td>
+<td>Return a specified value if the expression is NULL, else returns the expression.</td>
+</tr>
+<tr>
+<td>ISNUMERIC</td>
+<td>Checks if an expression is numeric or not.</td>
+</tr>
+<tr>
+<td>SYSTEM_USER</td>
+<td>Returns the login name for the current user</td>
+</tr>
+<tr>
+<td>USER_NAME</td>
+<td>Returns the database user name based on the specified id.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-joins-in-sql">12. Joins in SQL</h3>
+<p>Joins are a SQL concept that allows us to fetch data after combining multiple tables of a database.</p>
+<p>The following are the types of joins in SQL:</p>
+<p><strong>INNER JOIN:</strong> Returns any records which have matching values in both tables.</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/300/original/INNER_JOIN.png?1640071748" /></p>
+<p><em>Example:</em></p>
+<p>Consider the following tables,</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/302/original/INNER_JOIN_eg.png?1640071786" /></p>
+<p>Let us try to build the below table, using Joins,</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/304/original/inner_join_eg2.png?1640071859" /></p>
+<p>The SQL code will be as follows,</p>
+<pre><code>SELECT orders.order_id, products.product_name,customers.customer_name,products.price
+FROM orders
+INNER JOIN products ON products.product_id = order.product_id
+INNER JOIN customers on customers.customer_id = order.customer_id;
+</code></pre>
+<ul>
+<li><strong>NATURAL JOIN:</strong> It is a special type of inner join based on the fact that the column names and datatypes are the same on both tables.</li>
+</ul>
+<p><em>Syntax:</em></p>
+<pre><code>Select * from table1 Natural JOIN table2;
+</code></pre>
+<p><em>Example:</em></p>
+<pre><code>Select * from Customers Natural JOIN Orders;
+</code></pre>
+<p>In the above example, we are merging the Customers and Orders table shown above using a NATURAL JOIN based on the common column customer_id.</p>
+<ul>
+<li><strong>RIGHT JOIN:</strong> Returns all of the records from the second table, along with any matching records from the first.</li>
+</ul>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/305/original/RIGHT_JOIN.png?1640071991" /></p>
+<p><em>Example:</em></p>
+<p>Let us define an Orders table first,</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/307/original/RIGHT_JOIN_eg1.png?1640072050" /></p>
+<p>Let us also define an Employee table,</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/310/original/rt_join.png?1640072169" /></p>
+<p>Applying right join on these tables,</p>
+<pre><code>SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees
+ON Orders.EmployeeID = Employees.EmployeeID
+ORDER BY Orders.OrderID;
+</code></pre>
+<p>The resultant table will be,</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/312/original/resultant_rt_join.png?1640072214" /></p>
+<ul>
+<li><strong>LEFT JOIN:</strong> Returns all of the records from the first table, along with any matching records from the second table.</li>
+</ul>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/314/original/LEFT_JOIN.png?1640072420" /></p>
+<p><em>Example:</em></p>
+<p>Consider the below Customer and Orders table,</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/315/original/lft_join_1.png?1640072459" /></p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/317/original/lft_join_2.png?1640072500" /></p>
+<p>We will apply Left Join on the above tables, as follows,</p>
+<pre><code>SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;
+</code></pre>
+<p>The top few entries of the resultant table will appear as shown in the below image.</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/319/original/resultant_lft_join.png?1640072573" /></p>
+<ul>
+<li><strong>FULL JOIN:</strong> Returns all records from both tables when there is a match.</li>
+</ul>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/320/original/FULL_JOIN.png?1640072639" /></p>
+<p>Example:</p>
+<p>Consider the below tables, Customers and Orders,</p>
+<p><strong>Table Customers:</strong></p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/322/original/Table_Customers_eg_full_join.png?1640072745" /></p>
+<p><strong>Table Orders:</strong></p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/324/original/Table_Orders_full_join.png?1640072838" /></p>
+<p>Applying Outer Join on the above 2 tables, using the code:</p>
+<pre><code>SELECT  ID, NAME, AMOUNT, DATE
+  FROM CUSTOMERS
+  FULL JOIN ORDERS
+  ON CUSTOMERS.ID = ORDERS.CUSTOMER_ID;
+</code></pre>
+<p>We will get the following table as the result of the outer join.</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/326/original/result_of_outer_join.png?1640072912" /></p>
+<h3 id="13-triggers-in-sql">13. Triggers in SQL</h3>
+<p>SQL codes automatically executed in response to a certain event occurring in a table of a database are called triggers. There cannot be more than 1 trigger with a similar action time and event for one table.</p>
+<p><strong>Syntax:</strong></p>
+<pre><code>Create Trigger Trigger_Name
+(Before | After)  [ Insert | Update | Delete]
+on [Table_Name]
+[ for each row | for each column ]
+[ trigger_body ]
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>CREATE TRIGGER trigger1
+before INSERT
+ON Student
+FOR EACH ROW
+SET new.total = (new.marks/ 10) * 100;
+</code></pre>
+<p>Here, we create a new Trigger called trigger1, just before we perform an INSERT operation on the Student table, we calculate the percentage of the marks for each row.<br />
+Some common operations that can be performed on triggers are:</p>
+<ul>
+<li><strong>DROP:</strong> This operation will drop an already existing trigger from the table.</li>
+<li>
+<p>Syntax:</p>
+<p>DROP TRIGGER trigger name;</p>
+</li>
+<li>
+<p><strong>SHOW:</strong> This will display all the triggers that are currently present in the table.</p>
+</li>
+<li>
+<p>Syntax:</p>
+<p>SHOW TRIGGERS IN database_name;</p>
+</li>
+</ul>
+<h3 id="14-sql-stored-procedures">14. SQL Stored Procedures</h3>
+<p>SQL procedures are stored in SQL codes, which can be saved for reuse again and again.</p>
+<p><strong>Syntax:</strong></p>
+<pre><code>CREATE PROCEDURE procedure_name AS sql_statement
+GO;
+</code></pre>
+<p>To execute a stored procedure,</p>
+<pre><code>EXEC procedure_name;
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code>CREATE PROCEDURE SelectAllCustomers AS SELECT * FROM Customers;
+GO;
+</code></pre>
+<p>The above example creates a stored procedure called ‘SelectAllCustomers’, which selects all the records from the customer table.</p>
+<h3 id="15-sql-injection">15. SQL Injection</h3>
+<p>Insertion or ‘Injection’ of some SQL Query from the input data of the client to the application is called SQL Injection. They can perform CRUD operations on the database and can read to vulnerabilities and loss of data.</p>
+<p>It can occur in 2 ways:</p>
+<ul>
+<li>Data is used to dynamically construct an SQL Query.</li>
+<li>Unintended data from an untrusted source enters the application.</li>
+</ul>
+<p>The consequences of SQL Injections can be Confidentiality issues, Authentication breaches, Authorization vulnerabilities, and breaking the Integrity of the system.</p>
+<p><img alt="" src="https://i3.wp.com/d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/328/original/SQL_Injection.png?1640073155" /></p>
+<p>The above image shows an example of SQL injections, through the use of 2 tables - students and library.</p>
+<p>Here the hacker is injecting SQL code -</p>
+<pre><code>UNION SELECT studentName, rollNo FROM students
+</code></pre>
+<p>into the Database server, where his query is used to JOIN the tables - students and library. Joining the 2 tables, the result of the query is returned from the database, using which the hacker gains access to the information he needs thereby taking advantage of the system vulnerability. The arrows in the diagram show the flow of how the SQL Injection causes the vulnerability in the database system, starting from the hacker’s computer.</p>
+<p><strong>Conclusion</strong></p>
+<p>Databases are growing increasingly important in our modern industry where data is considered to be a new wealth. Managing these large amounts of data, gaining insights from them and storing them in a cost-effective manner makes database management highly important in any modern software being made. To manage any form of databases/RDBMS, we need to learn SQL which allows us to easily code and manage data from these databases and create large scalable applications of the future, which caters to the needs of millions.</p>
+<h3 id="useful-resources">Useful Resources</h3>
+<ul>
+<li><a href="https://www.interviewbit.com/database-testing-interview-questions/">Database Testing Interview Questions</a></li>
+<li><a href="https://www.interviewbit.com/technical-interview-questions/">Technical Interview Questions</a></li>
+<li><a href="https://www.interviewbit.com/blog/sql-books/">SQL Books</a></li>
+<li><a href="https://www.interviewbit.com/blog/sql-projects/">SQL Projects</a></li>
+<li><a href="https://www.interviewbit.com/blog/sql-ides/">SQL IDEs</a></li>
+<li><a href="https://www.interviewbit.com/blog/sql-commands/">SQL Commands</a></li>
+<li><a href="https://www.interviewbit.com/blog/features-of-sql/">Features of SQL</a></li>
+</ul>
+<h3 id="original-httpswwwinterviewbitcomsql-cheat-sheet">Original: <a href="https://www.interviewbit.com/sql-cheat-sheet/">https://www.interviewbit.com/sql-cheat-sheet/</a></h3>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit5/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit5">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit5
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../DBMS-CAE-1-Question-Bank/" class="md-footer__link md-footer__link--next" aria-label="Next: DBMS-CAE-1-Question-Bank">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                DBMS-CAE-1-Question-Bank
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="upi://pay?pa=8625057783@airtel&pn=GAUTAM SURESH PATIL&tn=Pay money to GAUTAM SURESH PATIL" target="_blank" rel="noopener" title="pay?pa=8625057783@airtel&amp;pn=GAUTAM SURESH PATIL&amp;tn=Pay money to GAUTAM SURESH PATIL" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../lol.js"></script>
+      
+    
+  </body>
+</html>

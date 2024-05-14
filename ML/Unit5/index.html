@@ -1,0 +1,4041 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tymaterials.live/ML/Unit5/">
+      
+      
+        <link rel="prev" href="../Unit4/">
+      
+      
+        <link rel="next" href="../Unit6/">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>Unit5 - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+500:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto 500";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-B5944EDZSE"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-B5944EDZSE",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-B5944EDZSE",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-5" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ST/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ST
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            ST
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ST/ST-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ST-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../UDBMS/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    UDBMS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            UDBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UDBMS/UDBMS-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UDB-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../NLP/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    NLP
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            NLP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NLP/NLP-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../UHV/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    UHV
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            UHV
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UHV/UHV-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ML
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            ML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#combining-multiple-learners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Multiple Learners:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationale:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating-diverse-learners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generating Diverse Learners:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voting:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bagging:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boosting:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixture-of-experts-revisited" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixture of Experts Revisited:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacked-generalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stacked Generalization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fine-tuning-an-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine-Tuning an Ensemble:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cascading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cascading:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ML-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ML-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ML-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ML-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../BP/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BP
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            BP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BP/BP-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BP-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sepm/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/SEPM-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/SEPM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/SEPM-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEPM-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../WD/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/WD-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dbms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/SQL-Cheat-Sheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL-Cheat-Sheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/DBMS-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/DBMS-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/DBMS-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DBMS-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/CD-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CD-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/EEIM-CAE-1-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EEIM-CAE-1-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/EEIM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EEIM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../BIA/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BIA
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            BIA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/BIA-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIA-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BIA/BIA-CAE-3-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIA-CAE-3-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_13" id="__nav_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            DM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DM/DM-CAE-2-Question-Bank/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DM-CAE-2-Question-Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#combining-multiple-learners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Multiple Learners:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationale:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating-diverse-learners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generating Diverse Learners:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voting:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bagging:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boosting:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixture-of-experts-revisited" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixture of Experts Revisited:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacked-generalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stacked Generalization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fine-tuning-an-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine-Tuning an Ensemble:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cascading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cascading:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="unit-5">Unit 5</h1>
+<ul>
+<li><a href="#unit-5">Unit 5</a></li>
+<li><a href="#combining-multiple-learners"><strong>Combining Multiple Learners:</strong></a></li>
+<li><a href="#rationale"><strong>Rationale:</strong></a></li>
+<li><a href="#generating-diverse-learners"><strong>Generating Diverse Learners:</strong></a></li>
+<li><a href="#voting"><strong>Voting:</strong></a></li>
+<li><a href="#bagging"><strong>Bagging:</strong></a></li>
+<li><a href="#boosting"><strong>Boosting:</strong></a></li>
+<li><a href="#mixture-of-experts-revisited"><strong>Mixture of Experts Revisited:</strong></a></li>
+<li><a href="#stacked-generalization"><strong>Stacked Generalization:</strong></a></li>
+<li><a href="#fine-tuning-an-ensemble"><strong>Fine-Tuning an Ensemble:</strong></a></li>
+<li><a href="#cascading"><strong>Cascading:</strong></a></li>
+</ul>
+<h2 id="combining-multiple-learners"><strong>Combining Multiple Learners:</strong></h2>
+<p>Combining multiple learners, also known as ensemble learning, is a machine learning technique where the predictions of multiple models are combined to improve overall performance. The fundamental idea is that by leveraging the strengths of diverse models, one can mitigate individual weaknesses and enhance generalization. There are various ways to combine learners, including voting, averaging, stacking, and boosting.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Improved Performance:</strong> Ensemble methods often outperform individual models, as they capitalize on the diversity among learners.</li>
+<li><strong>Robustness:</strong> Combining models helps in reducing overfitting and increases the robustness of the overall system.</li>
+<li><strong>Versatility:</strong> Ensemble methods can be applied to a wide range of machine learning algorithms, making them versatile in various scenarios.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Increased Complexity:</strong> Combining multiple learners adds complexity to the model, making it harder to interpret and implement.</li>
+<li><strong>Computational Overhead:</strong> Ensemble methods can be computationally expensive, especially when dealing with large datasets or complex models.</li>
+<li><strong>Sensitivity to Noisy Data:</strong> If individual models are sensitive to noise, ensemble methods might not perform well.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Classification and Regression:</strong> Ensemble learning is widely used for classification and regression tasks.</li>
+<li><strong>Anomaly Detection:</strong> Combining multiple anomaly detection models can improve the accuracy of identifying outliers.</li>
+<li><strong>Natural Language Processing:</strong> Ensemble methods can be applied to tasks like sentiment analysis, text classification, and machine translation.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Random Forest:</strong> A popular ensemble method for classification and regression tasks that builds multiple decision trees and combines their predictions.</li>
+<li><strong>Gradient Boosting:</strong> Sequentially builds weak learners and focuses on the mistakes of previous models, creating a strong overall model.</li>
+<li><strong>Voting Classifier:</strong> Combines predictions from multiple classifiers using voting strategies.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Kaggle Competitions:</strong> Many winning solutions in machine learning competitions on platforms like Kaggle use ensemble techniques to achieve high accuracy.</li>
+<li><strong>Financial Fraud Detection:</strong> Combining multiple fraud detection models can enhance the accuracy of identifying fraudulent transactions.</li>
+<li><strong>Medical Diagnosis:</strong> Ensemble methods can be employed to improve the accuracy of disease diagnosis based on various medical parameters.</li>
+</ul>
+<h2 id="rationale"><strong>Rationale:</strong></h2>
+<p>The rationale behind combining multiple learners lies in the concept of diversity and wisdom of the crowd. By aggregating predictions from different models, ensemble learning aims to create a more reliable and accurate prediction than any single model could achieve. The key assumptions are that individual models will make different errors, and by combining them, these errors will cancel out, leading to a more robust and generalized solution.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Error Reduction:</strong> Ensembles can effectively reduce errors by combining diverse models.</li>
+<li><strong>Enhanced Stability:</strong> The combination of models provides a stable and consistent prediction, reducing the impact of outliers.</li>
+<li><strong>Increased Predictive Power:</strong> Ensemble methods can capture complex relationships in the data that might be missed by individual models.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Complexity:</strong> Understanding and interpreting the combined decisions of multiple models can be challenging.</li>
+<li><strong>Computational Cost:</strong> Ensemble methods often require more computational resources, which can be a limitation in resource-constrained environments.</li>
+<li><strong>Potential Overfitting:</strong> If not carefully tuned, ensemble methods can overfit the training data.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Image and Speech Recognition:</strong> Combining different neural network architectures can improve the accuracy of recognition tasks.</li>
+<li><strong>Stock Market Prediction:</strong> Ensemble methods can be applied to predict stock prices by combining predictions from multiple financial models.</li>
+<li><strong>Customer Churn Prediction:</strong> Combining various predictive models can enhance the accuracy of predicting customer churn in businesses.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>XGBoost:</strong> An efficient and scalable implementation of gradient boosting that is widely used in data science competitions and industry applications.</li>
+<li><strong>Stacking:</strong> A meta-ensemble method that combines predictions from multiple models using another model, often achieving higher accuracy.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Credit Scoring:</strong> Ensembles can be applied to credit scoring models to improve the accuracy of assessing creditworthiness.</li>
+<li><strong>Weather Prediction:</strong> Combining predictions from multiple weather models can enhance the accuracy of weather forecasts.</li>
+</ul>
+<h2 id="generating-diverse-learners"><strong>Generating Diverse Learners:</strong></h2>
+<p>Generating diverse learners is a critical aspect of ensemble learning, as the effectiveness of the ensemble depends on the diversity among its individual models. Diversity is achieved by training models with different subsets of the data, using different algorithms, or varying hyperparameters.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Increased Generalization:</strong> Diverse learners capture different aspects of the underlying data distribution, leading to better generalization.</li>
+<li><strong>Error Reduction:</strong> Diversity helps in reducing errors by compensating for the weaknesses of individual models.</li>
+<li><strong>Robustness:</strong> Diverse models are less likely to make the same mistakes, increasing the overall robustness of the ensemble.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Challenging to Achieve:</strong> Generating diverse learners can be challenging, especially if the underlying data is limited or the models used are similar.</li>
+<li><strong>Increased Training Time:</strong> Training diverse models might require more time and resources compared to training a single model.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Image Classification:</strong> Diverse convolutional neural networks (CNNs) can capture different features in images, leading to improved classification accuracy.</li>
+<li><strong>Natural Language Processing:</strong> Using diverse language models can enhance the performance of tasks like sentiment analysis and text summarization.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Data Sampling Techniques:</strong> Training models on different subsets of the data, such as bootstrapping, can generate diverse learners.</li>
+<li><strong>Algorithmic Diversity:</strong> Using a combination of decision trees, neural networks, and support vector machines can introduce algorithmic diversity.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Medical Diagnosis:</strong> Diverse models trained on different patient demographics or medical parameters can lead to more accurate diagnostic predictions.</li>
+<li><strong>Predictive Maintenance:</strong> Models trained with diverse features and time windows can improve the accuracy of predicting equipment failures in industrial settings.</li>
+</ul>
+<h2 id="voting"><strong>Voting:</strong></h2>
+<p>Voting is a simple yet effective method of combining multiple learners in ensemble learning. In a voting system, each model in the ensemble independently predicts the output, and the final prediction is determined based on a voting mechanism. There are different types of voting, including majority voting, weighted voting, and soft voting.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Simplicity:</strong> Voting is a straightforward ensemble technique that is easy to implement and understand.</li>
+<li><strong>Reduction of Overfitting:</strong> Voting can mitigate overfitting by combining the predictions of multiple models.</li>
+<li><strong>Applicability:</strong> Voting can be applied to both classification and regression problems.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Equal Influence:</strong> In some voting schemes, each model has an equal say, which may not be optimal if some models are more reliable than others.</li>
+<li><strong>Vulnerability to Biases:</strong> If the models in the ensemble are biased in the same direction, the voting system may amplify these biases.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Image Classification:</strong> A voting ensemble of different convolutional neural networks can improve the accuracy of image classification tasks.</li>
+<li><strong>Anomaly Detection:</strong> Combining predictions from diverse anomaly detection models using voting can enhance the detection of outliers.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Hard Voting:</strong> In hard voting, the majority prediction is selected as the final output. For example, if three models predict classes A, B, and A, the final prediction is class A.</li>
+<li><strong>Soft Voting:</strong> In soft voting, the final prediction is based on the average or weighted average of the predicted probabilities from individual models.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Credit Scoring:</strong> Voting can be applied to credit scoring models, where multiple models predict the creditworthiness of an individual, and the final decision is based on a voting mechanism.</li>
+<li><strong>Customer Churn Prediction:</strong> Combining predictions from multiple models using voting can improve the accuracy of predicting customer churn.</li>
+</ul>
+<h2 id="bagging"><strong>Bagging:</strong></h2>
+<p>Bagging, or Bootstrap Aggregating, is an ensemble technique where multiple learners are trained on different subsets of the training data, sampled with replacement. The final prediction is often an average or a voting mechanism applied to the predictions of individual models. The goal of bagging is to reduce variance and improve generalization.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Variance Reduction:</strong> Bagging reduces the variance of the model by training on different subsets of data, leading to a more robust ensemble.</li>
+<li><strong>Stability:</strong> Bagging helps in creating a stable and consistent model by mitigating the impact of outliers and noise in the data.</li>
+<li><strong>Parallelization:</strong> Training multiple models independently allows for parallelization, making bagging suitable for distributed computing environments.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Increased Complexity:</strong> The ensemble model created through bagging can be more complex and computationally demanding.</li>
+<li><strong>Limited Bias Reduction:</strong> Bagging is more effective in reducing variance than bias, so it may not significantly improve models with high bias.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Random Forest:</strong> A popular bagging ensemble method that builds decision trees on different bootstrapped samples of the data.</li>
+<li><strong>Regression Problems:</strong> Bagging can be applied to regression problems to improve the accuracy of predicting continuous outcomes.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Bootstrap Sampling:</strong> For each model in the ensemble, training data is sampled with replacement, creating different training sets for each model.</li>
+<li><strong>Random Forest:</strong> A bagging technique applied to decision trees, where each tree is trained on a subset of the data and features.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Medical Diagnosis:</strong> Bagging can be applied to medical diagnosis models by training on different patient populations, improving the robustness of predictions.</li>
+<li><strong>Predictive Maintenance:</strong> Bagging can enhance the accuracy of predicting equipment failures by training models on different subsets of historical maintenance data.</li>
+</ul>
+<h2 id="boosting"><strong>Boosting:</strong></h2>
+<p>Boosting is an ensemble learning technique that aims to improve the accuracy of models by combining weak learners sequentially. Unlike bagging, where models are trained independently, boosting focuses on training each model to correct the errors of its predecessor. Common algorithms for boosting include AdaBoost, Gradient Boosting, and XGBoost.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Improved Accuracy:</strong> Boosting often results in higher accuracy compared to individual models or bagging.</li>
+<li><strong>Handles Class Imbalance:</strong> Boosting can effectively handle class imbalance by giving more weight to misclassified instances.</li>
+<li><strong>Sequential Learning:</strong> The sequential nature of boosting allows each model to focus on difficult-to-classify instances.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Sensitive to Noisy Data:</strong> Boosting can be sensitive to noisy data and outliers, potentially leading to overfitting.</li>
+<li><strong>Computational Complexity:</strong> Training models sequentially can be computationally expensive, especially if the dataset is large.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Face Detection:</strong> Boosting algorithms have been successfully applied to face detection tasks.</li>
+<li><strong>Predictive Analytics:</strong> Boosting is commonly used in predictive modeling for tasks like credit scoring.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>AdaBoost:</strong> An early boosting algorithm that assigns weights to misclassified instances, focusing on improving the performance of the next model.</li>
+<li><strong>Gradient Boosting:</strong> Builds models sequentially, each correcting the errors of the previous one by fitting to the residuals.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Credit Scoring:</strong> Boosting can be applied to credit scoring models to improve the accuracy of predicting creditworthiness.</li>
+<li><strong>Churn Prediction:</strong> Boosting algorithms can enhance the prediction of customer churn in subscription-based services.</li>
+</ul>
+<h2 id="mixture-of-experts-revisited"><strong>Mixture of Experts Revisited:</strong></h2>
+<p>A Mixture of Experts (MoE) is a type of ensemble model that consists of multiple expert models and a gating network that determines which expert to trust for a given input. Each expert specializes in a particular region of the input space, and the gating network learns to allocate weights to the experts based on the input.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Adaptive Learning:</strong> MoE models can adaptively allocate resources to different experts based on the input, allowing for more flexible and nuanced learning.</li>
+<li><strong>Handles Complex Relationships:</strong> MoE models are effective in capturing complex relationships in the data by allowing different experts to specialize in different patterns.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Increased Complexity:</strong> Implementing and training MoE models can be more complex compared to traditional models.</li>
+<li><strong>Prone to Overfitting:</strong> MoE models may be prone to overfitting, especially if not properly regularized.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Speech Recognition:</strong> MoE models have been used in speech recognition systems to handle diverse speech patterns.</li>
+<li><strong>Image Classification:</strong> MoE models can be applied to image classification tasks to capture different patterns in different regions of an image.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Gating Mechanism:</strong> The gating network in a MoE model assigns weights to each expert based on the input, determining their influence on the final prediction.</li>
+<li><strong>Neural Architecture:</strong> MoE models are often implemented as neural networks, where each expert and the gating network are neural modules.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Natural Language Processing:</strong> MoE models can be applied to tasks like machine translation to handle diverse language patterns.</li>
+<li><strong>Robotics:</strong> MoE models can be used in robotics for tasks where the robot needs to adapt its behavior based on different environmental conditions.</li>
+</ul>
+<h2 id="stacked-generalization"><strong>Stacked Generalization:</strong></h2>
+<p>Stacked Generalization, also known as stacking, is an ensemble learning technique that combines multiple models by training a meta-model on their predictions. The idea is to use the predictions of base models as features for training a higher-level model, which makes the final prediction. Stacking can capture diverse patterns learned by different base models.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Increased Predictive Power:</strong> Stacking leverages the strengths of diverse models, resulting in improved predictive power.</li>
+<li><strong>Flexibility:</strong> Stacking can be applied to various types of base models, allowing for flexibility in model selection.</li>
+<li><strong>Handles Heterogeneous Data:</strong> Stacking is effective when dealing with datasets that exhibit heterogeneity.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Increased Complexity:</strong> Stacking introduces additional complexity to the model, making it harder to interpret and implement.</li>
+<li><strong>Risk of Overfitting:</strong> Stacking may be susceptible to overfitting, especially if the dataset is small.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Time Series Forecasting:</strong> Stacking can be applied to time series forecasting tasks by combining predictions from different time series models.</li>
+<li><strong>Financial Modeling:</strong> Stacking is commonly used in financial modeling to predict stock prices or portfolio performance.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Base Models:</strong> Decision trees, support vector machines, and neural networks can serve as base models in a stacking ensemble.</li>
+<li><strong>Meta-Model:</strong> A linear regression, random forest, or another model is used as the meta-model to combine the predictions of base models.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Healthcare:</strong> Stacking can be applied to predict patient outcomes by combining predictions from various healthcare models.</li>
+<li><strong>Marketing:</strong> Stacking can improve the accuracy of customer segmentation models in marketing applications.</li>
+</ul>
+<h2 id="fine-tuning-an-ensemble"><strong>Fine-Tuning an Ensemble:</strong></h2>
+<p>Fine-tuning an ensemble involves adjusting the hyperparameters, feature sets, or training parameters of individual models within the ensemble to optimize overall performance. This process aims to extract the maximum benefit from each model and improve the synergy between them.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Optimized Performance:</strong> Fine-tuning allows for optimization of individual models, leading to improved overall performance.</li>
+<li><strong>Adaptability:</strong> Fine-tuning provides the flexibility to adapt the ensemble to changing data distributions or specific use cases.</li>
+<li><strong>Improved Generalization:</strong> Adjusting hyperparameters and features can enhance the ensemble's ability to generalize to new, unseen data.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Resource-Intensive:</strong> Fine-tuning an ensemble may require significant computational resources and time.</li>
+<li><strong>Potential Overfitting:</strong> Excessive fine-tuning can lead to overfitting on the training data, reducing the ensemble's performance on new data.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Predictive Modeling:</strong> Fine-tuning can be applied to predictive models in various domains, such as finance and healthcare.</li>
+<li><strong>Computer Vision:</strong> Ensembles in image classification tasks can be fine-tuned for improved accuracy.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Hyperparameter Tuning:</strong> Adjusting learning rates, regularization parameters, or ensemble weights can be considered fine-tuning.</li>
+<li><strong>Feature Engineering:</strong> Fine-tuning can involve selecting or modifying features used by individual models.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Credit Risk Assessment:</strong> Fine-tuning can be applied to optimize the performance of an ensemble in predicting credit risk.</li>
+<li><strong>Supply Chain Forecasting:</strong> Ensembles used for supply chain forecasting can be fine-tuned to adapt to changes in demand patterns.</li>
+</ul>
+<h2 id="cascading"><strong>Cascading:</strong></h2>
+<p>Cascading is an ensemble technique where the predictions of one model are used as inputs for subsequent models in a sequential manner. Each model in the cascade is designed to address specific aspects or challenges of the problem, and the final prediction is made based on the collective output of all models.</p>
+<p><em>Advantages:</em></p>
+<ul>
+<li><strong>Hierarchical Decision Making:</strong> Cascading allows for a hierarchical decision-making process, where each model specializes in a specific aspect of the problem.</li>
+<li><strong>Interpretability:</strong> The sequential nature of cascading makes it easier to interpret the decision-making process.</li>
+<li><strong>Improved Accuracy:</strong> Cascading can lead to improved accuracy by addressing different facets of the problem in a staged manner.</li>
+</ul>
+<p><em>Disadvantages:</em></p>
+<ul>
+<li><strong>Dependency on Previous Models:</strong> Cascading assumes that the predictions of earlier models are accurate, and errors can propagate through subsequent stages.</li>
+<li><strong>Increased Complexity:</strong> The design and optimization of a cascading ensemble can be complex, requiring careful consideration of model dependencies.</li>
+</ul>
+<p><em>Applications:</em></p>
+<ul>
+<li><strong>Fraud Detection:</strong> Cascading can be applied to fraud detection, with each model focusing on different aspects of transaction behavior.</li>
+<li><strong>Image Processing:</strong> Cascading can be used in image processing pipelines, where each model handles a specific step, such as object detection followed by image classification.</li>
+</ul>
+<p><em>Examples:</em></p>
+<ul>
+<li><strong>Face Recognition Cascade:</strong> A cascade of models for face recognition, where the first model detects faces, the second aligns them, and the third classifies individuals.</li>
+<li><strong>Text Classification Cascade:</strong> Models in a text classification cascade could include a language model for feature extraction, a sentiment analysis model, and a topic classification model.</li>
+</ul>
+<p><em>Use Cases:</em></p>
+<ul>
+<li><strong>Network Security:</strong> Cascading models for network security, where each stage detects specific types of cyber threats.</li>
+<li><strong>Autonomous Vehicles:</strong> Cascading models in autonomous vehicles, where one model identifies objects, another predicts their trajectories, and a third assesses collision risks.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit4/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit4">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit4
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Unit6/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit6">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit6
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="upi://pay?pa=8625057783@airtel&pn=GAUTAM SURESH PATIL&tn=Pay money to GAUTAM SURESH PATIL" target="_blank" rel="noopener" title="pay?pa=8625057783@airtel&amp;pn=GAUTAM SURESH PATIL&amp;tn=Pay money to GAUTAM SURESH PATIL" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../lol.js"></script>
+      
+    
+  </body>
+</html>
